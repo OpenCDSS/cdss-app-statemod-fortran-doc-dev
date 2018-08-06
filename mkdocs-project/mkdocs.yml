@@ -22,6 +22,7 @@ pages:
   - 'FAQ for Linux': dev-tasks/faq-linux.md
   - 'FAQ for MinGW': dev-tasks/faq-mingw.md
 - 'Code List': code-list/code-list.md
+- 'Resources': resources/resources.md
 - 'REFERENCE: Software Design':
   - 'Overview': software-design/overview.md
 - 'REFERENCE: Deployed Environment':

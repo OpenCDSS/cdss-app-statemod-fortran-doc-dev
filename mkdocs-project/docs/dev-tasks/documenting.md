@@ -77,7 +77,8 @@ See the following resources:
 * [Doxygen - Comment blocks in Fortran](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#fortranblocks)
 * [NASA Modeling Guru:  Using Doxygen with Fortran soruce code](https://modelingguru.nasa.gov/docs/DOC-1811)
 
-**TODO smalers 2017-01-10 need to discuss with the team how agressively to add new comments to StateMod code as part of OpenCDSS project,
+**TODO smalers 2017-01-10 need to discuss with the team whether to use Doxygen and if so
+how agressively to add new comments to StateMod code as part of OpenCDSS project,
 in order to make it easier for new developers to understand the code.**
 
 Refer to the [Initial Project Setup / Documentation, API (Doxygen)](../project-init/doc-doxygen/) documentation for how to run Doxygen.
