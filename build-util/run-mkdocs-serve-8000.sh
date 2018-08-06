@@ -11,7 +11,7 @@ if [ ! ${dirname} = "build-util" ]
         exit 1
 fi
 
-cd ..
+cd ../mkdocs-project
 
 echo "View the website using http://localhost:8000"
 echo "Stop the server with CTRL-C"

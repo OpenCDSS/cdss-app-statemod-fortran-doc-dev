@@ -35,13 +35,13 @@ rem - "mkdocs serve" does not do this
 
 @echo on
 
-cd ..
+cd ../mkdocs-project
 mkdocs build --clean
 cd build-util
 
 rem Now sync the local files up to Amazon S3
 rem - apparently can't pass an empty argument so comment out %dryrun%
 rem %dryrun%
-aws s3 sync ../site %s3Folder% --delete --profile %awsProfile%
+aws s3 sync site %s3Folder% --delete --profile %awsProfile%
 
 exit /b 0
