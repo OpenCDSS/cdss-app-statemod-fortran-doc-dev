@@ -1,7 +1,8 @@
 # Development Tasks / Designing Software
 
-**TODO smalers 2017-01-02 need to add content here about how to work with the OpenCDSS team to
-respond to feature requests, but reports, etc.
-Perhaps use GitHub issues and GitHub projects page as the interface to the StateCU software project.**
+New StateMod feature requests often originate from modelers that need new functionality to complete projects.
+A process has been implemented to use GitHub issues to define new requests.
+See the following:
 
-See the [Software Design](../software-design/overview/) documentation.
+* [OpenCDSS StateMod protocol for issues](http://learn.openwaterfoundation.org/cdss-website-opencdss/statemod/statemod/#adding-an-issue)
+* StateMod [Software Design](../software-design/overview/) documentation.
