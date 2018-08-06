@@ -1,11 +1,15 @@
 # StateMod / Code List
 
-* [Code List Alphabetical](#code-list-alphabetical)
-* [Code List by Purpose](#code-list-by-purpose)
+This page facilitates access to StateMod code in the GitHub repository, without having to
+clone the repository or download as a zip file.
+Additional information will be added to this page over time.
+
+* [Code List (alphabetical)](#code-list-alphabetical)
+* [Code List (by purpose)](#code-list-by-purpose)
 
 ---
 
-## Code List Alphabetical
+## Code List (alphabetical) ##
 
 The following is the list of StateMod code files, organized alphabetically.
 
@@ -269,9 +273,10 @@ The following is the list of StateMod code files, organized alphabetically.
 ||[`year.for`](https:/github.com/OpenWaterFoundation/cdss-app-statemod-fortran/tree/master/src/main/fortran/year.for)
 ||[`year2.for`](https:/github.com/OpenWaterFoundation/cdss-app-statemod-fortran/tree/master/src/main/fortran/year2.for)
 
-## Code List by Purpose
+## Code List (by purpose) ##
 
 The following is the list of StateMod code files, organized by purpose.
+**This list needs to be updated.**
 
 |**Group**|**File**|**Purpose**|
 |--|--|--|

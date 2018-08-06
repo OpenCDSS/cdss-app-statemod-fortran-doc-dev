@@ -1,10 +1,9 @@
-# Learn StateMod (for Software Developers) #
+# StateMod Documentation (for Software Developers) #
 
 This documentation is the developer manual for Colorado's Decision Support Systems (CDSS) StateMod water allocation model software.
 
-**This documentation is a work in progress and will contain notes for inserts until resources can
-be devoted to fill gaps.  Comments in the code with text "TODO smalers 2017-01-01 some text" (for example)
-are included to indicate work that needs to be completed.**
+**This documentation is a work in progress and will contain notes for inserts until resources can be devoted to fill gaps.
+Comments in the documentation are generally noted as bold and indicate that work needs to be completed.**
 
 If you are reading this documentation, you have an interest in learning how StateMod is designed,
 are a member of the software development team,
@@ -65,8 +64,8 @@ and establish open source software projects, referred to as "OpenCDSS", and this
 
 ## Open Water Foundation ##
 
-The Open Water Foundation (OWF, [openwaterfoundation.org](http://openwaterfoundation.org)) is a 501(c)3 social enterprise
-nonprofit that focuses on developing and supporting open source software to make better
+The Open Water Foundation (OWF, [openwaterfoundation.org](http://openwaterfoundation.org)) is a nonprofit social enterprise
+that focuses on developing and supporting open source software to make better
 decisions about water resources.  OWF is providing technical resources and management to
 transition StateMod and other CDSS software to sustainable open source software projects.
 
@@ -75,17 +74,16 @@ See also other [OWF learning resources](http://learn.openwaterfoundation.org).
 ## License ##
 
 The license for this documentation is being determined in the CDSS open source project.
-More information will be provided later.
-
-**TODO smalers 2017-01-09 need to determine software and documentation license.**
 
 ## Source Repository on GitHub ##
 
-**TODO smalers 2016-12-31 this information will be finalized once the public code repository and open source project website is put into place.**
+**This information will be finalized once the public code repository and open source project website is put into place.**
 
-The source files for this documentation are maintained in the private GitHub repository for StateMod: [cdss-app-statemod-fortran](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran) in the `doc-dev-mkdocs-project` folder.
-Documentation website files currently are copied to the Open Water Foundation [Learn StateMod (for Software Developers)](http://learn.openwaterfoundation.org/cdss-learn-statemod-dev/) website,
+The source files for this documentation are maintained in the public GitHub repository for StateMod developer documentation: [cdss-app-statemod-fortran-doc-dev](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-doc-dev).
+Documentation website files currently are copied to the Open Water Foundation [StateMod Documentation (for Software Developers)](http://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-dev/) website,
 and will be copied to an OpenCDSS website once software tools are made available publicly.
+
+Developer documentation is in a separate repository from code to facilitate editing by non-programmers.
 
 ## Release Notes ##
 

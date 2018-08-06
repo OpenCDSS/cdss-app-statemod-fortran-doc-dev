@@ -11,6 +11,7 @@ This documentation contains the following sections:
 * [Test StateMod by Running Reference Dataset](#test-statemod-by-running-reference-dataset)
 * [Automated Functional Testing Using `pytest`](#automated-functional-testing-using-pytest)
 * [Automated Functional Testing Using TSTool](#automated-functional-testing-using-tstool)
+* [StateMod Test Repository](#statemod-test-repository)
 
 ----------
 
@@ -53,3 +54,10 @@ whereas a simple file comparison would show a fail.
 A place-holder folder `src/test` has been created in the repository and `src/test/tstool` could be used for TSTool tests.
 
 **TODO smalers 2017-01-10 need to decide whether to prototype this approach.**
+
+## StateMod Test Repository ##
+
+A separate repository has been created for testing, to allow non-programmers to contribute to testing and to
+keep the StateMod code repository small.
+
+* See [StateMod test repository cdss-app-statemod-fortran-test](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-test).

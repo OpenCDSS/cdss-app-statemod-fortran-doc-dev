@@ -1,24 +1,56 @@
 # cdss-app-statemod-fortran-doc-dev #
 
 This repository contains [Colorado's Decision Support Systems (CDSS)](http://cdss.state.co.us/Pages/CDSSHome.aspx) StateMod developer documentation.
+See the following online resources:
 
-See the deployed [OWF / Learn StateMod (for Developers)](http://learn.openwaterfoundation.org/cdss-learn-statemod-dev/) documentation.
+* [OpenCDSS](http://learn.openwaterfoundation.org/cdss-website-opencdss/)
+* Deployed [StateMod Developer Documentation](http://learn.openwaterfoundation.org/cdss-app-statemod-doc-dev/)
+
+This page contains the following sections:
+
+* [Repository Contents](#repository-contents)
+* [Development Environment](#development-environment)
+* [Editing and Viewing Content](#editing-and-viewing-content)
+* [Style Guide](#style-guide)
+* [License](#license)
+* [Contributing](#contributing)
+* [Maintainers](#maintainers)
+* [Release Notes](#release-notes)
+
+-----------------
 
 ## Repository Contents ##
 
 The repository contains the following:
 
 ```text
-.github/              Files specific to GitHub such as issue template.
-.gitattributes        Typical Git configuration file for repository attributes.
-.gitignore            Typical Git configuration file for ignored file list.
-README.md             This file.
-build-util/           Useful scripts to view, build, and deploy documentation.
-mkdocs-project/       Typical MkDocs project for this documentation.
-  mkdocs.yml          MkDocs configuration file for website.
-  docs/               Folder containing source Markdown and other files for website.
-  site/               Folder created by MkDocs containing the static website - ignored using .gitignore.
+cdss-app-statemod-fortran-doc-dev/   Repository name and main folder.
+  build-util/                        Useful scripts to view, build, and deploy documentation.
+  mkdocs-project/                    Typical MkDocs project for this documentation.
+    mkdocs.yml                       MkDocs configuration file for website.
+    docs/                            Folder containing source Markdown and other files for website.
+    site/                            Folder created by MkDocs containing the static website - ignored using .gitignore.
+  .github/                           Files specific to GitHub such as issue template.
+  .gitattributes                     Typical Git configuration file for repository attributes.
+  .gitignore                         Typical Git configuration file for ignored file list.
+  README.md                          This file.
 
+```
+
+The following folder structure is recommended for StateMod development.
+Top-level folders should be created as necessary.
+Repositories are expected to be on the same folder level to allow scripts in those repositories to work.
+
+```
+C:\Users\user\                               Windows user home folder.
+/home/user/                                  Linux user home folder.
+  cdss-dev/                                  Projects that are part of Colorado's Decision Support Systems.
+    StateMod/                                StateMod product folder.
+      git-repos/                             Git repositories for StateMod.
+        cdss-app-statemod-fortran/           StateMod source code development.
+        cdss-app-statemod-fortran-doc-dev/   StateMod develpoer documentation.
+        cdss-app-statemod-fortran-doc-user/  StateMod user documentation.
+        cdss-app-statemod-fortran-test/      StateMod automated tests.
 ```
 
 ## Development Environment ##
@@ -35,7 +67,7 @@ The development environment will change as the developers upgrade to newer versi
 If the development environment is properly configured, edit and view content as follows:
 
 1. Edit content in the `mkdocs-project/docs` folder and update `mkdocs-project/mkdocs.yml` as appropriate.
-2. Run the `build-util/run-mkdocs-serve-8000.sh` script (Linux) or equivalent.
+2. Run the `build-util/run-mkdocs-serve-8000.sh` script (Cygwin, Linux) or equivalent.
 3. View content in a web browser using URL `http://localhost:8000`.
 
 ## Style Guide ##
@@ -57,7 +89,9 @@ provide in-line table of contents on pages, where appropriate, to facilitate rev
 
 ## License ##
 
-The license is being determined.
+The license for this documentation is being determined.
+The Open Water Foundation consulting team has recommended using the
+[Creative Commons Attribution 2-0 Generic (CC BY 2.0) License](https://creativecommons.org/licenses/by/2.0/).
 
 ## Contributing ##
 
@@ -68,15 +102,11 @@ Contribute to the documentation as follows:
 
 ## Maintainers ##
 
-This repository is maintained by the [Open Water Foundation](http://openwaterfoundation.org/).
-
-## Contributors ##
-
-Steve Malers, Open Water Foundation (@smalers)
+This repository is maintained by the OpenCDSS team.
 
 ## Release Notes ##
 
 The following release notes indicate the update history for documentation, with GitHub repository issue indicated,
-if applicable (links to issues via README.md are not cleanly supported by GitHub so use the repository issues page to find).
 
+* 2018-08-06 - Update content to agree with latest OpenCDSS website and conventions.
 * 2018-06-27 - Copy content from files saved with code.  Separate to facilitate editing.
