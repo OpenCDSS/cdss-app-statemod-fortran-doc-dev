@@ -4,7 +4,7 @@ This repository contains [Colorado's Decision Support Systems (CDSS)](http://cds
 See the following online resources:
 
 * [OpenCDSS](http://learn.openwaterfoundation.org/cdss-website-opencdss/)
-* Deployed [StateMod Developer Documentation](http://learn.openwaterfoundation.org/cdss-app-statemod-doc-dev/)
+* Deployed [StateMod Developer Documentation](http://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-dev/)
 
 This page contains the following sections:
 
