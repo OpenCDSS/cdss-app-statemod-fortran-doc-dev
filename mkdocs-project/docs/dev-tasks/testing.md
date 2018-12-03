@@ -60,4 +60,4 @@ A place-holder folder `src/test` has been created in the repository and `src/tes
 A separate repository has been created for testing, to allow non-programmers to contribute to testing and to
 keep the StateMod code repository small.
 
-* See [StateMod test repository cdss-app-statemod-fortran-test](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-test).
+* See [StateMod test repository cdss-app-statemod-fortran-test](https://github.com/OpenCDSS/cdss-app-statemod-fortran-test).

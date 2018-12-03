@@ -129,11 +129,18 @@ Do the following in a Windows command shell, Git CMD, or perform the equivalent 
 
 ## Clone Git Repositories ##
 
-The [cdss-app-statemod-fortran Git repository hosted on GitHub](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran)
-contains the StateMod software and Git repository configuration files.
-It also contains the most recent version of this documentation.
+The [cdss-app-statemod-fortran Git repository hosted on GitHub](https://github.com/OpenCDSS/cdss-app-statemod-fortran)
+contains the StateMod code and Git repository configuration files.
+This is referred to to as the main StateMod repository.
 
-If Eclipse/Photran is used, the repository will be imported into the Eclipse/Photran workspace as a Fortran project.
+If using Eclipse/Photran, the repository will be imported into the Eclipse/Photran workspace as a Fortran project
+in a later step, which allows the files to be managed in Git but also be accessed from Eclipse.
+
+If prompted, specify the GitHub account credentials.
+The repository will include the Fortran StateMod project.
+
+The files resulting from the following steps should match the [Development Files Structure](../project-init/overview#development-folder-structure).
+
 
 ### ![Linux](../images/linux-32.png) Clone the repository files (Linux) ###
 
@@ -141,23 +148,97 @@ If Eclipse/Photran is used, the repository will be imported into the Eclipse/Pho
 $ cd ~/cdss-dev/StateMod
 $ mkdir git-repos
 $ cd git-repos
-> git clone https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran.git
+$ git clone https://github.com/OpenCDSS/cdss-app-statemod-fortran.git
+
+# Output...
+
+Cloning into 'cdss-app-statemod-fortran'...
+remote: Enumerating objects: 282, done.
+remote: Counting objects: 100% (282/282), done.
+remote: Compressing objects: 100% (264/264), done.
+remote: Total 1237 (delta 48), reused 27 (delta 14), pack-reused 955
+Receiving objects: 100% (1237/1237), 5.75 MiB | 6.29 MiB/s, done.
+Resolving deltas: 100% (482/482), done.
+```
+
+Once the main repository has been cloned, the `git-clone-all-statemod.sh` helper script will clone remaining repositories
+including documentation and tests.
+
+```bash
+$ cd ~/cdss-dev/StateMod/git-repos/cdss-app-cdss-fortran/build-util
+$ ./git-clone-all-statemod
+
+# Output...
+
+operatingSystem=mingw (used to check for Cygwin and filemode compatibility)
+
+Clone all repositories for the product to set up a new developer environment.
+The following is from /c/Users/sam/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran/build-util/product-repo-list.txt
+
+--------------------------------------------------------------------------------
+# Repositories that comprise StateMod
+# - assumes that local folder name will match the repository name
+cdss-app-statemod-fortran
+cdss-app-statemod-fortran-doc-dev
+cdss-app-statemod-fortran-doc-user
+cdss-app-statemod-fortran-test
+--------------------------------------------------------------------------------
+
+All repositories that don't already exist will be cloned to /c/Users/sam/cdss-dev/StateMod/git-repos.
+Repositories will be cloned using root URL https://github.com/OpenCDSS
+You may be prompted to enter credentials.
+Continue [y/n]?: y
+================================================================================
+Cloning repository:  cdss-app-statemod-fortran
+Repository folder:  /c/Users/sam/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran
+Repository Url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran
+Repo folder already exists so skipping:  /c/Users/sam/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran
+================================================================================
+Cloning repository:  cdss-app-statemod-fortran-doc-dev
+Repository folder:  /c/Users/sam/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran-doc-dev
+Repository Url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-dev
+Cloning into 'cdss-app-statemod-fortran-doc-dev'...
+remote: Enumerating objects: 214, done.
+remote: Total 214 (delta 0), reused 0 (delta 0), pack-reused 214
+Receiving objects: 100% (214/214), 4.70 MiB | 5.25 MiB/s, done.
+Resolving deltas: 100% (32/32), done.
+================================================================================
+Cloning repository:  cdss-app-statemod-fortran-doc-user
+Repository folder:  /c/Users/sam/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran-doc-user
+Repository Url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user
+Cloning into 'cdss-app-statemod-fortran-doc-user'...
+remote: Enumerating objects: 199, done.
+remote: Total 199 (delta 0), reused 0 (delta 0), pack-reused 199
+Receiving objects: 100% (199/199), 17.45 MiB | 5.09 MiB/s, done.
+Resolving deltas: 100% (50/50), done.
+================================================================================
+Cloning repository:  cdss-app-statemod-fortran-test
+Repository folder:  /c/Users/sam/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran-test
+Repository Url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-test
+Cloning into 'cdss-app-statemod-fortran-test'...
+remote: Enumerating objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 3
+Unpacking objects: 100% (3/3), done.
+================================================================================
+
+After cloning, /c/Users/sam/cdss-dev/StateMod/git-repos contains:
+cdss-app-statemod-fortran
+cdss-app-statemod-fortran-doc-dev
+cdss-app-statemod-fortran-doc-user
+cdss-app-statemod-fortran-test
 ```
 
 ### ![Windows](../images/windows-32.ico) Clone the repository files (Windows) ###
+
+Use the Linux instructions if using Git Bash.  The following will work if using Git Cmd.
 
 ```com
 > C:
 > cd \Users\user\cdss-dev\StateMod
 > mkdir git-repos
 > cd git-repos
-> git clone https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran.git
+> git clone https://github.com/OpenCDSS/cdss-app-statemod-fortran.git
 ```
-
-If prompted, specify the GitHub account credentials.
-The repository will include the Fortran StateMod project.
-
-The resulting files should match the [Development Files Structure](../project-init/overview#development-folder-structure).
 
 *Press back in the browser to return to the outline.*
 
@@ -193,8 +274,6 @@ $ ./run-eclipse-statemod.sh
 *Press back in the browser to return to the outline.*
 
 ## Import the Existing Eclipse StateMod Project from the Git Repository Folder ##
-
-**TODO smalers 2017-10-24 need to update for StateMod - StateCU documentation was copied.**
 
 The [Initial Project Setup](../project-init/overview/) process performed by the software team leads
 did extensive work to set up the Eclipse project 

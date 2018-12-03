@@ -9,10 +9,10 @@ set dryrun=""
 rem dryrun="--dryrun"
 set s3Folder="s3://learn.openwaterfoundation.org/cdss-learn-statemod-dev"
 
-rem Make sure that this batch file is being run from the build-util folder
+rem Make sure that this batch file is being run from the old-build-util folder
 rem Get current folder, see: https://superuser.com/questions/160702/get-current-folder-name-by-a-dos-command
 for %%* in (.) do set curDirName=%%~nx*
-if NOT "%curDirName%" == "build-util" (
+if NOT "%curDirName%" == "old-build-util" (
         echo.
         echo Must run from build-util folder
         echo.

@@ -24,6 +24,7 @@ This step requires that the Git software was previously installed as per [Develo
 
 The private repository [cdss-app-statemod-fortran](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran) was created using the
 GitHub website within the Open Water Foundation organization account.  This established an empty "remote" repository.
+Note that accessing this repository now will forward to the OpenCDSS GitHub account.
 
 ## Clone Empty GitHub StateMod Repository ##
 
