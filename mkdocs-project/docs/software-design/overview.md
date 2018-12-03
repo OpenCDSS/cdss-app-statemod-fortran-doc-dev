@@ -12,7 +12,7 @@ See also the following resources:
 
 Need to describe code modules at a high level:
 
-* Main entry point (see: [`statem.for`](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran/blob/master/src/main/fortran/statem.for))
+* Main entry point (see: [`statem.for`](https://github.com/OpenCDSS/cdss-app-statemod-fortran/blob/master/src/main/fortran/statem.for))
 * Code organization:  include files, parameter data, etc.
 * Input
 * Initialization

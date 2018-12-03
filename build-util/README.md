@@ -2,6 +2,13 @@
 
 This folder contains useful scripts for viewing and deploying the static website.
 
-* `copyToOwfAmazonS3.bat` - build site and copy `site` files to OWF Amazon S3 static website (Windows)
-* `copyToOwfAmazonS3.sh` - build site and copy `site` files to OWF Amazon S3 static website (Linux)
-* `run-mkdocs-serve-8000.sh` - run `mkdocs serve` to view the website
+* `copy-to-co-dnr-gcp.sh` - build site and copy `site` files to the CO DNR GCP static website
+(run with Git Bash)
+* `run-mkdocs-serve-8001.sh` - run `mkdocs serve` to view the website
+
+Several older scripts are also saved in `old-build-util` and can be run if needed:
+
+* `copy-to-owf-amazon-s3.bat` - build site and copy `site` files to OWF Amazon S3 static website
+(run Windows command prompt)
+* `copy-to-owf-amazon-s3.sh` - build site and copy `site` files to OWF Amazon S3 static website
+(run with Git Bash)

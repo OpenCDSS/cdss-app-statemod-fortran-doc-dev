@@ -55,7 +55,7 @@ The documentation will be installed into a folder corresponding to the software 
 ## User Documentation Using MkDocs ##
 
 The user documentation for StateMod currently primarily uses Microsoft Word and is distributed as PDF.
-User documentation is saved in the separate [cdss-app-statemod-fortran-doc-user repository](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-doc-user).
+User documentation is saved in the separate [cdss-app-statemod-fortran-doc-user repository](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user).
 A MkDocs wrapper document has been created to add navigation and provide access to legacy documentation.
 Full MkDocs documentation may be added in the future.
 

@@ -39,7 +39,9 @@ then installing Java 8 from Oracle is recommended:
 * [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 Select the Windows x64 download for Windows 7 and 10.
-The specific update is generally not important.  Select the most recent stable version, for example `jdk-8u112-windows-x64.exe`.
+The specific update is generally not important and the latest version should generally be used because
+it includes security and performance enhancements.
+Select the most recent stable version, for example `jdk-8u191-windows-x64.exe`.
 Accept the license agreement and download.
 
 Run the installer program as administrator.
@@ -63,8 +65,8 @@ The Java Runtime Environment (JRE) is used to run compiled Java programs (used t
 ```text
 C:\Program Files\
     Java\
-        jdk1.8.0_112\  
-        jre1.8.0_112\  
+        jdk1.8.0_191\  
+        jre1.8.0_191\  
 ```
 
 #### Create Symbolic Links ####
@@ -77,13 +79,13 @@ In the future the symbolic links can be recreated to point to newer versions of 
 ```com
 > cd \Program Files\Java
 
-C:\Program Files\Java>mklink /d jdk8 jdk1.8.0_112
-symbolic link created for jdk8 <<===>> jdk1.8.0_112
+C:\Program Files\Java>mklink /d jdk8 jdk1.8.0_191
+symbolic link created for jdk8 <<===>> jdk1.8.0_191
 
-C:\Program Files\Java>mklink /d jre8 jre1.8.0_112
-symbolic link created for jre8 <<===>> jre1.8.0_112
+C:\Program Files\Java>mklink /d jre8 jre1.8.0_191
+symbolic link created for jre8 <<===>> jre1.8.0_191
 
-> dir
+C:\Program Files\Java>dir
 
  Volume in drive C is OS
   Volume Serial Number is 8C0B-FCB1
@@ -96,5 +98,13 @@ symbolic link created for jre8 <<===>> jre1.8.0_112
    01/01/2017  02:15 AM    <SYMLINKD>     jdk8 [jdk1.8.0_112]
    01/01/2017  02:05 AM    <DIR>          jre1.8.0_112
    01/01/2017  02:15 AM    <SYMLINKD>     jre8 [jre1.8.0_112]
+```
 
+If an error is shown using `mklink` because the link already exists,
+remove the existing symbolic link first and then repeat creating the link.
+Use the `rmdir` command:
+
+```
+C:\Program Files\Java>rmdir jdk8
+C:\Program Files\Java>rmdir jre8
 ```
