@@ -24,7 +24,7 @@ This step requires that Eclipse/Photran was previously installed as per the [Dev
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
-**TODO smalers 2016-12-31 need to complete this - the initial focus has been on Windows.**
+This section will be completed when resources are available for Linux development and testing.
 
 ### ![Windows](../images/windows-32.ico) Windows ###
 
@@ -37,16 +37,7 @@ been initialized with the proper MinGW environment variables.
 C:\Users\user\cdss-dev\StateMod\git-repos\cdss-app-statemod-fortran\build-util\eclipse\run-eclipse-statemod.bat
 ```
 
-A snapshot of the script contents is as follows ([see the repository for current version](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran/blob/master/build-util/eclipse/run-eclipse-statemod-mingw.bat)):
-
-```bat
-rem Run Eclipse with Java 8, to make sure the right versions are used
-rem This assumes that Java 8 and Eclipse have been installed as per the StateMod developer documentation.
-
-rem Specify the VM to use and the maximum memory
-"C:\Program Files\Eclipse\eclipse-parallel-mars-64\eclipse" -vm "C:\Program Files\Java\jre8\bin\java" -vmargs -Xmx700M
-
-```
+See the [script in the repository](https://github.com/OpenCDSS/cdss-app-statemod-fortran/blob/master/build-util/eclipse/run-eclipse-statemod-mingw.bat).
 
 Note that the command line parameters passed to Eclipse are an alternative to changing the `eclipse.ini` file 
 distributed with the Eclipse software.

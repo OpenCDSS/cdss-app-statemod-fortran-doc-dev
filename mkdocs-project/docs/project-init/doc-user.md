@@ -1,3 +1,10 @@
 # Initial Project Setup / Documentation, User (MkDocs)
 
-**TODO smalers 2017-01-02 need to decide whether MkDocs will be used for user documentation, stick with legacy Word documentation, or both.**
+StateMod documentation has traditionally been maintained in a single large PDF document generated from 
+Microsoft Word files.
+
+A separate repository
+[cdss-app-statemod-fortran-doc-user](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user)
+has been create for User Documentation.
+
+See the [Development Tasks](../dev-tasks/documenting.md) for information about processing Word documentation.

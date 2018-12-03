@@ -48,26 +48,16 @@ Stop the server with `Ctrl-C` in the command shell window.
 
 ### Publish the documentation ###
 
-Currently the StateMod developer documentation is published to the
-[StateMod Documentation (for Software Developers) static website](http://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-dev/)
-hosted by the Open Water Foundation.
-This content is expected to migrate to a location hosted by the State of Colorado.
-
-The `site` folder under the MkDocs project is copied to an Amazon S3 bucket using the following batch file (Windows example).
-The developer must have the proper credentials to copy the files.
-
-```
-> C:
-> cd \Users\user\cdss-dev\StateMod\cdss-app-statemod-fortran-doc-dev\mkdocs-project\build-util
-> copy-to-owf-amazon-s3.bat
-```
+Run the `doc-dev-mkdocs-project\build-util\copy-to-co-dnr-gcp.sh` script to publish the documentation
+to the State of Colorado's Google Cloud Platform website.
+The documentation will be installed into a folder corresponding to the software version.
 
 ## User Documentation Using MkDocs ##
 
-The user documentation for StateMod currently uses Microsoft Word and is distributed as PDF.
+The user documentation for StateMod currently primarily uses Microsoft Word and is distributed as PDF.
 User documentation is saved in the separate [cdss-app-statemod-fortran-doc-user repository](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-doc-user).
-
-An option for going forward is to use MkDocs for user documentation, and an outline document has been created.
+A MkDocs wrapper document has been created to add navigation and provide access to legacy documentation.
+Full MkDocs documentation may be added in the future.
 
 ## Fortran Code API Documentation Using Doxygen ##
 
@@ -77,19 +67,13 @@ See the following resources:
 * [Doxygen - Comment blocks in Fortran](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#fortranblocks)
 * [NASA Modeling Guru:  Using Doxygen with Fortran soruce code](https://modelingguru.nasa.gov/docs/DOC-1811)
 
-**TODO smalers 2017-01-10 need to discuss with the team whether to use Doxygen and if so
-how agressively to add new comments to StateMod code as part of OpenCDSS project,
-in order to make it easier for new developers to understand the code.**
-
 Refer to the [Initial Project Setup / Documentation, API (Doxygen)](../project-init/doc-doxygen/) documentation for how to run Doxygen.
 
-Currently, Doxygen is intended as a local developer tool.
-If StateMod code is packaged into a library, then the Doxygen-generated API code can be published for developers that use the library.
+Doxygen output can be copied to the State of Colorado's Google Cloud Platform storage site for public access using the
+`doc-dev-doxygen-project/copy-to-co-dnr-gcp.sh` script.
 
 ## Fortran Code Internal Documentation Using Comments ##
 
 The Fortran code files that comprise the StateMod software should be documented with in-line comments
 using Fortran conventions to facilitate understanding of variables, data structures, modules, functions,
 subroutines, etc.
-
-**TODO smalers 2017-01-10 need to provide some specific examples for guidance.**

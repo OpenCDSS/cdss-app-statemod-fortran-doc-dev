@@ -42,10 +42,11 @@ consistent with the [development project folder structure](overview#development-
 
 ## Create Eclipse Workspace Folder ##
 
-The Eclipse workspace folder can be created through the Eclipse workspace selection wizard (see next section) but can
-also be created as follows and then selected in Eclipse.
-It is assumed that the parent folders were created in previous steps.
-The workspace folder will not be saved in the Git repository because it contains developer-specific files.
+Although it is possible to create one workspace and manage multiple development efforts
+(e.g., StateMod and additional software) under one workspace,
+this can become confusing.
+The following assumes that a new workspace is created specifically for the StateMod project
+consistent with the [development project folder structure](overview#development-folder-structure).
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
@@ -84,8 +85,7 @@ Instead, the files in the Git repository folder will be linked to the workspace 
 ## Workspace Configuration ##
 
 Additional configuration of the workspace may be desirable.
-
-**TODO smalers 2016-11-20 evaluate whether more configuration is needed or not, such as code format preference.**
+This will be evaluated as Eclipse is used in development.
 
 ## Next Step ##
 

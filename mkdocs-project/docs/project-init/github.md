@@ -4,14 +4,14 @@ The initial StateMod code for OpenCDSS is a history of versions maintained by Ra
 13.00.03 to 15.00.01.  This sequence brackets changes made by Jim Brannon to enable support for gfortran and Linux.
 Jim's changes were implemented in parallel by Ray Bennett but recent changes by Jim may need to be incorporated.
 The approach taken for OpenCDSS is to implement a folder structure similar to StateCU.
-The new Open Water Foundation repository is suitable for collaboration as part of the OpenCDSS effort.
-The OWF repository can be migrated to a State of Colorado organizational account at some point.
+A new Open Water Foundation repository was created because the OpenCDSS GitHub account was not available at that time.
+The OWF repository was later transferred to the OpenCDSS organizational account (November/December, 2018).
 
 This documentation contains the following sections:
 
 * [Prerequisites](#prerequisites)
 * [Create a New StateMod Repository on GitHub](#create-a-new-statemod-repository-on-github)
-* [Clone Empty GitHub StateMod Repository](#clone-legacy-github-statemod-repository)
+* [Clone Empty GitHub StateMod Repository](#clone-empty-github-statemod-repository)
 * [Next Steps](#next-steps)
 
 ---------------

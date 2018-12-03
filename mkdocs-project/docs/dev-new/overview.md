@@ -6,50 +6,87 @@ It is recommended that the StateMod development environment should follow these 
 consistent with the [Development Environment](../dev-env/overview/) and [Initial Project Setup](../project-init/overview/) documentation.
 The [standard development folder structure](../project-init/overview#development-folder-structure) should be followed to minimize potential for issues,
 especially given the number of components and setup steps.
-All of this documentation is consistent with the recommended development environment.
+This documentation is consistent with the recommended development environment.
 
 This documentation and development environment are also consistent with the StateCU software.
+Configuring the development environment for StateMod will support compiling StateCU.
 
 The intent of this documentation is to completely document setup steps and allow new developers to comment on this documentation
 so that it can be improved for other developers. The following steps need to occur to set up a new developer's environment.
-Links to other documentation are included to provide more information and "(**see details below**)" is used to indicate that
-specific instructions are included below (rather than immediately linking to other pages from the following outline).
+Links to other documentation are included to provide more information and **see details below** is used to indicate that
+specific instructions are included below.
 After reading instructions for a step, use "back" to return to this outline so that setup instructions can be followed in the proper sequence.
 **Bold comments** indicate which steps are required and which are optional.
 
-1. [Create folder for development files](#create-folder-for-development-files) - where development will occur (**see details below**),
-**required**
+The following sections are available in this page:
+
+* [Minimal Development Environment Setup (for command line compiling)](#minimal-development-environment-setup-for-command-line-compiling)
+* [Full Development Environment Setup (for interactive development environment)](#full-development-environment-setup-for-interactive-development-environment)
+* Supporting Information (used in the above sections):
+	+ [Create Folder for Development Files](#create-folder-for-development-files)
+	+ [Clone Git Repositories](#clone-git-repositories)
+	+ [Create Eclipse Workspace Folder](#create-eclipse-workspace-folder)
+	+ [Import the Existing Eclipse StateMod Project from the Git Repository Folder](#import-the-existing-eclipse-statemod-project-from-the-git-repository-folder)
+
+-----------------
+
+## Minimal Development Environment Setup (for command line compiling)
+
+A minimal development environment can be configured to develop and compile StateMod using
+a text editor and command line compiler.
+
+1. [Create folder for development files](#create-folder-for-development-files) - where development will occur - **required - see details below**
 2. Development Environment software install part 1 (version control)
-	* [Development Environment / Git](../dev-env/git/) - install Git software so the repository can be cloned,
-	**required (if not already installed)**
-3. [Clone Git Repository](#clone-git-repository) - clone the repository to get access to all files (**see details below**), **required**
-4. Development Environment software install part 2 (documentation tools), **optional (install if will view and edit documentation within development environment)**
+	* [Development Environment / Git](../dev-env/git/) - install Git software so the repositories can be cloned - **required if not already installed**
+3. [Clone Git Repositories](#clone-git-repositories) - clone the repositories to get access to all files - **required - see details below**
+4. Development Environment software install part 2 (documentation tools) - **optional, install if will view and edit documentation within development environment**
 	* [Development Environment / Python and pip](../dev-env/python/) - install Python, which is needed by MkDocs
 	* [Development Environment / MkDocs](../dev-env/mkdocs/) - install MkDocs to view/edit full documentation locally.
 	See [Development Tasks / Documenting](../dev-tasks/documenting#developer-documentation-using-mkdocs)
 	for instructions on viewing documentation.
 5. Development Environment software install part 3 (Fortran development tools)
-	* [Development Environment / Machine](../dev-env/machine/) - configure machine for development,
-	**required (provides environment)**
-	* [Development Environment / Java 8](../dev-env/java8/) - make sure Java 8 is available on system,
-	**optional (not needed for command-line compile, install if Eclipse/Photran IDE is used)**
+	* [Development Environment / Machine](../dev-env/machine/) - configure machine for development - **required - to provide core environment**
+	* [Development Environment / gfortran](../dev-env/gfortran/) - install `gfortran` Fortran compiler - **required**
+	* [Development Environment / text editor](../dev-env/text-editor/) - install text editor of choice - **required, if not already done**
+	* [Development Environment / Doxygen](../dev-env/doxygen/) - install Doxygen to auto-generate code API documentation -
+	**optional, install to auto-generate code API documentation and graphs from code and code comments**
+	* [Development Environment / KDiff3](../dev-env/kdiff3/) - install software to facilitate comparing files -
+	**optional - highly useful and can be used with Git**
+6. [Next Steps - Development Tasks](#next-steps-development-tasks) - compile software
+
+## Full Development Environment Setup (for interactive development environment) ##
+
+Optionally, a full development environment can be configured to develop and compile StateMod using
+the Eclipse integrated development environment.
+
+1. [Create folder for development files](#create-folder-for-development-files) - where development will occur - **required - see details below**
+2. Development Environment software install part 1 (version control)
+	* [Development Environment / Git](../dev-env/git/) - install Git software so the repositories can be cloned,
+	**required (if not already installed)**
+3. [Clone Git Repositories](#clone-git-repositories) - clone the repositories to get access to all files - **required - see details below**
+4. Development Environment software install part 2 (documentation tools) - **optional, install if will view and edit documentation within development environment**
+	* [Development Environment / Python and pip](../dev-env/python/) - install Python, which is needed by MkDocs
+	* [Development Environment / MkDocs](../dev-env/mkdocs/) - install MkDocs to view/edit full documentation locally.
+	See [Development Tasks / Documenting](../dev-tasks/documenting#developer-documentation-using-mkdocs)
+	for instructions on viewing documentation.
+5. Development Environment software install part 3 (Fortran development tools)
+	* [Development Environment / Machine](../dev-env/machine/) - configure machine for development - **required - to provide core environment**
+	* [Development Environment / Java 8](../dev-env/java8/) - make sure Java 8 is available on system - **required to use Eclipse/Photran IDE**
 	* [Development Environment / gfortran](../dev-env/gfortran/) - install `gfortran` Fortran compiler, **required**
 	* [Development Environment / Eclipse and Photran](../dev-env/eclipse/) - install Eclipse for use as IDE,
-	**optional (not needed for command-line compile, install if Eclipse/Photran IDE is used)**
+	**optional, not needed for command-line compile, install if Eclipse/Photran IDE is used**
 	* [Development Environment / Doxygen](../dev-env/doxygen/) - install Doxygen to auto-generate code API documentation,
-	**optional (install to auto-generate code API documentation and graphs from code and code comments)**
+	**optional, install to auto-generate code API documentation and graphs from code and code comments**
 	* [Development Environment / pytest](../dev-env/pytest/) - install to facilitate automated testing,
-	**optional (being evaluated)**
+	**optional, being evaluated**
 	* [Development Environment / KDiff3](../dev-env/kdiff3/) - install software to facilitate comparing files,
-	**optional (highly useful and can be used with Git)**
+	**optional, highly useful and can be used with Git**
 6. Eclipse Workspace Setup (interactive development environment),
-	**optional (not needed for command-line compile, install if Eclipse/Photran IDE is used)**
-	* [Create Eclipse Workspace Folder](#create-eclipse-workspace-folder) - simple manual step (***see details below***)
+	**optional, not needed for command-line compile, install if Eclipse/Photran IDE is used**
+	* [Create Eclipse Workspace Folder](#create-eclipse-workspace-folder) - simple manual step - **see details below**
 	* [Import the Existing Eclipse StateMod Project from the Git Repository Folder](#import-the-existing-eclipse-statemod-project-from-the-git-repository-folder) - import
-	from Git repository working files (**see details below**)
-7. [Next Steps - Development Tasks](#next-steps-development-tasks) - be productive!
-
-The following sections are referenced from the above outline.
+	from Git repository working files - **see details below**
+7. [Next Steps - Development Tasks](#next-steps-development-tasks) - compile software
 
 -------------
 
@@ -90,7 +127,7 @@ Do the following in a Windows command shell, Git CMD, or perform the equivalent 
 
 *Press back in the browser to return to the outline.*
 
-## Clone Git Repository ##
+## Clone Git Repositories ##
 
 The [cdss-app-statemod-fortran Git repository hosted on GitHub](https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran)
 contains the StateMod software and Git repository configuration files.
@@ -167,18 +204,18 @@ New developers need to import the project into the empty workspace as follows.
 
 Use ***File / Import*** and then follow the sequence below.
 
-![Import project](overview-images/eclipse-import-project-1.png)
+![Import project](images/eclipse-import-project-1.png)
 
 The first step allows browsing to an existing project (the user name will be different).
 
-![Import project](overview-images/eclipse-import-project-2.png)
+![Import project](images/eclipse-import-project-2.png)
 
 Press ***Finish*** in the initial import dialog.
 
 The resulting Eclipse workspace is shown as below.
 Note that Eclipse recognizes the associated Git repository indicated by the repository name/branch next to the Eclipse project.
 
-![Import project](overview-images/eclipse-import-project-3.png)
+![Import project](images/eclipse-import-project-3.png)
 
 ## Next Steps - Development Tasks ##
 

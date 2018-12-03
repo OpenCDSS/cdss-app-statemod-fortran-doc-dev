@@ -1,7 +1,7 @@
 # Initial Project Setup / Documentation, Developer (MkDocs)
 
-A MkDocs project was initially created outside the Git repository in order to document initial project setup.
-That documentation was then copied into the following folder, to be further maintained with the StateMod code:
-`~/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran/doc-dev-mkdocs-project`.
+A MkDocs project (this documentation) was created in order to document initial project setup.
+Typical MkDocs guidelines were followed.
+See the [repository README](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-dev) for more information.
 
 See the [Development Tasks](../dev-tasks/documenting.md) for information about using MkDocs.

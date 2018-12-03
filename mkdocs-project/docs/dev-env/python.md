@@ -24,7 +24,7 @@ This will ensure that it is up to date and will not interfere with Python that m
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
-**TODO smalers 2016-12-31 fill this out after Windows documentation is complete**
+This section will be completed when resources are available for Linux development and testing.
 
 ### ![Windows](../images/windows-32.ico) Windows ###
 
@@ -121,7 +121,7 @@ See the examples below for specific operating systems.
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
-**TODO smalers 2016-12-31 fill this out after Windows documentation is complete**
+This section will be completed when resources are available for Linux development and testing.
 
 ### ![Windows](../images/windows-32.ico) Windows ###
 

@@ -35,7 +35,7 @@ rem - "mkdocs serve" does not do this
 
 @echo on
 
-cd ../mkdocs-project
+cd ../../mkdocs-project
 mkdocs build --clean
 cd build-util
 

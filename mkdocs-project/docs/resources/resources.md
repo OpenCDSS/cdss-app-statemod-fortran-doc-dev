@@ -1,7 +1,7 @@
 # StateMod / Resources
 
 This page provides access to resources that may be useful to StateMod developers.
-Filenames for legacy resources have been modified slightly to correct typos and facilitate online use.
+Filenames for legacy resources have been modified slightly to facilitate online use.
 
 * [StateMod Design Documents](#statemod-design-documents)
 

@@ -16,13 +16,17 @@ This documentation contains the following sections:
 
 ## Compile StateMod on Command Line ##
 
+Compiling on the command line uses the `make` command and `makefile`.
+
 ### ![Linux](../images/linux-32.png) Linux ###
+
+Compiling on Linux is similar to Windows.  Use the `make` command targets.
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW ###
 
 To compile StateMod on the command line it is first necessary to configure the environment to run the compiler.
 Open a Windows command prompt window and change to the folder where the setup script exists.
-Then run the `setup-mingw-env.bat` batch file to configure the MinGW environment (note that setting up the environment in the window only needs
+Then run the `build-util/mingw/setup-mingw-env.bat` batch file to configure the MinGW environment (note that setting up the environment in the window only needs
 to be done once after the window is opened).
 
 ```
@@ -77,7 +81,7 @@ the initial focus is command-line compilation.***
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
-**TODO smalers 2017-10-24 need to complete this section**
+This section will be completed when resources are available for Linux development and testing.
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW ###
 

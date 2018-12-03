@@ -27,7 +27,7 @@ Before installing MkDocs, it is necessary that [Python is installed](python) and
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
-**TODO smalers 2016-12-31 Linux documenation will be completed after Windows version**
+This section will be completed when resources are available for Linux development and testing.
 
 ### ![Windows](../images/windows-32.ico) Windows ###
 
