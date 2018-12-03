@@ -12,7 +12,7 @@ This documentation describes common tasks, roughly in the order from design to d
 * [Coding](coding) - Fortran coding information
 * [Compiling](compiling) - compiling the software
 * [Testing](testing) - how to automate StateMod code testing
-* [Deploying](deploying) - building an installer and deploying an operational StateMod
+* [Releasing](releasing) - building an installer and releasing an operational StateMod
 * [FAQ for Cygwin](faq-cygwin) - frequently asked questions about Cygwin
 * [FAQ for Linux](faq-linux) - frequently asked questions about Linux
 * [FAQ for MinGW](faq-mingw) - frequently asked questions about MinGW

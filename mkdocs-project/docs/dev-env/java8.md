@@ -21,7 +21,7 @@ This documentation includes the following sections:
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
-**TODO smalers 2016-12-31 complete this after Windows environment has been fully documented**
+This section will be completed when resources are available for Linux development and testing.
 
 ### ![Windows](../images/windows-32.ico) Windows ###
 

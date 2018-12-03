@@ -31,7 +31,7 @@ because few if any of the top-level folders are created with scripts.
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
-Execute the following commands in a shell such as `bash`.
+Execute the following commands in a shell (comments provided for guidance).
 
 ```sh
 $
@@ -46,7 +46,7 @@ $ mkdir StateMod
 ### ![Windows](../images/windows-32.ico) Windows ###
 
 Execute the following commands in a Windows command prompt window, or use File Explorer to create folders,
-or perform the equivalent steps in a Git Bash window.
+or perform the equivalent steps in a Git Bash window (comments provided for guidance).
 
 ```com
 >

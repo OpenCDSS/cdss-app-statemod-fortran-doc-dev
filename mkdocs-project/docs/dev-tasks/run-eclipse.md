@@ -18,7 +18,7 @@ The development environment must be configured properly in order for Eclipse to 
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
-**TODO smalers 2016-12-31 fill in when there is time to test on Linux**
+This section will be completed when resources are available for Linux development and testing.
 
 ### ![Windows](../images/windows-32.ico) Windows ###
 

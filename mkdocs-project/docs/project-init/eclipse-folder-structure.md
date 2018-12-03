@@ -66,7 +66,7 @@ The legacy repository and code versions did not include these files so they have
 
 The initial README file from GitHub repository initialization had default contents.
 The legacy code did not contain a README.
-The `README.md` file was initialized with Markdown text explaining the repository, similar to what was done for StateCU.
+The `README.md` file was initialized with Markdown text explaining the repository.
 
 ### `.gitignore` ###
 
@@ -93,9 +93,7 @@ See the GitHub article [Dealing with line endings](https://help.github.com/artic
 
 ### `LICENSE.md` ###
 
-A simple file was created as a place-holder as the license is finalized in the OpenCDSS project.
-
-**TODO smalers 2017-01-02 update as the license is determined.**
+The license file indicates the software license.  GPL v3 is used for OpenCDSS software.
 
 ## Next Steps
 

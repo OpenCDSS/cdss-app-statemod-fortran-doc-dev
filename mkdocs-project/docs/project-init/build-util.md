@@ -1,12 +1,8 @@
 # Initial Project Setup / Build Utility Scripts #
 
-This documentation provides a reference for development environment and build utility scripts.
-The default versions of these scripts have been saved in the repository to allow a new developer to directly use the scripts,
+This documentation references a number of build utility scripts.
+These scripts are saved in the repository to help developers be efficient,
 assuming that they have set up the development environment as per this documentation.
-Copies of the scripts can be modified for specific developers and saved to a location specific to the user,
-for example `~/cdss-dev/StateMod/build-util` (not in the repository).
-Or, utility scripts can be updated based on experience of developers in order to be generally useful.
-Additional scripts will be added as the need is identified.
 
 This documentation includes the following sections:
 
@@ -28,15 +24,15 @@ For Windows the folder structure is similar to the following:
 
 ```txt
 C:/Users/user/
-    cdss-dev/
-        StateMod/
-            git-repos/
-                cdss-app-statemod-fortran/
-                    build-util/
-                        eclipse/
-                            run-eclipse-statemod-mingw.bat
-                        mingw/
-                            setup-mingw-env.bat
+  cdss-dev/
+    StateMod/
+      git-repos/
+        cdss-app-statemod-fortran/
+          build-util/
+            eclipse/
+              run-eclipse-statemod-mingw.bat
+            mingw/
+              setup-mingw-env.bat
 ```
 
 ## Script to Configure MinGW Environment - `setup-mingw-env` ##
@@ -46,7 +42,7 @@ C:/Users/user/
 Run this batch file to configure the MinGW environment so that compilers can be found in the command shell and in eclipse.
 This batch file is called by other batch files that use the MinGW environment, such as `run-eclipse-statemod-mingw.bat`.
 
-This batch file is described first in [Development Environment / Machine](dev-env/machine/) and is located in `build-util/mingw`.
+This batch file is described first in [Development Environment / Machine](../dev-env/machine/) and is located in `build-util/mingw`.
 
 ## Script to Run Eclipse - `run-eclipse-statemod-mingw` ##
 

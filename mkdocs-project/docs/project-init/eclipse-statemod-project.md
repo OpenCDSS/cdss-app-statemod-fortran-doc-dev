@@ -98,9 +98,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 Including the above files in the repository facilitates project setup for new developers.
-
-**TODO smalers 2017-01-02 Evaluate whether there are any issues including in the repository.
-Steve will check with OTS to get their input**.
+However, the files may be ignored from the repository in the future,
+in which case each new environment setup will require setting up the Eclipse project.
 
 ## Eclipse Project Properties ##
 
@@ -109,7 +108,7 @@ Project properties are one way to do this.
 
 ### ![Linux](../images/linux-32.png) Linux ##
 
-**TODO smalers 2017-10-24 need to complete.**
+This section will be completed when resources are available for Linux development and testing.
 
 ### ![Windows](../images/windows-32.ico) Windows ##
 

@@ -2,7 +2,7 @@
 # Use hash-comments to comment out pages have not been written
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
-site_name: 'StateMod Documentation (for Software Developers)'
+site_name: 'StateMod (Develop)'
 pages:
 - 'Introduction': index.md
 - 'New Developer Setup':
@@ -17,7 +17,7 @@ pages:
   - 'Coding': dev-tasks/coding.md
   - 'Compiling': dev-tasks/compiling.md
   - 'Testing': dev-tasks/testing.md
-  - 'Deploying': dev-tasks/deploying.md
+  - 'Releasing': dev-tasks/releasing.md
   - 'FAQ for Cygwin': dev-tasks/faq-cygwin.md
   - 'FAQ for Linux': dev-tasks/faq-linux.md
   - 'FAQ for MinGW': dev-tasks/faq-mingw.md
@@ -36,8 +36,9 @@ pages:
   - 'MkDocs': dev-env/mkdocs.md
   - 'Java 8': dev-env/java8.md
   - 'gfortran': dev-env/gfortran.md
+  - 'Text Editor': dev-env/text-editor.md
   - 'Eclipse and Photran': dev-env/eclipse.md
-  - 'Text Editor': dev-env/editor.md
+  - 'Text Editor': dev-env/text-editor.md
   - 'Doxygen': dev-env/doxygen.md
   - 'KDiff3': dev-env/kdiff3.md
 - 'REFERENCE: Initial Project Setup':
@@ -60,12 +61,11 @@ pages:
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme: material
 #theme: readthedocs
-#repo_url:  https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran-doc-dev
-site_description:  'CDSS StateMod software developer documentation'
-site_author: 'Open Water Foundation'
+#repo_url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-dev
+site_description:  'CDSS StateMod Documentation (Develop)'
+site_author: 'CO Department of Natural Resources'
 site_favicon:  'images/StateMod-favicon.ico'
-#copyright:  'Copyright Open Water Foundation'
-#copyright:  'Colorado Water Conservation Board'
+copyright:  'CO Department of Natural Resources'
 # Use extra CSS to customize styles, based on theme
 extra_css:
   - 'css/extra-material-theme.css'

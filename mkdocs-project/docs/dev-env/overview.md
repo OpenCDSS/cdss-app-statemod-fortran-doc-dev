@@ -38,7 +38,7 @@ The following software are required for StateMod development:
 6. [Java 8](java8) - used to run Eclipse, and can be used to write utility programs (**skip if using a text editor rather than Eclipse/Photran**)
 7. [gfortran](gfortran) - compiler for the StateMod Fortran software
 8. [Eclipse/Photran](eclipse) - IDE used for interactive Fortran software development (**skip if using a text editor rather than Eclipse/Photran**)
-9. [Text Editor](editor) - editor used to edit code and other files, useful in any case
+9. [Text Editor](text-editor) - editor used to edit code and other files, useful in any case
 10. [Doxygen](doxygen) - documentation tool (**skip if not creating graphs of code calls**)
 11. [KDiff3](kdiff3) - tool for comparing files (**skip if not comparing files or have equivalent tool**)
 
