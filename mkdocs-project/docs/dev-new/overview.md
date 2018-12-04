@@ -165,7 +165,7 @@ Once the main repository has been cloned, the `git-clone-all-statemod.sh` helper
 including documentation and tests.
 
 ```bash
-$ cd ~/cdss-dev/StateMod/git-repos/cdss-app-cdss-fortran/build-util
+$ cd ~/cdss-dev/StateMod/git-repos/cdss-app-statecu-fortran/build-util
 $ ./git-clone-all-statemod
 
 # Output...
