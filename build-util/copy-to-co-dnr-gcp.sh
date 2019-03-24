@@ -17,8 +17,9 @@ checkMkdocsVersion() {
 		# Use the Windows Python with Git Bash
 		mkdocsVersionFull=$(py -m mkdocs --version)
 	else
-		# On Cygwin, mkdocs --version gives:  mkdocs, version 1.0.4 from /usr/lib/python3.6/site-packages/mkdocs (Python 3.6)
 		# General case
+		# On Cygwin, mkdocs --version gives:  mkdocs, version 1.0.4 from /usr/lib/python3.6/site-packages/mkdocs (Python 3.6)
+		# On Debian Linux, similar to Cygwin:  mkdocs, version 0.17.3
 		mkdocsVersionFull=$(mkdocs --version)
 	fi
 	echo "MkDocs --version:  $mkdocsVersionFull"

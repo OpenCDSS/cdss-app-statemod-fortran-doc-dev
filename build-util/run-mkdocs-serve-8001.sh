@@ -11,15 +11,22 @@
 checkMkdocsVersion() {
 	# Required MkDocs version is at least 1
 	requiredMajorVersion="1"
-	# On Cygwin, mkdocs --version gives:  mkdocs, version 1.0.4 from /usr/lib/python3.6/site-packages/mkdocs (Python 3.6)
-	# On Debian Linux, similar to Cygwin:  mkdocs, version 0.17.3
-	mkdocsVersionFull=$(mkdocs --version)
+	if [ $operatingSystem = "mingw" ]; then
+		# Git bash mkdocs --version gives: __main__.py, version 1.0.4 from C:\Users\sam\AppData\Local\Programs\Python\Python37\lib\site-packages\mkdocs (Python 3.7)
+		# Use the Windows Python with Git Bash
+		mkdocsVersionFull=$(py -m mkdocs --version)
+	else
+		# General case
+		# On Cygwin, mkdocs --version gives:  mkdocs, version 1.0.4 from /usr/lib/python3.6/site-packages/mkdocs (Python 3.6)
+		# On Debian Linux, similar to Cygwin:  mkdocs, version 0.17.3
+		mkdocsVersionFull=$(mkdocs --version)
+	fi
 	echo "MkDocs --version:  $mkdocsVersionFull"
 	mkdocsVersion=$(echo $mkdocsVersionFull | cut -d ' ' -f 3)
 	echo "MkDocs full version number:  $mkdocsVersion"
 	mkdocsMajorVersion=$(echo $mkdocsVersion | cut -d '.' -f 1)
 	echo "MkDocs major version number:  $mkdocsMajorVersion"
-	if [ "$mkdocsMajorVersion" -lt $requiredMajorVersion ]; then
+	if [ "$mkdocsMajorVersion" -lt "$requiredMajorVersion" ]; then
 		echo ""
 		echo "MkDocs version for this documentation must be version $requiredMajorVersion or later."
 		echo "MkDocs mersion that is found is $mkdocsMajorVersion, from full version ${mkdocsVersion}."
@@ -82,9 +89,8 @@ cd ../mkdocs-project
 
 echo "View the website using http://localhost:8001"
 echo "Stop the server with CTRL-C"
-# Use the Windows Python with Git Bash
 if [ $operatingSystem = "mingw" ]; then
-	# Git Bash
+	# Use the Windows Python with Git Bash
 	py -m mkdocs serve -a 0.0.0.0:8001
 else
 	# General case
