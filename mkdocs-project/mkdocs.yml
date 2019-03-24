@@ -3,7 +3,7 @@
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
 site_name: 'StateMod (Develop)'
-pages:
+nav:
 - 'Introduction': index.md
 - 'New Developer Setup':
   - 'Overview': dev-new/overview.md
@@ -36,7 +36,6 @@ pages:
   - 'MkDocs': dev-env/mkdocs.md
   - 'Java 8': dev-env/java8.md
   - 'gfortran': dev-env/gfortran.md
-  - 'Text Editor': dev-env/text-editor.md
   - 'Eclipse and Photran': dev-env/eclipse.md
   - 'Text Editor': dev-env/text-editor.md
   - 'Doxygen': dev-env/doxygen.md
@@ -57,15 +56,28 @@ pages:
   - 'Documentation, API (Doxygen)': project-init/doc-doxygen.md
   - 'Git StateMod History': project-init/git-statemod-history.md
 # ------- configuration properties ---------------
-# Use Material theme
-# - installation notes:  https://github.com/squidfunk/mkdocs-material
-theme: material
-#theme: readthedocs
-#repo_url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-dev
-site_description:  'CDSS StateMod Documentation (Develop)'
-site_author: 'CO Department of Natural Resources'
-site_favicon:  'images/StateMod-favicon.ico'
+# Alphabetize
+# ------------------------------------------------
 copyright:  'CO Department of Natural Resources'
+# ------------------------------------------------
 # Use extra CSS to customize styles, based on theme
 extra_css:
   - 'css/extra-material-theme.css'
+# ------------------------------------------------
+# Google Analytics
+# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
+google_analytics:
+ - 'UA-43023264-1'
+ - auto
+# ------------------------------------------------
+# Don't publish the repo because it leads to irritating edit links
+#repo_url:  https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-dev
+# ------------------------------------------------
+site_author: 'CO Department of Natural Resources'
+site_description:  'CDSS StateMod Documentation (Develop)'
+# ------------------------------------------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme:
+  name: material
+  favicon: 'images/StateMod-favicon.ico'

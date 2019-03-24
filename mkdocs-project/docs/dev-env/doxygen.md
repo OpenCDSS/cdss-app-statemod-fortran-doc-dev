@@ -63,4 +63,4 @@ After downloading, run the installer program as follows.
 
 ## Configure Doxygen Project ##
 
-A Doxygen project is configured as part of the [Initial Project Setup / Doxygen](../project-init/doc-doxygen/) - **do not do now**.
+A Doxygen project is configured as part of the [Initial Project Setup / Doxygen](../project-init/doc-doxygen.md) - **do not do now**.

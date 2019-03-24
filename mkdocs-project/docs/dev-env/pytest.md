@@ -21,7 +21,7 @@ This documentation contains the following sections:
 
 ## Prerequisites ##
 
-The `pytest` software depends on [Python and `pip`](python/) being installed.
+The `pytest` software depends on [Python and `pip`](python.md) being installed.
 
 ## Install `pytest` ##
 
@@ -54,4 +54,4 @@ The following may be useful:  [improve slow startup](http://stackoverflow.com/qu
 
 ## Writing `pytest` Tests ##
 
-See the [Development Tasks / Testing](../dev-tasks/testing#automated-testing-using-pytest) documentation for examples of tests.
+See the [Development Tasks / Testing](../dev-tasks/testing.md#automated-testing-using-pytest) documentation for examples of tests.

@@ -22,8 +22,8 @@ This documentation includes the following sections:
 
 The prerequisites for installing Eclipse are:
 
-* [Java 8](java8) - Java is needed to run Eclipse
-* [`gfortran` compiler](gfortran) - Eclipse relies on `gfortran` and other development tools having been installed in MinGW, Cygwin, or Linux
+* [Java 8](java8.md) - Java is needed to run Eclipse
+* [`gfortran` compiler](gfortran.md) - Eclipse relies on `gfortran` and other development tools having been installed in MinGW, Cygwin, or Linux
 
 ## Install Eclipse and Photran ##
 
@@ -74,7 +74,7 @@ C:\Program Files\
 
 It is possible to create a desktop shortcut to Eclipse.
 However, before doing so, it is recommended to create a batch file to run eclipse,
-as per the [Initial Project Setup / Eclipse Run Script](../project-init/eclipse-run-script/).
+as per the [Initial Project Setup / Eclipse Run Script](../project-init/eclipse-run-script.md).
 The batch file is the recommended way to start Eclipse for StateMod development;
 however, the desktop shortcut is a convenience for general Eclipse use.
 
@@ -99,4 +99,4 @@ Double-clicking on the shortcut desktop icon should then run the desired Eclipse
 ## Next Steps ##
 
 Additional Eclipse configuration will be performed after finishing development environment setup, as per the
-[Initial Project Setup](../project-init/overview/) documentation - **do not do now**.
+[Initial Project Setup](../project-init/overview.md) documentation - **do not do now**.

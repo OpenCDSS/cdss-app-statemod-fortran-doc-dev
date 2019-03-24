@@ -22,7 +22,7 @@ The following sections are included in this documentation:
 ## Prerequisites ##
 
 Creating an Eclipse workspace requires that Eclipse is installed and it is recommended that Eclipse
-is run using an [Eclipse run script](eclipse-run-script/).
+is run using an [Eclipse run script](eclipse-run-script.md).
 
 ## Background ##
 
@@ -38,7 +38,7 @@ configuration of the Eclipse project).
 Although it is possible to create one workspace and manage multiple development efforts under one workspace,
 it can become confusing.
 The following assumes that a new workspace is created specifically for the StateMod project
-consistent with the [development project folder structure](overview#development-folder-structure).
+consistent with the [development project folder structure](overview.md#development-folder-structure).
 
 ## Create Eclipse Workspace Folder ##
 
@@ -46,7 +46,7 @@ Although it is possible to create one workspace and manage multiple development 
 (e.g., StateMod and additional software) under one workspace,
 this can become confusing.
 The following assumes that a new workspace is created specifically for the StateMod project
-consistent with the [development project folder structure](overview#development-folder-structure).
+consistent with the [development project folder structure](overview.md#development-folder-structure).
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
@@ -65,7 +65,7 @@ $ mkdir eclipse-workspace
 
 ## Specify Eclipse Workspace Folder to Eclipse ##
 
-If Windows, start Eclipse using the [build-util/eclipse/run-eclipse-statemod-mingw.bat run script](eclipse-run-script/)
+If Windows, start Eclipse using the [build-util/eclipse/run-eclipse-statemod-mingw.bat run script](eclipse-run-script.md)
 and select the workspace folder created in the previous step, for example for software developer "sam":
 
 ![Eclipse new workspace](eclipse-workspace-images/eclipse-workspace-select.png)
@@ -89,4 +89,4 @@ This will be evaluated as Eclipse is used in development.
 
 ## Next Step ##
 
-See the configuration of the [Eclipse StateMod Project](eclipse-statemod-project).
+See the configuration of the [Eclipse StateMod Project](eclipse-statemod-project.md).

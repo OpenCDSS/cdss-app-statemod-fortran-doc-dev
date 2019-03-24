@@ -16,7 +16,6 @@ This documentation page includes the following sections:
 * [Colorado's Decision Support Systems](#colorados-decision-support-systems) - the system under which the software is maintained
 * [License](#license) - license for software and this documentation
 * [Source Repository on GitHub](#source-repository-on-github) - location of StateMod repository in GitHub
-* [MkDocs](#mkdocs) - the tool used to create this documentation
 
 ------------
 
@@ -74,9 +73,4 @@ The StateMod software is licensed using the GPL v3 license.
 ## Source Repository on GitHub ##
 
 The source files for this documentation are maintained in the
-[StateCU GitHub repository](https://github.com/OpenCDSS/cdss-app-statecmod-fortran-doc-dev).
-
-## MkDocs ##
-
-This documentation is prepared using MkDocs.
-For full MkDocs documentation visit [mkdocs.org](http://mkdocs.org).
+[StateMod GitHub repository](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-dev).

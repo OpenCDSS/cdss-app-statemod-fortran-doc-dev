@@ -61,6 +61,7 @@ C:\Users\user\                               Windows user home folder.
 /cygdrive/C/Users/user/                      Cygwin user home folder that overlaps Windows files.
   cdss-dev/                                  Projects that are part of Colorado's Decision Support Systems.
     StateMod/                                StateMod product folder.
+----------- below here folders must match --------------------------
       git-repos/                             Git repositories for StateMod.
         cdss-app-statemod-fortran/           StateMod source code development.
         cdss-app-statemod-fortran-doc-dev/   StateMod develpoer documentation.
@@ -124,8 +125,10 @@ This repository is maintained by the OpenCDSS team.
 
 ## Release Notes ##
 
-The following release notes indicate the update history for documentation, with GitHub repository issue indicated,
+The following release notes indicate the major update history for documentation.
+See the GitHub issues for details.
 
+* 2019-03-23 - Update to MkDocs 1.04.
 * 2018-12-02 - Update for public open source access.
 * 2018-08-06 - Update content to agree with latest OpenCDSS website and conventions.
 * 2018-06-27 - Copy content from files saved with code.  Separate to facilitate editing.

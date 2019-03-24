@@ -16,7 +16,7 @@ This documentation includes the following documentation:
 ## Developer Documentation Using MkDocs ##
 
 This developer documentation uses MkDocs and should be updated appropriately to keep the documentation current.
-See the [Initial Project Setup / Documentation, Develper (MkDocs)](../project-init/doc-dev/)
+See the [Initial Project Setup / Documentation, Develper (MkDocs)](../project-init/doc-dev.md)
 for background on how the documentation is configured.
 If using the standard development files structure,
 the developer documentation is located in `~/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran-doc-dev/`.
@@ -67,7 +67,7 @@ See the following resources:
 * [Doxygen - Comment blocks in Fortran](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#fortranblocks)
 * [NASA Modeling Guru:  Using Doxygen with Fortran soruce code](https://modelingguru.nasa.gov/docs/DOC-1811)
 
-Refer to the [Initial Project Setup / Documentation, API (Doxygen)](../project-init/doc-doxygen/) documentation for how to run Doxygen.
+Refer to the [Initial Project Setup / Documentation, API (Doxygen)](../project-init/doc-doxygen.md) documentation for how to run Doxygen.
 
 Doxygen output can be copied to the State of Colorado's Google Cloud Platform storage site for public access using the
 `doc-dev-doxygen-project/copy-to-co-dnr-gcp.sh` script.
