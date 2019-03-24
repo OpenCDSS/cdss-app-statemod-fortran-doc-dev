@@ -8,7 +8,7 @@ committed to the repository.
 To facilitate use in Eclipse, it is necessary to restructure the files in a consistent folder structure.
 Helpful information is:
 
-* [Development folder structure](overview#development-folder-structure) - development folder structure for StateMod files
+* [Development folder structure](overview.md#development-folder-structure) - development folder structure for StateMod files
 
 
 This documentation includes the following sections:
@@ -31,7 +31,7 @@ The corresponding files on the file system are as shown below:
 
 ![New project 6](eclipse-folder-structure-images/initial-folder-structure.png)
 
-The flat structure of the legacy files are reorganized into the new [development folder structure](overview#development-folder-structure)
+The flat structure of the legacy files are reorganized into the new [development folder structure](overview.md#development-folder-structure)
 as follows.
 
 First, right click on the project in ***Project Explorer*** and then use ***New / Folder*** to create a `src` folder

@@ -1,11 +1,11 @@
 # Initial Project Setup / Overview #
 
 The Initial Project Setup documentation is a record of how the project was set up the first time.
-It is assumed that all software listed in the [Development Environment](../dev-env/overview/) has been installed,
+It is assumed that all software listed in the [Development Environment](../dev-env/overview.md) has been installed,
 although the project initialization steps will list each setup step.
 
 This documentation is a useful reference in case the project needs to be reinitialized or other similar projects need to be configured.
-Sections of this documentation are also referenced by the [New Developer Setup](../dev-new/overview/) documentation,
+Sections of this documentation are also referenced by the [New Developer Setup](../dev-new/overview.md) documentation,
 such as configuring the Eclipse workspace.
 
 This documentation includes the following sections:
@@ -111,6 +111,7 @@ C:\Users\user\                               Windows user files (same as Git Bas
     StateMod/                                CDSS StateMod software project.
       eclipse-workspace/                     Eclipse workspace to organize Eclipse projects (not in Git repository).
       git-repos/                             Git repositories that comprise StateMod.
+--------------- below here folder names must match exactly --------------------------
         cdss-app-statemod-fortran/           StateMod Git main program repository.
           .git/                              Git local repository - DO NOT TOUCH DIRECTLY.
           .gitattributes                     Git repository properties.
@@ -139,6 +140,7 @@ C:\Users\user\                               Windows user files (same as Git Bas
 The following summarizes Eclipse files, which are used if Eclipse/Photran software are used (optional).
 These files are not stored in the repository because they are software files or
 dynamically change for each developer.
+The following folders are consistent with the above folder structure.
 
 ```
 /c/users/user/                           Git Bash user files (same as Windows location).
@@ -163,19 +165,19 @@ although some steps were actually implemented in slightly different order for pr
 scripts to run steps were created after running the steps on the command line the first time.
 
 * Initialize software development folder and Git repository to receive files
-	+ [Create Development Home Folder](home-folder) - manually create project home folder that will hold all the software development files
-	+ [GitHub Git Repository](github) - create empty GitHub repository
+	+ [Create Development Home Folder](home-folder.md) - manually create project home folder that will hold all the software development files
+	+ [GitHub Git Repository](github.md) - create empty GitHub repository
 * Initialize Eclipse development environment
-	+ [Eclipse Run Script](eclipse-run-script) - the script ensures that the proper version of Eclipse and Java are used
-	+ [Eclipse Workspace](eclipse-workspace) - create an Eclipse workspace for the StateMod software project
-	+ [Eclipse StateMod Project](eclipse-statemod-project) - configure the project connected to the Git repository files
-	+ [Eclipse Folder Structure](eclipse-folder-structure) - implement the development folder structure
+	+ [Eclipse Run Script](eclipse-run-script.md) - the script ensures that the proper version of Eclipse and Java are used
+	+ [Eclipse Workspace](eclipse-workspace.md) - create an Eclipse workspace for the StateMod software project
+	+ [Eclipse StateMod Project](eclipse-statemod-project.md) - configure the project connected to the Git repository files
+	+ [Eclipse Folder Structure](eclipse-folder-structure.md) - implement the development folder structure
 * Initialize build utility scripts
-	+ [Build Utility Scripts](build-util) - helpful build utility scripts for developers 
+	+ [Build Utility Scripts](build-util.md) - helpful build utility scripts for developers 
 * Initialize documentation
-	+ [Documentation, Legacy (Word)](doc) - Word documentation
-	+ [Documentation, Developer (MkDocs)](doc-dev) - create initial MkDocs project for developer documentation
-	+ [Documentation, User (MkDocs)](doc-user) - create initial MkDocs project for user documentation
-	+ [Doxygen](doc-doxygen) - configure Doxygen project to generate API documentation
+	+ [Documentation, Legacy (Word)](doc.md) - Word documentation
+	+ [Documentation, Developer (MkDocs)](doc-dev.md) - create initial MkDocs project for developer documentation
+	+ [Documentation, User (MkDocs)](doc-user.md) - create initial MkDocs project for user documentation
+	+ [Doxygen](doc-doxygen.md) - configure Doxygen project to generate API documentation
 * Initialize repository with recent history of versions - the following was executed for each StateMod code version
-	+ [Save StateMod version history in GitHub](git-statemod-history) - save StateMod versions in repository
+	+ [Save StateMod version history in GitHub](git-statemod-history.md) - save StateMod versions in repository

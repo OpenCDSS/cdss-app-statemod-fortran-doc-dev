@@ -21,7 +21,7 @@ This documentation includes the following sections:
 
 ## Prerequisites ##
 
-Before installing MkDocs, it is necessary that [Python is installed](python) and [`pip` is installed](pip).
+Before installing MkDocs, it is necessary that [Python and pip are installed](python.md).
 
 ## Install MkDocs ##
 
@@ -81,4 +81,4 @@ Commands:
 
 ```
 
-See the [Development Tasks / Documenting](../dev-tasks/documenting#developer-documentation-using-mkdocs) documentation for instructions on using MkDocs.
+See the [Development Tasks / Documenting](../dev-tasks/documenting.md#developer-documentation-using-mkdocs) documentation for instructions on using MkDocs.

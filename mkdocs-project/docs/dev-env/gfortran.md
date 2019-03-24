@@ -17,7 +17,7 @@ This documentation contains the following sections:
 
 ## Prerequisites ##
 
-On Windows, either [MinGW](machine#install-mingw-native-windows-32-bit) or [Cygwin](machine#install-cygwin) must have been installed.
+On Windows, either [MinGW](machine.md#install-mingw-native-windows-32-bit) or [Cygwin](machine.md#install-cygwin) must have been installed.
 The initial focus of this documentation is the MinGW approach.
 
 ## Install `gfortran` ##
@@ -34,4 +34,4 @@ This section will be completed when resources are available for Cygwin developme
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW ###
 
-The `gfortran` compiler is installed as part of the [MinGW installation](machine#install-mingw).
+The `gfortran` compiler is installed as part of the [MinGW installation](machine.md#install-mingw).

@@ -42,7 +42,7 @@ C:/Users/user/
 Run this batch file to configure the MinGW environment so that compilers can be found in the command shell and in eclipse.
 This batch file is called by other batch files that use the MinGW environment, such as `run-eclipse-statemod-mingw.bat`.
 
-This batch file is described first in [Development Environment / Machine](../dev-env/machine/) and is located in `build-util/mingw`.
+This batch file is described first in [Development Environment / Machine](../dev-env/machine.md) and is located in `build-util/mingw`.
 
 ## Script to Run Eclipse - `run-eclipse-statemod-mingw` ##
 
@@ -51,4 +51,4 @@ This batch file is described first in [Development Environment / Machine](../dev
 Use this batch file to start Eclipse in the MinGW environment.
 This batch file calls `setup-mingw-env` before calling Eclipse.
 
-This batch file is described first in [Initial Project Setup / Eclipse Run Script](eclipse-run-script/) and is located in `build-util/eclipse`.
+This batch file is described first in [Initial Project Setup / Eclipse Run Script](eclipse-run-script.md) and is located in `build-util/eclipse`.
