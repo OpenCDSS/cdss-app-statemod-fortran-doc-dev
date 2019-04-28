@@ -11,5 +11,5 @@ Many of the examples in this documentation use command line Git (Git Bash) for c
 
 Git integration with other tools such as text editors is not currently documented but may be added in the future.
 
-Refer to the [CDSS / Learn Git](http://learn.openwaterfoundation.org/cdss-learn-git/)
+Refer to the [CDSS / Learn Git](http://opencdss.state.co.us/cdss-learn-git/)
 documentation for information about installing, configuring, and using Git software within the CDSS environment.
