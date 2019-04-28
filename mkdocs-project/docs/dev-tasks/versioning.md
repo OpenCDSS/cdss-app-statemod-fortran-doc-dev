@@ -11,8 +11,7 @@ Git protocols for StateMod follow OpenCDSS protocols and are summarized here for
 ## Git Training 
 
 There are numerous resources on the internet for Git training.
-See also the [CDSS / Learn Git](http://learn.openwaterfoundation.org/cdss-learn-git/) documentation.
-**Need to update this link to point to the Google Cloud location when it is finalized.**
+See also the [CDSS / Learn Git](http://opencdss.state.co.us/cdss-learn-git/) documentation.
 
 ## Git Tools in Repository
 

@@ -3,21 +3,9 @@
 This repository contains [Colorado's Decision Support Systems (CDSS)](https://www.colorado.gov/cdss)
 StateMod developer documentation.  See the following online resources:
 
-* OpenCDSS Documentation
-	+ Published [OpenCDSS Documentation](http://learn.openwaterfoundation.org/cdss-website-opencdss/)
-	on Open Water Foundation website - transitioning to CO DNR website
-	+ Published [OpenCDSS Documentation](https://storage.googleapis.com/static-cdss-state-co-us/opencdss/latest/)
-	on CO DWR website - not yet the final location
-* StateMod Developer Documentation
-	+ Published [StateMod Documentation](http://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-dev/)
-	on Open Water Foundation website - transitioning to CO DNR website
-	+ Published [StateMod  Documentation](https://storage.googleapis.com/static-cdss-state-co-us/statemod/latest/doc-dev/)
-	on CO DWR website - not yet the final location
-* StateMod User Documentation
-	+ Published [StateMod Documentation](http://learn.openwaterfoundation.org/cdss-app-statemod-fortran-doc-user/)
-	on Open Water Foundation website - transitioning to CO DNR website
-	+ Published [StateMod  Documentation](https://storage.googleapis.com/static-cdss-state-co-us/statemod/latest/doc-user/)
-	on CO DWR website - not yet the final location
+* [OpenCDSS](http://opencdss.state.co.us/opencdss/)
+* [StateMod Developer Documentation](http://opencdss.state.co.us/statemod/latest/doc-dev/)
+* [StateMod User Documentation](http://opencdss.state.co.us/statemod/latest/doc-user/)
 
 This page contains the following sections:
 
@@ -128,6 +116,7 @@ This repository is maintained by the OpenCDSS team.
 The following release notes indicate the major update history for documentation.
 See the GitHub issues for details.
 
+* 2019-04-26 - Update to opencdss.state.co.us.
 * 2019-03-23 - Update to MkDocs 1.04.
 * 2018-12-02 - Update for public open source access.
 * 2018-08-06 - Update content to agree with latest OpenCDSS website and conventions.
