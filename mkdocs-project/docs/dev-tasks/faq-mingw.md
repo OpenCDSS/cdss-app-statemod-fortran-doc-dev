@@ -6,11 +6,22 @@ MinGW is installed with a number of Unix/Linux system tools to facilitate develo
 
 Answers to the following questions are provided in this documentation:
 
-* [How do I access MinGW/MSYS programs from the Windows Command Shell?](#how-do-i-access-mingwmsys-programs-from-the-windows-command-shell)
+* [How do I access MSYS/MinGW programs from the Windows Command Shell?](#how-do-i-access-msysmingw-programs-from-the-windows-command-shell)
+* [How do I access MSYS/MinGW programs from the Windows Command Shell (old 32-bit instructions)?](#how-do-i-access-msysmingw-programs-from-the-windows-command-shell-old-32-bit-instructions)
 
 ------------
 
-## How do I access MinGW/MSYS programs from the Windows Command Shell? ##
+## How do I access MSYS/MinGW programs from the Windows Command Shell? ##
+
+Previous versions of MinGW required configuring a Windows command shell.
+However, the latest MSYS/MinGW environment ([see Development Environment/Machine](../dev-env/machine.md))
+provides command shells in the ***Start / MSYS2 64bit*** menu.
+Software that is installed using these command shells and MSYS2 installation commands will
+be available in the shell windows without additional configuration.
+
+Other Windows programs are also available if in the `PATH`.
+
+## How do I access MSYS/MinGW programs from the Windows Command Shell (old 32-bit instructions)? ##
 
 As part of the MinGW setup, it is recommended that a batch file is created to set environment variables,
 in particular the `PATH`, in order to find MinGW and MSYS software executables.

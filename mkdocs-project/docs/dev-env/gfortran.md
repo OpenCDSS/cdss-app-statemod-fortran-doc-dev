@@ -18,7 +18,7 @@ This documentation contains the following sections:
 ## Prerequisites ##
 
 On Windows, either [MinGW](machine.md#install-mingw-native-windows-32-bit) or [Cygwin](machine.md#install-cygwin) must have been installed.
-The initial focus of this documentation is the MinGW approach.
+**The initial focus of this documentation is the MinGW approach.**
 
 ## Install `gfortran` ##
 
