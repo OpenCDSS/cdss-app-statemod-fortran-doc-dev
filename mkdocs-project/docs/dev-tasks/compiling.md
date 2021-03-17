@@ -24,6 +24,28 @@ Compiling on Linux is similar to Windows.  Use the `make` command targets.
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW ###
 
+StateMod can be compiled on the command line using ***Start / MSYS2 64bit*** command shell.
+Select ***MSYS2 MinGW 32-bit*** or ***MSYS2 MinGW 64-bit*** command shell that
+is appropriate for the executable to be created.
+
+If the standard folder structure is used:
+
+```
+> cd            (to change to user's home folder)
+> cd cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran/src/main/fortran
+> make veryclean
+> make statemod
+```
+
+The executable `statemod-<version>-gfortran-win-32bit.exe` or
+`statemod-<version>-gfortran-win-64bit.exe`
+is created in the same folder and can copied to a location that is
+convenient to run with model dataset.
+
+### ![Windows](../images/windows-32.ico) Windows - MinGW (Old Environment) ###
+
+**These instructions are for the initial environment.  A newer environment consistent with previous section should be used instead.**
+
 To compile StateMod on the command line it is first necessary to configure the environment to run the compiler.
 Open a Windows command prompt window and change to the folder where the setup script exists.
 Then run the `build-util/mingw/setup-mingw-env.bat` batch file to configure the MinGW environment (note that setting up the environment in the window only needs

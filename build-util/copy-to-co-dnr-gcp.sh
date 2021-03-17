@@ -146,8 +146,8 @@ syncFiles() {
 	# - the -r option means recursive to sync the whole folder tree
 	# For now always upload to the versioned copy
 	echo ""
-	echo "Copying the documentation to the versioned folder..."
-	gsutil.cmd -m rsync -d -r ${dryrun} $siteFolder ${gsFolderVersion}
+	echo "Copying the documentation to the versioned folder: ${gsFolderVersion}"
+	gsutil.cmd -m rsync -d -r ${dryrun} ${siteFolder} ${gsFolderVersion}
 	if [ ${copyToLatest} = "yes" ]; then
 		# Also copy the latest
 		echo ""
@@ -208,8 +208,8 @@ echo "statemodVersion=$statemodVersion"
 
 # Set --dryrun to test before actually doing
 dryrun=""
-gsFolderLatest="gs://static-cdss-state-co-us/statemod/latest/doc-dev"
-gsFolderVersion="gs://static-cdss-state-co-us/statemod/${statemodVersion}/doc-dev"
+gsFolderLatest="gs://opencdss.state.co.us/statemod/latest/doc-dev"
+gsFolderVersion="gs://opencdss.state.co.us/statemod/${statemodVersion}/doc-dev"
 
 # Whether to copy to latest in addition to the specific version
 # - default to no because the script can be run on any version, and can't assume latest

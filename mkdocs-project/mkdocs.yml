@@ -29,7 +29,9 @@ nav:
   - 'Overview': deployed-env/overview.md
 - 'REFERENCE: Development Environment':
   - 'Overview': dev-env/overview.md
-  - 'Machine': dev-env/machine.md
+  - 'Machine':
+    - 'Latest': dev-env/machine.md
+    - 'MinGW 32-bit (old)': dev-env/machine-32bit.md
   - 'Git': dev-env/git.md
   - 'Python and pip': dev-env/python.md
   - 'pytest': dev-env/pytest.md
@@ -80,4 +82,4 @@ site_description:  'CDSS StateMod Documentation (Develop)'
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme:
   name: material
-  favicon: 'images/StateMod-favicon.ico'
+  favicon: 'images/NewCOLogo32x32.gif'
