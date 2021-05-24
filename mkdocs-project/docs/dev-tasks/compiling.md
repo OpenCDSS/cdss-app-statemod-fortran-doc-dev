@@ -8,13 +8,13 @@ for example, if automating the build process.
 
 This documentation contains the following sections:
 
-* [Compile StateMod on Command Line](#compile-statemod-on-command-line)
+* [Compile StateMod on Command Line with `gfortran` Compiler](#compile-statemod-on-command-line-with-gfortran-compiler)
 * [Compile StateMod on Command Line with Lahey Compiler](#compile-statemod-on-command-line-with-lahey-compiler)
 * [Compile StateMod in Eclipse](#compile-statemod-in-eclipse)
 
 ----------------------
 
-## Compile StateMod on Command Line ##
+## Compile StateMod on Command Line with `gfortran` Compiler##
 
 Compiling on the command line uses the `make` command and `makefile`.
 
@@ -24,8 +24,8 @@ Compiling on Linux is similar to Windows.  Use the `make` command targets.
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW ###
 
-StateMod can be compiled on the command line using ***Start / MSYS2 64bit*** command shell.
-Select ***MSYS2 MinGW 32-bit*** or ***MSYS2 MinGW 64-bit*** command shell that
+StateMod can be compiled on the command line using a ***Start / MSYS2 64bit*** command shell.
+Select ***Start / MSYS2 64bit / MYSYS2 MinGW 32-bit*** or ***Start / MSYS2 64bit / MYSYS2 MinGW 64-bit*** command shell that
 is appropriate for the executable to be created.
 
 If the standard folder structure is used:
@@ -99,7 +99,8 @@ Note that the legacy StateMod Lahey `AM.bat` file has been updated to ignore
 ## Compile StateMod in Eclipse ##
 
 ***Note that although the StateMod project is configured to work with Eclipse,
-the initial focus is command-line compilation.***
+the initial focus is command-line compilation.
+This documentation has not been updated to reflect latest MSYS2/MinGW environment.***
 
 ### ![Linux](../images/linux-32.png) Linux ###
 
