@@ -9,6 +9,7 @@ nav:
   - 'Overview': dev-new/overview.md
 - 'Development Tasks':
   - 'Overview': dev-tasks/overview.md
+  - 'Linux Commands': dev-tasks/linux-commands.md
   - 'Run Eclipse': dev-tasks/run-eclipse.md
   - 'Designing Software': dev-tasks/designing-software.md
   - 'Version Control with Git': dev-tasks/versioning.md

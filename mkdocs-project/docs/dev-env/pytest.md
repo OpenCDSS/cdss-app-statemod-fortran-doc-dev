@@ -1,5 +1,8 @@
 # Development Environment / pytest #
 
+**`pytest` is not currently used for testing but may be used in the future.
+This documentation is retained in case it is useful in the future.**
+
 The `pytest` software is a useful tool that provides enhanced unit test features,
 which can can also be used for functional testing of Python and other software (in this case StateMod).  See also:
 

@@ -1,6 +1,7 @@
 # StateMod Documentation (for Software Developers) #
 
 This documentation is the developer manual for Colorado's Decision Support Systems (CDSS) StateMod water allocation model software.
+**This documentation has been updated for StateMod 17.0.3.**
 
 If you are reading this documentation, you have an interest in learning how StateMod is designed,
 are a member of the software development team,
@@ -21,12 +22,12 @@ This documentation page includes the following sections:
 
 ## How to Use this Documentation ##
 
-This website is a companion to the StateMod source code and provides guidance for
+This documentation is a companion to the StateMod source code and provides guidance for
 software developers that modify and support StateMod.
 
-It is the intended to create StateMod executable programs for Windows (7, 10, +) and Linux, with Windows being the primary version.
-32-bit and 64-bit versions will also be generated, although the Windows 32-bit version is the starting point and is initially the main focus.
-This documentation includes information for these variants and will be filled out as resources can be applied to each configuration.
+It is the intended to create StateMod executable programs for Windows 10+ and Linux, with Windows being the primary version.
+64-bit software is the target environment, although 32-bit software was previously the focus.
+This documentation includes information for multiple computer environments and will be filled out as resources can be applied to each configuration.
 Icons for Linux ![Linux](images/linux-32.png) and Windows ![Windows](images/windows-32.ico) are included to help indicate documentation
 specific to an operating system.
 
@@ -49,10 +50,10 @@ If the page is viewed in a narrow window the navigation menus may be compressed 
 
 ## Colorado's Decision Support Systems ##
 
-Colorado's Decision Support Systems (CDSS, [cdss.state.co.us](https://www.colorado.gov/cdss))
+Colorado's Decision Support Systems (CDSS, [https://cdss.colorado.gov/](https://cdss.colorado.gov/))
 has been developed to answer important questions about Colorado's water resources.
-CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](http://cwcb.state.co.us)
-and [Colorado Division of Water Resources (DWR)](http://water.state.co.us).
+CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](https://cwcb.colorado.gov/)
+and [Colorado Division of Water Resources (DWR)](https://dwr.colorado.gov/).
 
 ![CDSS Website](index-images/CDSS-website.png)
 
@@ -62,7 +63,7 @@ StateMod results are linked to the StateCU consumptive use model and in some bas
 
 In late 2016, the CWCB funded the OpenCDSS project to move StateMod and other CDSS software to open source licensing
 and establish open source software projects.
-The [Open Water Foundation](http://openwaterfoundation.org) was contracted to lead the OpenCDSS project.
+The [Open Water Foundation](https://openwaterfoundation.org) was contracted to lead the OpenCDSS project.
 
 ## License ##
 

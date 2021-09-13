@@ -2,56 +2,73 @@
 
 This documentation discusses how StateMod should be deployed into an operational environment.
 It is important to keep this target in sight as the end result of software development.
-However, software development will occur using a version-controlled copy of files that is different than the deployed environment
-(see [New Developer Setup](../dev-new/overview) documentation for how to set up a new developer environment).
+StateMod modelers that are not software developers will only be working in the deployed environment.
+
+Software development occurs using a version-controlled copy of files that are different than the deployed environment.
+Ssee [New Developer Setup](../dev-new/overview.md) documentation for how to set up a new developer environment).
 Files from the developer environment can be installed to the deployed environment for local testing,
-and StateMod users that are not developers will only be working in the deployed environment.
 
 This documentation contains the following sections:
 
-* [Location of Installed StateMod Software](#location-of-installed-statemod-software)
-* [Relationship of StateMod Executable with StateMod GUI](#relationship-of-statemod-executable-with-statemod-gui)
+* [Packaging the StateMod Executable with StateMod Dataset](#packaging-the-statemod-executable-with-statemod-dataset)
+* [Packaging the StateMod Executable with StateMod GUI](#packaging-the-statemod-executable-with-statemod-gui)
 * [StateMod 32 and 64 Bit Executable Considerations](#statemod-32-and-64-bit-executable-considerations)
 
 ---------------
 
-## Location of Installed StateMod Software ##
+## Packaging the StateMod Executable with StateMod Dataset
 
-The legacy approach for distributing the StateMod executable has been... **TODO smalers 2017-10-24 need to confirm**
+Each StateMod dataset contains the `StateMod` folder for model input files.
+Some CDSS datasets include the StateMod executable with input files to ensure that the correct version
+of the software is used with the dataset.
+This approach can avoid problems and is recommended for deployment.
 
-**TODO smalers 2016-12-31 Need to work with WWG to confirm where StateMod should be installed going forward.
-Perhaps should have a default location under C:\CDSS but also recommend copying to dataset folder to ensure compatibility.
-Other issues to be considered include the following:**
+As of StateMod 17.0.0, the executable is available on the
+[OpenCDSS website](https://opencdss.state.co.us/statemod/) in a zip file.
+A specific StateMod executable version can be packaged with a StateMod dataset by
+copying the `statemod*.exe` executable file into the dataset `StateMod` folder.
+The `statemod.cmd` file can also be packaged with a dataset to provide a general command
+for command-line use and to call from the StateMod GUI and other programs.
 
-* Should the software install into a versioned folder like CDSS TSTool, Python, and other software?
-For example:  `C:\CDSS\StateMod-13.03\bin\statemod.exe`.
-This would be more flexible when new features are added.
-The downside is that it would complicate simple use where "statemod" is entered in a command window,
-although the latest install could always update the `PATH` environment variable.
-An intelligent StateMod runner script could be developed (similar to Python `py` program)
-to look for StateMod in normal locations.
-This program could be installed in a common location such as `C:\CDSS\bin`.
-* Should a version number be included in the StateMod executable filename?
-This is less of an issue if the StateMod install folder is versioned.
-`statemod -v` can be run to print the version when in doubt.
+## Packaging the StateMod Executable with StateMod GUI
 
-## Relationship of StateMod Executable with StateMod GUI ##
+**As of 2021-09-10, the StateMod GUI is not actively maintained, with the last update being version 07.01.00 from 2008.
+The following information assumes that if StateMod GUI is update,
+the information presented below may be useful.**
 
-The legacy approach for distributing the StateMod executable has been to package the `statemod.exe` file
-with the StateMod GUI.  For examaple, see the [CDSS StateMod Download](http://cdss.state.co.us/software/Pages/StateMod.aspx).
+**As of StateMod 17.0.0, the executable is available on the
+[OpenCDSS website](https://opencdss.state.co.us/statemod/) in a zip file.
+The executable name contains the version to uniquely identify the software version.
+The StateMod executable is also distributed with a general `statemod.cmd` file
+that can be used to run the most recent executable, for example from the StateMod GUI.
+The StateMod GUI can be updated to use the general `statemod.cmd` program
+as the default and can also run the version in a dataset's `StateMod` folder
+(if the executable is packaged with a dataset).**
 
-**TODO smalers 2016-12-31 Need to decide how the StateMod executable should continue to be packaged with the GUI,
-and perhaps also be distributed separately, especially Linux versions.
-Also, the StateMod GUI is out of date and needs updated.  Need to prioritize within the OpenCDSS effort.**
+The StateMod executable has been distributed with the StateMod GUI as the `StateMod.exe` file.
+See the [CDSS StateMod](https://cdss.colorado.gov/software/statemod) web page.
+For Windows, the software defaults to an installation folder: 
+
+```
+C:\CDSS\StateModGUI-07.01.00\bin\
+    StateMod.exe          StateMod model executable.
+    StateModGUI.exe       StateMod GUI launcher executable.
+    other files           Other files are used by the GUI.
+```
+
+The StateMod GUI software can be updated to use the longer filename and `statemod.cmd`,
+or the longer filename can be renamed to the generic name shown above
+to use newer StateMod executable version with older StateMod GUI.
 
 ## StateMod 32 and 64 Bit Executable Considerations ##
 
-**TODO smalers 2017-10-24 need to update this section - content was copied from StateCU **
+**As of StateMod 17.0.0, the software is distributed as a 64-bit executable.
+The following information is for historical purposes only and can be used to confirm whether an executable is 32-bit or 64-bit.**
 
 The StateMod software is a Fortran program that is compiled to a 32-bit static executable using the `gfortran` compiler.
-The 32-bit Windows executable will run on 64-bit Windows 7 and 10 computers similar to other 32-bit software.
-Although creating a 64-bit executable may be desirable or necessary in the future, it is currently not the focus of development,
-and will require an evaluation of code memory logic and binary output file structure.
+The 32-bit Windows executable will run on 64-bit Windows computers similar to other 32-bit software.
+However, compiling and distributing the 64-bit executable is now the default for development and distribution.
+
 See the following resources to understand whether a program has been compiled as a 32-bit or 64-bit executable:
 
 * [10 Ways to Determine if Application is Compiled for 32-bit or 64-bit](https://www.raymond.cc/blog/determine-application-compiled-32-64-bit/)
@@ -118,7 +135,7 @@ Image Base = 4194304
 ```
 
 Another option is to use an editor that can edit a binary file. 
-For example, use Windows `Notepad`, `Notepad++`, or `vim -b` editors.
+For example, use Windows `Notepad`, `Notepad++`, or Linux shell `vim -b` editors.
 Search for the characters `PE` at the top of the file.
 
 * If these characters are followed closely by `L`, then the executable is 32-bit.

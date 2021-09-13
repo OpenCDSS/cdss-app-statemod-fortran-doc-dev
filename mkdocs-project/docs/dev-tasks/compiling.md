@@ -24,23 +24,48 @@ Compiling on Linux is similar to Windows.  Use the `make` command targets.
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW ###
 
-StateMod can be compiled on the command line using a ***Start / MSYS2 64bit*** command shell.
-Select ***Start / MSYS2 64bit / MYSYS2 MinGW 32-bit*** or ***Start / MSYS2 64bit / MYSYS2 MinGW 64-bit*** command shell that
-is appropriate for the executable to be created.
+To compile StateMod, open an ***MSYS2 64bit / MSYS2 MinGW 64-bit*** window.
+There is no need for any additional configuration (as was required in earlier 32-bit StateMod development environment).
 
-If the standard folder structure is used:
+Then change to the code location and run the makefile,
+replacing `user` with the appropriate user name:
 
 ```
-> cd            (to change to user's home folder)
-> cd cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran/src/main/fortran
+> cd /C/Users/user/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran/src/main/fortran
 > make veryclean
 > make statemod
 ```
 
-The executable `statemod-<version>-gfortran-win-32bit.exe` or
-`statemod-<version>-gfortran-win-64bit.exe`
-is created in the same folder and can copied to a location that is
-convenient to run with model dataset.
+The executable with name similar to `statemod-17.0.2-gfortran-win-64bit.exe`
+is created in the same folder and can be run with model input,
+such as in a test folder separate from the code.
+The version will match that in the `statem.for` file.
+
+Use the `make help` command to list available `makefile` targets.
+The following are the main targets that are useful during development:
+
+**<p style="text-align: center;">
+`make` Targets for StateMod
+</p>**
+
+| **`makefile` Target**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
+| -- | -- |
+| `clean` | Remove dynamically created files (but not final executable). |
+| `help` | Print help. |
+| `installer` | Create the StateMod software installer zip file and optionally upload to GCP. |
+| `statemod` | Compile the StateMod executable, recompiling any `.o` if `.for` files are modified.  Same as `statemod_o3` to compile the optimized variant for testing.  **Use for normal development.**
+| `statemod_check` | Compile the StateMod executable including all runtime checks. |
+| `statemod_o3` | Compile the StateMod executable for optimization level 3 and limited runtime checks.  Use for production release and full testing. |
+| `statemod_release` | Do clean compile on `check` and `o3` release variant and copy `o3` variant to plain name without `-o3` for release. **Use to prepare for software release.** |
+| `veryclean` | Make the 'clean' target, and also remove the final executable. |
+| `veryclean_check` | Needed by `statemod_release`. |
+| `veryclean_o3` | Needed by `statemod_release`. |
+
+A typical development session will involve repeating:
+
+1. editing source code
+2. `make statemod`
+3. Copy the executable to `StateMod` folder of a dataset for testing.  See the [Testing](testing.md) documentation.
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW (Old Environment) ###
 
