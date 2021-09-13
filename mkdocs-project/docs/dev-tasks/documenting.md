@@ -29,14 +29,17 @@ See the following resources for information on MkDocs and Markdown:
 ### Run MkDocs Server to View Documentation ###
 
 MkDocs runs a local Python web server that allows the browser to view the documentation.
-To start the server, change to the folder where the documentation configuration file exists and start the server.
-This should work for Windows command shell, Git Bash running on Windows or Linux, and Linux command shell,
-depending on the development environment.
-See the `build-util/run-mkdocs-serve-8000.sh` script to run the local web server to allowing viewing the documentation.
+To start the server, change to the folder where the documentation configuration file exists and start the web server,
+for example for developer documentation:
+
+```
+$ cd /C/Users/userName/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran-doc-dev/build-util
+$ ./run-mkdocs-serve-8001.sh
+```
 
 The following indicates that the server is running.  If an error is shown, it is usually because the
 `mkdocs.yml` file lists a file that does not yet exist or the file has a syntax problem such as mismatched quotes.
-If a problem occurs, fix the problem and try restarting the server.
+If a problem occurs, fix the problem and if necessary restart the server.
 
 ![mkdocs serve](documenting-images/mkdocs-serve.png)
 
@@ -48,16 +51,20 @@ Stop the server with `Ctrl-C` in the command shell window.
 
 ### Publish the documentation ###
 
-Run the `doc-dev-mkdocs-project\build-util\copy-to-co-dnr-gcp.sh` script to publish the documentation
+Run the `build-util/copy-to-co-dnr-gcp.sh` script to publish the documentation
 to the State of Colorado's Google Cloud Platform website.
 The documentation will be installed into a folder corresponding to the software version.
 
+This script also provides the option to publish to a `latest` folder.
+This is useful because other documentation that links to StateMod documentation can
+use the generic `latest` link rather than requiring updates to link to a specific version.
+
 ## User Documentation Using MkDocs ##
 
-The user documentation for StateMod currently primarily uses Microsoft Word and is distributed as PDF.
+The user documentation for StateMod originally used Microsoft Word and was distributed as PDF.
+The documentation has been converted to MkDocs.
 User documentation is saved in the separate [cdss-app-statemod-fortran-doc-user repository](https://github.com/OpenCDSS/cdss-app-statemod-fortran-doc-user).
 A MkDocs wrapper document has been created to add navigation and provide access to legacy documentation.
-Full MkDocs documentation may be added in the future.
 
 ## Fortran Code API Documentation Using Doxygen ##
 

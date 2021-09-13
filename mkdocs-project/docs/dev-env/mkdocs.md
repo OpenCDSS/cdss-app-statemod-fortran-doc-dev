@@ -1,5 +1,7 @@
 # Development Environment / MkDocs #
 
+**MkDocs is required if editing the developer or user documentation.**
+
 MkDocs is a Python add-on package that creates static website content from Markdown input.
 This documentation was created with MkDocs.
 Although the latest published version of this documentation can be viewed on the web,

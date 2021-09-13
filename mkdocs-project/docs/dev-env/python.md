@@ -1,5 +1,7 @@
 # Development Environment / Python and pip #
 
+**Python is required if editing documentation because it is used by MkDocs.**
+
 Python is used by the MkDocs documentation software, which formats this static website documentation from Markdown files.
 Python is also used by the `pytest` automated test framework, which may be used for functional testing.
 Python is also a useful program for creating data processing scripts, including processing spatial data using Geographic Information System

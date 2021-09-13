@@ -1,5 +1,8 @@
 # Development Environment / Java 8 #
 
+**Java is required if Eclipse/Photran is used.
+The Java version will need to be updated over time.**
+
 Eclipse is used for the integrated development environment (IDE) and Eclipse requires Java to run.
 The Eclipse Photran plugin is used to provide a Fortran IDE.
 The following Eclipse/Photran download page indicates that Eclipse Mars is required:

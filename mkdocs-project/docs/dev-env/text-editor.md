@@ -4,7 +4,7 @@ The [Eclipse/Photran IDE](eclipse) is one option for editing code and performing
 However, some developers may prefer to avoid Eclipse and instead use a test editor and the command-line compiler.
 Text editors are also useful in general for some operations.
 The StateMod development environment is configured to accommodate both options.
-Text editors that are known to be used with StateCU are discussed below.
+Text editors that are known to be used with StateMod are discussed below.
 
 * [Prerequisites](#prerequisites)
 * [General Considerations](#general-considerations)
@@ -15,6 +15,7 @@ Text editors that are known to be used with StateCU are discussed below.
 	+ [Sublime](#sublime)
 	+ [UltraEdit](#ultraedit)
 	+ [vim](#vim)
+	+ [Visual Studio Code](#visual-studio-code)
 	+ [Other Editors](#other-editors)
 
 -------------
@@ -90,6 +91,11 @@ The following are useful `vim` features:
 set list
 set listchars=tab:>-
 ```
+
+### Visual Studio Code ###
+
+The [Visual Studio Code](https://code.visualstudio.com/)
+editor is useful for editing Markdown files because it provides a documentation preview.
 
 ### Other Editors ###
 
