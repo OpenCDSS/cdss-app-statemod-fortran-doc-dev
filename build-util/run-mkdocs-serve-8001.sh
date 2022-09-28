@@ -11,22 +11,21 @@
 checkMkdocsVersion() {
   # Required MkDocs version is at least 1.
   requiredMajorVersion="1"
-  if [ "${operatingSystem}" = "mingw" ]; then
-    # Git bash mkdocs --version gives: __main__.py, version 1.0.4 from C:\Users\sam\AppData\Local\Programs\Python\Python37\lib\site-packages\mkdocs (Python 3.7)
-    # Use the Windows Python with Git Bash.
-    mkdocsVersionFull=$(py -m mkdocs --version)
-  else
-    # General case.
-    # On Cygwin, mkdocs --version gives:  mkdocs, version 1.0.4 from /usr/lib/python3.6/site-packages/mkdocs (Python 3.6).
-    # On Debian Linux, similar to Cygwin:  mkdocs, version 0.17.3.
-    mkdocsVersionFull=$(mkdocs --version)
-  fi
+  # On Cygwin, mkdocs --version gives:  mkdocs, version 1.0.4 from /usr/lib/python3.6/site-packages/mkdocs (Python 3.6)
+  # On Debian Linux, similar to Cygwin:  mkdocs, version 0.17.3
+  # On newer windows: MkDocs --version:  python -m mkdocs, version 1.3.1 from C:\Users\steve\AppData\Local\Programs\Python\Python310\lib\site-packages\mkdocs (Python 3.10)
+  # The following should work for any version after a comma.
+  mkdocsVersionFull=$(${mkdocsExe} --version | sed -e 's/.*, \(version .*\)/\1/g' | cut -d ' ' -f 2)
   echo "MkDocs --version:  ${mkdocsVersionFull}"
   mkdocsVersion=$(echo ${mkdocsVersionFull} | cut -d ' ' -f 3)
+  if [ -z "${mkdocsVersion}" ]; then
+    echo "Error getting MkDocs version.  Is it installed?"
+    exit 1
+  fi
   echo "MkDocs full version number:  ${mkdocsVersion}"
   mkdocsMajorVersion=$(echo ${mkdocsVersion} | cut -d '.' -f 1)
   echo "MkDocs major version number:  ${mkdocsMajorVersion}"
-  if [ "${mkdocsMajorVersion}" -lt "${requiredMajorVersion}" ]; then
+  if [ "${mkdocsMajorVersion}" -lt ${requiredMajorVersion} ]; then
     echo ""
     echo "MkDocs version for this documentation must be version ${requiredMajorVersion} or later."
     echo "MkDocs mersion that is found is ${mkdocsMajorVersion}, from full version ${mkdocsVersion}."
@@ -39,8 +38,7 @@ checkMkdocsVersion() {
 
 # Determine the operating system that is running the script:
 # - mainly care whether Cygwin
-checkOperatingSystem()
-{
+checkOperatingSystem() {
   if [ ! -z "${operatingSystem}" ]; then
     # Have already checked operating system so return.
     return
@@ -69,10 +67,45 @@ checkSourceDocs() {
   :
 }
 
+# Set the MkDocs executable to use, depending operating system and PATH:
+# - sets the global ${mkdocsExe} variable
+# - return 0 if the executable is found, exit with 1 if not
+setMkDocsExe() {
+  if [ "${operatingSystem}" = "cygwin" -o "${operatingSystem}" = "linux" ]; then
+    # Is usually in the PATH.
+    mkdocsExe="mkdocs"
+    if hash py 2>/dev/null; then
+      echo "mkdocs is not found (not in PATH)."
+      exit 1
+    fi
+  elif [ "${operatingSystem}" = "mingw" ]; then
+    # This is used by Git Bash:
+    # - calling 'hash' is a way to determine if the executable is in the path
+    if hash py 2>/dev/null; then
+      mkdocsExe="py -m mkdocs"
+    else
+      # Try adding the Windows folder to the PATH and rerun:
+      # - not sure why C:\Windows is not in the path in the first place
+      PATH=/C/Windows:${PATH}
+      if hash py 2>/dev/null; then
+        mkdocsExe="py -m mkdocs"
+      else
+        echo 'mkdocs is not found in C:\Windows.'
+        exit 1
+      fi
+    fi
+  fi
+  return 0
+}
+
 # Entry point into the script.
 
 # Check the operating system.
 checkOperatingSystem
+
+# Set the MkDocs executable:
+# - will exit if MkDocs is not found
+setMkDocsExe
 
 # Make sure the MkDocs version is OK.
 checkMkdocsVersion
@@ -89,10 +122,4 @@ cd ../mkdocs-project
 
 echo "View the website using http://localhost:8001"
 echo "Stop the server with CTRL-C"
-if [ "${operatingSystem}" = "mingw" ]; then
-  # Use the Windows Python with Git Bash.
-  py -m mkdocs serve -a 0.0.0.0:8001
-else
-  # General case.
-  mkdocs serve -a 0.0.0.0:8001
-fi
+${mkdocsExe} serve -a 0.0.0.0:8001

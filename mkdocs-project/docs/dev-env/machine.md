@@ -4,7 +4,7 @@ This documentation describes the latest tested development environments.
 See also:
 
 * older [MinGW 32-bit installation instructions](machine-32bit.md),
-used for initial transition to `gfortran` but not used for current development
+  used for initial transition to `gfortran` but not used for current development
 
 The computer and operating system used for development control how other software components are installed.
 The target environment is Windows 10 and Linux, with initial focus being Windows given the
@@ -34,10 +34,10 @@ Again, Windows MinGW is the initial focus.**
 
 * ![Linux](../images/linux-32.png) [Linux](#linux)
 * ![Windows](../images/windows-32.ico) [Windows](#windows)
-	+ [Install MSys2 64-bit Software](#install-msys2-64-bit-software) - focus of this documentation
-		+ [Install 64-bit MinGW Software](#install-64-bit-mingw-software) - needed to create 64-bit executables
-		+ [Install 32-bit MinGW Software](#install-32-bit-mingw-software) - needed to create 32-bit executables
-	+ ![Cygwin](../images/cygwin-32.png) [Install Cygwin](#install-cygwin) - alternative to MinGW environment (not tested)
+    + [Install MSYS2 64-bit Software](#install-msys2-64-bit-software) - focus of this documentation
+        - [Install 64-bit MinGW Software](#install-64-bit-mingw-software) - needed to create 64-bit executables
+        - [Install 32-bit MinGW Software](#install-32-bit-mingw-software) - needed to create 32-bit executables - **64-bit is recommended**
+    + ![Cygwin](../images/cygwin-32.png) [Install Cygwin](#install-cygwin) - alternative to MinGW environment (not tested)
 
 -------------------
 
@@ -60,20 +60,20 @@ MinGW or Cygwin are the recommended compiler environments.
 MinGW is the focus as it has been previously used to compile StateMod
 and is straightforward to install.
 
-### Install MSys2 64-bit Software ###
+### Install MSYS2 64-bit Software ###
 
-**The following documentation was created on 2021-03-09 (`gfortran` 10.2)
-and updated on 2021-05-20 (`gfortran` 10.3)
-using the MSys2 installer available at the time.
+**The following documentation was created on 2021-09-27 (`gcc` 12.2 and `gfortran` 10.2)
+using the MSYS2 installer available at the time.
 The process may be different if run at a different time, but will hopefully be similar.
-MSys2 developers change the configuration over time.**
-The following illustrates the ***Start*** menu for different versions of MSys2.
+MSYS2 developers change the configuration over time.**
+The following illustrates the ***Start*** menu for different versions of MSYS2.
 It is important to use the correct menu when following the instructions below.
 
-| **MSys2 Start Menu** | **Comments** |
+| **MSYS2 Start Menu** | **Comments** |
 | -- | -- |
-| ![10.3](machine-images/msys2-start-menu-10.3.png) | Used with installer containing `gfortran` 10.3. |
-| ![10.2](machine-images/msys2-start-menu-10.2.png) | Used with installer containing `gfortran` 10.2. |
+| ![12.2](machine-images/msys2-start-menu-12.2.png) | Used with installer containing `gcc` and `gfortran` 12.2. |
+| ![10.3](machine-images/msys2-start-menu-10.3.png) | Used with installer containing `gcc` and `gfortran` 10.3. |
+| ![10.2](machine-images/msys2-start-menu-10.2.png) | Used with installer containing `gcc` and `gfortran` 10.2. |
 
 The Minimalist GNU for Windows (MinGW) environment provides a minimal Linux implementation on Windows.
 MinGW provides an environment in which the `gcc` and `gfortran` compilers will run.
@@ -93,11 +93,11 @@ Title Bar for MinGW Shells
 | ![git-bash-title](machine-images/git-bash-title.png) | Git Bash window title (after installing Git for Windows), does not typically include `gfortran`. |
 | ![mingw-title](machine-images/mingw-title.png)<br>![mingw-title-64](machine-images/mingw-title-64.png) | MinGW window title (see installation instructions below), does include `gfortran` if the following instructions are completed.  The title may vary depending on terminal window and MinGW version.  The first example shown displays the current folder in the title and `~` indicates the user's home folder. |
 
-See the following for MinGW installation instructions (however, **see below for more specific instructions that have been tested**):
+See the following for MinGW installation instructions:
 
-* [mingw-w64](http://mingw-w64.org/doku.php) - current MinGW tools
+* [mingw-w64](https://www.mingw-w64.org/) - current MinGW tools - **however, see below for more specific instructions that have been tested**
 * note that the original `mingw.org` website that was used with initial StateMod `gfortran` work
-is not maintained and should be avoided
+  is not maintained and should be avoided
 
 The documentation below recommends using MSYS2 environment, which includes MinGW 64-bit and 32-bit compilers.
 If MSYS2 has previously been installed, it does not need to be reinstalled.
@@ -105,8 +105,10 @@ Look for a `C:\msys64` folder.
 If it exists, then MSYS2 was previously installed and can continue to be used for StateMod development.
 The software also can be reinstalled to use the latest version, if necessary.
 
-If MSYS2/MinGW needs to be installed, download from the [mingw-w64 Downloads page](http://mingw-w64.org/doku.php/download), as shown below.
-This page provides multiple installers for different target environments.
+If MSYS2/MinGW needs to be installed, download from the [mingw-w64 Downloads page](https://www.mingw-w64.org/downloads/), as shown below.
+This page provides multiple installers for different target environments,
+which changes over time.
+**However, see the instructions below for the download link - do not use links in the table.**
 
 **<p style="text-align: center;">
 ![install-msys2-1.png](machine-images/install-msys2-1.png)
@@ -116,17 +118,17 @@ This page provides multiple installers for different target environments.
 Download Page for MinGW Packages (<a href="../machine-images/install-msys2-1.png">see full-size image</a>)
 </p>**
 
-The ***Msys2*** for Windows installer includes C, C++, and Fortran and is used for development below.
-Although other installers are available, Msys2 includes more recent compiler versions than other installers.
+The ***MSYS2*** for Windows installer includes C, C++, and Fortran and is used for development below.
+Although other installers are available, MSYS2 includes more recent compiler versions than other installers.
 Do not use links in the above table.
-Instead, retrieve the installation program from the [msys2.org](https://www.msys2.org/) download page:
+Instead, retrieve the installation program from the [msys2.org](https://www.msys2.org/) download page shown below.
 
 **<p style="text-align: center;">
 ![install-msys2-2.png](machine-images/install-msys2-2.png)
 </p>**
 
 **<p style="text-align: center;">
-Installation Instructions for MSys2 (<a href="../machine-images/install-msys2-2.png">see full-size image</a>)
+Installation Instructions for MSYS2 (<a href="../machine-images/install-msys2-2.png">see full-size image</a>)
 </p>**
 
 Download the installer program, which will save to the `Downloads` folder.
@@ -135,13 +137,15 @@ The checksum can optionally be verified using Git Bash `sha256sum` program (if G
 to ensure that the download file is valid.
 Copy the checksum string from the download page into a file named `sum1.txt`.
 Then verify the download using the following in Git Bash,
-substituting the current installer file:
+substituting the current installer file, similar to the following:
 
 ```
-sha256sum msys2-x86_64-20210419.exe | cut -d ' ' -f 1 > sum2.txt
+sha256sum msys2-x86_64-20220904.exe | cut -d ' ' -f 1 > sum2.txt
 diff sum1.txt sum2.txt
 ```
 
+The output from the `diff` command should be empty, indicating that the checksums are the same
+and consequently the installer contents are as expected.
 Run the downloaded installer program, for example using ***Windows Explorer***,
 and follow the instructions on the above web page.
 **This does not require running as administrator.**
@@ -195,20 +199,20 @@ The following will be shown when the installation is complete.
 MSys2 Installation Complete (<a href="../machine-images/install-msys2-7.png">see full-size image</a>)
 </p>**
 
-The `C:\msys64` folder will include the MSys2 files, including `C:\msys64\mingw32` and `C:\msys64\mingw64` folders.
+The `C:\msys64` folder will include the MSSYS files, including `C:\msys64\mingw32` and `C:\msys64\mingw64` folders.
 
-Press ***Finish*** to open an MSys2 terminal window, as shown below,
-which will be used to install the MinGW 64-bit and 32-bit environments.
+Press ***Finish*** to open an MSSYS terminal window, as shown below,
+which will be used to install the MinGW 64-bit (and if necessary, 32-bit environments).
 
 **<p style="text-align: center;">
 ![install msys2-8.png](machine-images/install-msys2-8.png)
 </p>**
 
 **<p style="text-align: center;">
-MSys2 Terminal Window (<a href="../machine-images/install-msys2-8.png">see full-size image</a>)
+MSYS2 Terminal Window (<a href="../machine-images/install-msys2-8.png">see full-size image</a>)
 </p>**
 
-In the terminal window, as per the MSys2 installation instructions,
+In the terminal window, as per the MSYS2 installation instructions,
 run the following to update the package repository database that
 allows the `pacman` package installer to retrieve the latest software.
 See also the [`pacman`](https://archlinux.org/pacman/pacman.8.html) documentation to explain command line usage.
@@ -261,9 +265,25 @@ warning: /etc/pacman.d/mirrorlist.mingw64 installed as /etc/pacman.d/mirrorlist.
 warning: /etc/pacman.d/mirrorlist.ucrt64 installed as /etc/pacman.d/mirrorlist.ucrt64.pacnew
 (6/6) upgrading pacman                             [#####################] 100%
 :: To complete this update all MSYS2 processes including this terminal will be closed. Confirm to proceed [Y/n]
+
 ```
 
-Open a new MSys2 terminal using ***Start*** menu ***MSYS2 64bit / MSYS2 MSYS***.  Then run:
+Multiple versions of the MSYS2 environment are provided, as configured with different ***Start*** menu selections.
+See the [MSYS2 Environment](https://www.msys2.org/docs/environments/)
+documentation for a description.
+Based on experimentation, the MSYS2 MINGW64 environment is the only version that provides `gcc` and `gfortran`
+compilers after the following installation is completed.
+
+**Note that executables created by linking files compiled with different libraries,
+such as MSVCRT and UCRT64 libraries, cannot be mixed.
+Be consistent when compiling software.**
+
+**Note also that different versions of installers show "64" (for 64-bit) differently in menus.
+Newer installers default to 64-bit so "64" does not seem to be shown as often.**
+
+Open a new MSYS2 terminal using ***Start*** menu ***MSYS2 / MSYS2 MINGW64***.
+Then run the following to update the environment to current software
+(note that this is not yet installing the compiler):
 
 ```
 $ pacman -Su
@@ -272,19 +292,55 @@ $ pacman -Su
  there is nothing to do
 :: Starting full system upgrade...
  there is nothing to do
+```
+
+
+```
+$ pacman -Su
+:: Starting core system upgrade...
+ there is nothing to do
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (7) curl-7.85.0-2  less-608-1  libcurl-7.85.0-2  libexpat-2.4.9-1  libffi-3.4.3-1
+             libksba-1.6.1-1  libnghttp2-1.50.0-1
+
+Total Download Size:   1.51 MiB
+Total Installed Size:  2.41 MiB
+Net Upgrade Size:      0.03 MiB
+
+:: Proceed with installation? [Y/n]
+:: Retrieving packages...
+ libnghttp2-1.50.0-1-x86_64       65.4 KiB  66.0 KiB/s 00:01 [###############################] 100%
+ libksba-1.6.1-1-x86_64          126.1 KiB   125 KiB/s 00:01 [###############################] 100%
+ less-608-1-x86_64               114.8 KiB   114 KiB/s 00:01 [###############################] 100%
+ libcurl-7.85.0-2-x86_64         254.2 KiB   221 KiB/s 00:01 [###############################] 100%
+ libffi-3.4.3-1-x86_64            30.8 KiB   158 KiB/s 00:00 [###############################] 100%
+ curl-7.85.0-2-x86_64            896.9 KiB   388 KiB/s 00:02 [###############################] 100%
+ libexpat-2.4.9-1-x86_64          62.5 KiB  49.6 KiB/s 00:01 [###############################] 100%
+ Total (7/7)                    1550.6 KiB   569 KiB/s 00:03 [###############################] 100%
+(7/7) checking keys in keyring                               [###############################] 100%
+(7/7) checking package integrity                             [###############################] 100%
+(7/7) loading package files                                  [###############################] 100%
+(7/7) checking for file conflicts                            [###############################] 100%
+(7/7) checking available disk space                          [###############################] 100%
+:: Processing package changes...
+(1/7) upgrading libnghttp2                                   [###############################] 100%
+(2/7) upgrading libffi                                       [###############################] 100%
+(3/7) upgrading less                                         [###############################] 100%
+(4/7) upgrading libcurl                                      [###############################] 100%
+(5/7) upgrading curl                                         [###############################] 100%
+(6/7) upgrading libexpat                                     [###############################] 100%
+(7/7) upgrading libksba                                      [###############################] 100%
+:: Running post-transaction hooks...
+(1/1) Updating the info directory file...
 ```
 
 **If the above results in errors**, follow the instructions to run additional commands.
 For example, the second step may need to be run if `pacman -Su` results in errors:
 
 ```
-$ pacman -Su
-warning: database file for 'clang64' does not exist (use '-Sy' to download)
-:: Starting core system upgrade...
- there is nothing to do
-:: Starting full system upgrade...
-error: failed to prepare transaction (could not find database)
-
 $ pacman -Sy
 :: Synchronizing package databases...
  mingw32 is up to date
@@ -295,346 +351,225 @@ $ pacman -Sy
  msys is up to date
 
 $ pacman -Sy
-...output follows...
+...additional output follows...
 ```
 
 #### Install 64-bit MinGW Software ####
 
 The environment is now ready to install 64-bit compiler software including GCC (`gcc`) and Fortran (`gfortran`).
-If not already open, open a new MSys2 terminal using ***Start*** menu ***MSYS2 64bit / MSYS2 MSYS***.
+If not already open, open a new MSYS2 terminal using ***Start*** menu ***MSYS2 / MSYS2 MINGW64***
+and `cd` to the folder that includes the downloaded installer,
+for example:
+
+```
+cd /c/Users/someuser/Downloads
+```
+
 Run the following command.  The `x86_64` indicates 64-bit installer.
-This will install many packages requiring several minutes.
+This will install many packages that may require several minutes.
 Full output is shown below.
 Running 64-bit compiler tools after completing the following installation step requires
-opening a 64-bit ***MSYS2 64bit / MinGW 64-bit*** terminal.
+opening a 64-bit ***MSYS2 / MSYS2 MINGW64*** terminal.
 
 ```
 $ pacman -S --needed base-devel mingw-w64-x86_64-toolchain
-warning: file-5.40-2 is up to date -- skipping
-warning: gawk-5.1.0-1 is up to date -- skipping
-warning: gettext-0.19.8.1-1 is up to date -- skipping
-warning: grep-3.0-2 is up to date -- skipping
-warning: pacman-5.2.2-23 is up to date -- skipping
-warning: perl-5.32.1-1 is up to date -- skipping
-warning: sed-4.8-1 is up to date -- skipping
-warning: wget-1.21.1-2 is up to date -- skipping
-:: There are 48 members in group base-devel:
-:: Repository msys
-   1) asciidoc  2) autoconf  3) autoconf2.13  4) autogen  5) automake-wrapper  6) automake1.10  7) automake1.11  8) automake1.12  9) automake1.13  10) automake1.14  11) automake1.15
-   12) automake1.16  13) automake1.6  14) automake1.7  15) automake1.8  16) automake1.9  17) bison  18) btyacc  19) diffstat  20) diffutils  21) dos2unix  22) flex  23) gdb
-   24) gettext-devel  25) gperf  26) groff  27) help2man  28) intltool  29) libtool  30) libunrar  31) libunrar-devel  32) m4  33) make  34) man-db  35) pactoys-git  36) patch
-   37) patchutils  38) pkgconf  39) pkgfile  40) quilt  41) reflex  42) scons  43) swig  44) texinfo  45) texinfo-tex  46) ttyrec  47) unrar  48) xmlto
-
-Enter a selection (default=all):
 :: There are 19 members in group mingw-w64-x86_64-toolchain:
 :: Repository mingw64
-   1) mingw-w64-x86_64-binutils  2) mingw-w64-x86_64-crt-git  3) mingw-w64-x86_64-gcc  4) mingw-w64-x86_64-gcc-ada  5) mingw-w64-x86_64-gcc-fortran  6) mingw-w64-x86_64-gcc-libgfortran
-   7) mingw-w64-x86_64-gcc-libs  8) mingw-w64-x86_64-gcc-objc  9) mingw-w64-x86_64-gdb  10) mingw-w64-x86_64-gdb-multiarch  11) mingw-w64-x86_64-headers-git  12) mingw-w64-x86_64-libgccjit
-   13) mingw-w64-x86_64-libmangle-git  14) mingw-w64-x86_64-libwinpthread-git  15) mingw-w64-x86_64-make  16) mingw-w64-x86_64-pkgconf  17) mingw-w64-x86_64-tools-git
-   18) mingw-w64-x86_64-winpthreads-git  19) mingw-w64-x86_64-winstorecompat-git
+   1) mingw-w64-x86_64-binutils  2) mingw-w64-x86_64-crt-git  3) mingw-w64-x86_64-gcc
+   4) mingw-w64-x86_64-gcc-ada  5) mingw-w64-x86_64-gcc-fortran
+   6) mingw-w64-x86_64-gcc-libgfortran  7) mingw-w64-x86_64-gcc-libs  8) mingw-w64-x86_64-gcc-objc
+   9) mingw-w64-x86_64-gdb  10) mingw-w64-x86_64-gdb-multiarch  11) mingw-w64-x86_64-headers-git
+   12) mingw-w64-x86_64-libgccjit  13) mingw-w64-x86_64-libmangle-git
+   14) mingw-w64-x86_64-libwinpthread-git  15) mingw-w64-x86_64-make  16) mingw-w64-x86_64-pkgconf
+   17) mingw-w64-x86_64-tools-git  18) mingw-w64-x86_64-winpthreads-git
+   19) mingw-w64-x86_64-winstorecompat-git
 
 Enter a selection (default=all):
 resolving dependencies...
 looking for conflicting packages...
 
-Packages (125) docbook-xml-4.5-2  docbook-xsl-1.79.2-1  expat-2.3.0-1  libarchive-3.5.1-1  libatomic_ops-7.6.10-1  libgc-8.0.4-1  libguile-2.2.7-1  libiconv-devel-1.16-2  libltdl-2.4.6-11
-               libpcre16-8.44-1  libpcre2_16-10.36-1  libpcre2_32-10.36-1  libpcre2posix-10.36-1  libpcre32-8.44-1  libpcrecpp-8.44-1  libpcreposix-8.44-1  libpipeline-1.5.3-2
-               libxxhash-0.8.0-1  mingw-w64-x86_64-bzip2-1.0.8-2  mingw-w64-x86_64-ca-certificates-20200601-3  mingw-w64-x86_64-expat-2.2.10-1  mingw-w64-x86_64-gettext-0.19.8.1-10
-               mingw-w64-x86_64-gmp-6.2.1-2  mingw-w64-x86_64-isl-0.24-1  mingw-w64-x86_64-libffi-3.3-4  mingw-w64-x86_64-libiconv-1.16-2  mingw-w64-x86_64-libsystre-1.0.1-4
-               mingw-w64-x86_64-libtasn1-4.16.0-2  mingw-w64-x86_64-libtre-git-r128.6fb7206-2  mingw-w64-x86_64-mpc-1.2.1-1  mingw-w64-x86_64-mpdecimal-2.5.0-2
-               mingw-w64-x86_64-mpfr-4.1.0-3  mingw-w64-x86_64-ncurses-6.2-3  mingw-w64-x86_64-openssl-1.1.1.k-2  mingw-w64-x86_64-p11-kit-0.23.22-1  mingw-w64-x86_64-python-3.8.9-2
-               mingw-w64-x86_64-readline-8.0.004-2  mingw-w64-x86_64-sqlite3-3.35.5-1  mingw-w64-x86_64-tcl-8.6.11-3  mingw-w64-x86_64-termcap-1.3.1-6  mingw-w64-x86_64-tk-8.6.11.1-2
-               mingw-w64-x86_64-windows-default-manifest-6.4-3  mingw-w64-x86_64-xxhash-0.8.0-1  mingw-w64-x86_64-xz-5.2.5-2  mingw-w64-x86_64-zlib-1.2.11-9  mingw-w64-x86_64-zstd-1.5.0-1
-               mpdecimal-2.5.0-1  pcre-8.44-1  pcre2-10.36-1  perl-Locale-Gettext-1.07-7  perl-Module-Build-0.4231-1  perl-Test-Pod-1.52-1  perl-XML-Parser-2.46-3  perl-YAML-Syck-1.34-1
-               perl-inc-latest-0.500-1  python-3.9.5-1  tar-1.34-1  xxhash-0.8.0-1  asciidoc-9.1.0-2  autoconf-2.71-1  autoconf2.13-2.13-3  autogen-5.18.16-1  automake-wrapper-11-1
-               automake1.10-1.10.3-4  automake1.11-1.11.6-4  automake1.12-1.12.6-4  automake1.13-1.13.4-5  automake1.14-1.14.1-4  automake1.15-1.15.1-2  automake1.16-1.16.3-1
-               automake1.6-1.6.3-3  automake1.7-1.7.9-3  automake1.8-1.8.5-4  automake1.9-1.9.6-3  bison-3.7.6-1  btyacc-20210328-1  diffstat-1.64-1  diffutils-3.7-1  dos2unix-7.4.2-1
-               flex-2.6.4-1  gdb-10.2-3  gettext-devel-0.19.8.1-1  gperf-3.1-2  groff-1.22.4-1  help2man-1.48.3-1  intltool-0.51.0-2  libtool-2.4.6-11  libunrar-6.0.5-1
-               libunrar-devel-6.0.5-1  m4-1.4.18-2  make-4.3-1  man-db-2.9.4-1  mingw-w64-x86_64-binutils-2.36.1-3  mingw-w64-x86_64-crt-git-9.0.0.6200.a528542c8-1
-               mingw-w64-x86_64-gcc-10.3.0-2  mingw-w64-x86_64-gcc-ada-10.3.0-2  mingw-w64-x86_64-gcc-fortran-10.3.0-2  mingw-w64-x86_64-gcc-libgfortran-10.3.0-2
-               mingw-w64-x86_64-gcc-libs-10.3.0-2  mingw-w64-x86_64-gcc-objc-10.3.0-2  mingw-w64-x86_64-gdb-10.2-1  mingw-w64-x86_64-gdb-multiarch-10.2-1
-               mingw-w64-x86_64-headers-git-9.0.0.6200.a528542c8-1  mingw-w64-x86_64-libgccjit-10.3.0-2  mingw-w64-x86_64-libmangle-git-9.0.0.6200.a528542c8-1
-               mingw-w64-x86_64-libwinpthread-git-9.0.0.6200.a528542c8-1  mingw-w64-x86_64-make-4.3-1  mingw-w64-x86_64-pkgconf-1.7.4-2  mingw-w64-x86_64-tools-git-9.0.0.6200.a528542c8-1
-               mingw-w64-x86_64-winpthreads-git-9.0.0.6200.a528542c8-1  mingw-w64-x86_64-winstorecompat-git-9.0.0.6200.a528542c8-1  pactoys-git-r2.07ca37f-1  patch-2.7.6-1
-               patchutils-0.4.2-1  pkgconf-1.7.4-1  pkgfile-21-1  quilt-0.66-2  reflex-20200715-1  scons-3.1.2-6  swig-4.0.2-1  texinfo-6.7-3  texinfo-tex-6.7-3  ttyrec-1.0.8-2
-               unrar-6.0.5-1  xmlto-0.0.28-2
+Packages (63) binutils-2.37-5  bison-3.8.2-3  diffstat-1.64-1  diffutils-3.8-3  dos2unix-7.4.3-1
+              flex-2.6.4-2  gperf-3.1-4  groff-1.22.4-3  m4-1.4.19-2  make-4.3-3
+              mingw-w64-x86_64-bzip2-1.0.8-2  mingw-w64-x86_64-ca-certificates-20211016-3
+              mingw-w64-x86_64-expat-2.4.9-1  mingw-w64-x86_64-gettext-0.21-3
+              mingw-w64-x86_64-gmp-6.2.1-3  mingw-w64-x86_64-isl-0.25-1
+              mingw-w64-x86_64-libffi-3.4.3-1  mingw-w64-x86_64-libiconv-1.17-1
+              mingw-w64-x86_64-libsystre-1.0.1-4  mingw-w64-x86_64-libtasn1-4.19.0-1
+              mingw-w64-x86_64-libtre-git-r128.6fb7206-2  mingw-w64-x86_64-mpc-1.2.1-1
+              mingw-w64-x86_64-mpdecimal-2.5.1-1  mingw-w64-x86_64-mpfr-4.1.0.p13-1
+              mingw-w64-x86_64-ncurses-6.3-5  mingw-w64-x86_64-openssl-1.1.1.q-1
+              mingw-w64-x86_64-p11-kit-0.24.1-3  mingw-w64-x86_64-python-3.10.7-2
+              mingw-w64-x86_64-readline-8.1.002-2  mingw-w64-x86_64-sqlite3-3.39.2-1
+              mingw-w64-x86_64-tcl-8.6.11-5  mingw-w64-x86_64-termcap-1.3.1-6
+              mingw-w64-x86_64-tk-8.6.11.1-2  mingw-w64-x86_64-tzdata-2022b-1
+              mingw-w64-x86_64-windows-default-manifest-6.4-4  mingw-w64-x86_64-xxhash-0.8.1-2
+              mingw-w64-x86_64-xz-5.2.6-1  mingw-w64-x86_64-zlib-1.2.12-1
+              mingw-w64-x86_64-zstd-1.5.2-2  patch-2.7.6-1  pkgconf-1.8.0-1  texinfo-6.8-4
+              texinfo-tex-6.8-4  base-devel-2022.01-2  mingw-w64-x86_64-binutils-2.39-2
+              mingw-w64-x86_64-crt-git-10.0.0.r72.g1dd2a4993-1  mingw-w64-x86_64-gcc-12.2.0-1
+              mingw-w64-x86_64-gcc-ada-12.2.0-1  mingw-w64-x86_64-gcc-fortran-12.2.0-1
+              mingw-w64-x86_64-gcc-libgfortran-12.2.0-1  mingw-w64-x86_64-gcc-libs-12.2.0-1
+              mingw-w64-x86_64-gcc-objc-12.2.0-1  mingw-w64-x86_64-gdb-12.1-3
+              mingw-w64-x86_64-gdb-multiarch-12.1-3
+              mingw-w64-x86_64-headers-git-10.0.0.r72.g1dd2a4993-1
+              mingw-w64-x86_64-libgccjit-12.2.0-1
+              mingw-w64-x86_64-libmangle-git-10.0.0.r72.g1dd2a4993-1
+              mingw-w64-x86_64-libwinpthread-git-10.0.0.r72.g1dd2a4993-1
+              mingw-w64-x86_64-make-4.3-1  mingw-w64-x86_64-pkgconf-1.8.0-2
+              mingw-w64-x86_64-tools-git-10.0.0.r72.g1dd2a4993-1
+              mingw-w64-x86_64-winpthreads-git-10.0.0.r72.g1dd2a4993-1
+              mingw-w64-x86_64-winstorecompat-git-10.0.0.r72.g1dd2a4993-1
 
-Total Download Size:    196.95 MiB
-Total Installed Size:  1273.74 MiB
+Total Download Size:    161.78 MiB
+Total Installed Size:  1053.01 MiB
 
 :: Proceed with installation? [Y/n]
 :: Retrieving packages...
- mingw-w64-x86_64-libiconv-1.16-2-any                                                 744.5 KiB   720 KiB/s 00:01 [###################################################################] 100%
- mingw-w64-x86_64-zlib-1.2.11-9-any                                                   101.4 KiB  16.5 MiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-binutils-2.36.1-3-any                                                 7.1 MiB   593 KiB/s 00:12 [###################################################################] 100%
- mingw-w64-x86_64-headers-git-9.0.0.6200.a528542c8-1-any                                5.3 MiB   417 KiB/s 00:13 [###################################################################] 100%
- mingw-w64-x86_64-crt-git-9.0.0.6200.a528542c8-1-any                                    3.1 MiB   447 KiB/s 00:07 [###################################################################] 100%
- mingw-w64-x86_64-isl-0.24-1-any                                                      949.7 KiB   346 KiB/s 00:03 [###################################################################] 100%
- mingw-w64-x86_64-gmp-6.2.1-2-any                                                     501.1 KiB   334 KiB/s 00:02 [###################################################################] 100%
- mingw-w64-x86_64-mpfr-4.1.0-3-any                                                    357.1 KiB   404 KiB/s 00:01 [###################################################################] 100%
- mingw-w64-x86_64-mpc-1.2.1-1-any                                                      72.7 KiB   454 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-libwinpthread-git-9.0.0.6200.a528542c8-1-any                         28.9 KiB  14.1 MiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-gcc-libs-10.3.0-2-any                                               755.7 KiB   372 KiB/s 00:02 [###################################################################] 100%
- mingw-w64-x86_64-windows-default-manifest-6.4-3-any                                   12.9 KiB  0.00   B/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-winpthreads-git-9.0.0.6200.a528542c8-1-any                           39.0 KiB   279 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-zstd-1.5.0-1-any                                                    529.2 KiB   280 KiB/s 00:02 [###################################################################] 100%
- mingw-w64-x86_64-gcc-10.3.0-2-any                                                     27.1 MiB   332 KiB/s 01:24 [###################################################################] 100%
- mingw-w64-x86_64-gcc-ada-10.3.0-2-any                                                 18.9 MiB   276 KiB/s 01:10 [###################################################################] 100%
- mingw-w64-x86_64-gcc-libgfortran-10.3.0-2-any                                        780.9 KiB   294 KiB/s 00:03 [###################################################################] 100%
- mingw-w64-x86_64-gcc-fortran-10.3.0-2-any                                             10.3 MiB   407 KiB/s 00:26 [###################################################################] 100%
- mingw-w64-x86_64-gcc-objc-10.3.0-2-any                                                11.5 MiB   326 KiB/s 00:36 [###################################################################] 100%
- mingw-w64-x86_64-expat-2.2.10-1-any                                                  140.4 KiB   316 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-gettext-0.19.8.1-10-any                                               3.4 MiB   456 KiB/s 00:08 [###################################################################] 100%
- mingw-w64-x86_64-libtre-git-r128.6fb7206-2-any                                        84.2 KiB   585 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-libsystre-1.0.1-4-any                                                24.0 KiB  23.4 MiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-ncurses-6.2-3-any                                                  1579.4 KiB   519 KiB/s 00:03 [###################################################################] 100%
- mingw-w64-x86_64-bzip2-1.0.8-2-any                                                    89.1 KiB   487 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-libffi-3.3-4-any                                                     40.2 KiB  19.6 MiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-mpdecimal-2.5.0-2-any                                               324.5 KiB   444 KiB/s 00:01 [###################################################################] 100%
- mingw-w64-x86_64-libtasn1-4.16.0-2-any                                               165.2 KiB   562 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-p11-kit-0.23.22-1-any                                               352.4 KiB   488 KiB/s 00:01 [###################################################################] 100%
- mingw-w64-x86_64-ca-certificates-20200601-3-any                                      349.6 KiB   498 KiB/s 00:01 [###################################################################] 100%
- mingw-w64-x86_64-openssl-1.1.1.k-2-any                                                 4.8 MiB   420 KiB/s 00:12 [###################################################################] 100%
- mingw-w64-x86_64-termcap-1.3.1-6-any                                                  28.0 KiB  6.84 MiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-readline-8.0.004-2-any                                              378.8 KiB   493 KiB/s 00:01 [###################################################################] 100%
- mingw-w64-x86_64-tcl-8.6.11-3-any                                                      2.6 MiB   408 KiB/s 00:07 [###################################################################] 100%
- mingw-w64-x86_64-sqlite3-3.35.5-1-any                                                  6.7 MiB   301 KiB/s 00:23 [###################################################################] 100%
- mingw-w64-x86_64-tk-8.6.11.1-2-any                                                  1972.9 KiB   566 KiB/s 00:03 [###################################################################] 100%
- mingw-w64-x86_64-xz-5.2.5-2-any                                                      354.3 KiB   839 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-python-3.8.9-2-any                                                   17.0 MiB   560 KiB/s 00:31 [###################################################################] 100%
- mingw-w64-x86_64-xxhash-0.8.0-1-any                                                   99.7 KiB  13.9 MiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-gdb-10.2-1-any                                                        4.1 MiB   747 KiB/s 00:06 [###################################################################] 100%
- mingw-w64-x86_64-gdb-multiarch-10.2-1-any                                              6.3 MiB   423 KiB/s 00:15 [###################################################################] 100%
- mingw-w64-x86_64-libgccjit-10.3.0-2-any                                                9.5 MiB   517 KiB/s 00:19 [###################################################################] 100%
- mingw-w64-x86_64-libmangle-git-9.0.0.6200.a528542c8-1-any                             22.6 KiB  22.0 MiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-make-4.3-1-any                                                      151.6 KiB   487 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-pkgconf-1.7.4-2-any                                                  79.2 KiB   595 KiB/s 00:00 [###################################################################] 100%
- mingw-w64-x86_64-tools-git-9.0.0.6200.a528542c8-1-any                                302.3 KiB   522 KiB/s 00:01 [###################################################################] 100%
- mingw-w64-x86_64-winstorecompat-git-9.0.0.6200.a528542c8-1-any                        19.9 KiB  19.4 MiB/s 00:00 [###################################################################] 100%
- mpdecimal-2.5.0-1-x86_64                                                             104.8 KiB   557 KiB/s 00:00 [###################################################################] 100%
- python-3.9.5-1-x86_64                                                                 16.0 MiB   417 KiB/s 00:39 [###################################################################] 100%
- docbook-xml-4.5-2-any                                                                 81.4 KiB   536 KiB/s 00:00 [###################################################################] 100%
- docbook-xsl-1.79.2-1-any                                                             740.0 KiB   447 KiB/s 00:02 [###################################################################] 100%
- asciidoc-9.1.0-2-any                                                                 178.7 KiB   392 KiB/s 00:00 [###################################################################] 100%
- m4-1.4.18-2-x86_64                                                                   218.4 KiB   342 KiB/s 00:01 [###################################################################] 100%
- diffutils-3.7-1-x86_64                                                               342.0 KiB   316 KiB/s 00:01 [###################################################################] 100%
- autoconf-2.71-1-any                                                                  643.7 KiB   283 KiB/s 00:02 [###################################################################] 100%
- autoconf2.13-2.13-3-any                                                              137.6 KiB   340 KiB/s 00:00 [###################################################################] 100%
- libatomic_ops-7.6.10-1-any                                                            25.9 KiB  25.3 MiB/s 00:00 [###################################################################] 100%
- libgc-8.0.4-1-x86_64                                                                 188.0 KiB   293 KiB/s 00:01 [###################################################################] 100%
- libltdl-2.4.6-11-x86_64                                                               32.5 KiB   214 KiB/s 00:00 [###################################################################] 100%
- libguile-2.2.7-1-x86_64                                                                4.8 MiB   289 KiB/s 00:17 [###################################################################] 100%
- autogen-5.18.16-1-x86_64                                                             650.0 KiB   348 KiB/s 00:02 [###################################################################] 100%
- automake1.6-1.6.3-3-any                                                              256.3 KiB   429 KiB/s 00:01 [###################################################################] 100%
- automake1.7-1.7.9-3-any                                                              298.6 KiB   347 KiB/s 00:01 [###################################################################] 100%
- automake1.8-1.8.5-4-any                                                              345.0 KiB   338 KiB/s 00:01 [###################################################################] 100%
- automake1.9-1.9.6-3-any                                                              386.8 KiB   388 KiB/s 00:01 [###################################################################] 100%
- automake1.10-1.10.3-4-any                                                            441.6 KiB   386 KiB/s 00:01 [###################################################################] 100%
- automake1.11-1.11.6-4-any                                                            492.2 KiB   367 KiB/s 00:01 [###################################################################] 100%
- automake1.12-1.12.6-4-any                                                            505.3 KiB   350 KiB/s 00:01 [###################################################################] 100%
- automake1.13-1.13.4-5-any                                                            503.6 KiB   358 KiB/s 00:01 [###################################################################] 100%
- automake1.14-1.14.1-4-any                                                            505.3 KiB   326 KiB/s 00:02 [###################################################################] 100%
- automake1.15-1.15.1-2-any                                                            515.6 KiB   312 KiB/s 00:02 [###################################################################] 100%
- automake1.16-1.16.3-1-any                                                            520.6 KiB   267 KiB/s 00:02 [###################################################################] 100%
- automake-wrapper-11-1-any                                                             18.8 KiB  6.13 MiB/s 00:00 [###################################################################] 100%
- bison-3.7.6-1-x86_64                                                                 741.3 KiB   297 KiB/s 00:02 [###################################################################] 100%
- btyacc-20210328-1-x86_64                                                              70.0 KiB   205 KiB/s 00:00 [###################################################################] 100%
- diffstat-1.64-1-x86_64                                                                29.3 KiB   222 KiB/s 00:00 [###################################################################] 100%
- dos2unix-7.4.2-1-x86_64                                                              336.7 KiB   316 KiB/s 00:01 [###################################################################] 100%
- flex-2.6.4-1-x86_64                                                                  294.6 KiB   296 KiB/s 00:01 [###################################################################] 100%
- expat-2.3.0-1-x86_64                                                                  29.1 KiB  14.2 MiB/s 00:00 [###################################################################] 100%
- libxxhash-0.8.0-1-x86_64                                                              22.4 KiB  7.29 MiB/s 00:00 [###################################################################] 100%
- xxhash-0.8.0-1-x86_64                                                                 18.8 KiB  18.3 MiB/s 00:00 [###################################################################] 100%
- gdb-10.2-3-x86_64                                                                      3.9 MiB   257 KiB/s 00:15 [###################################################################] 100%
- libiconv-devel-1.16-2-x86_64                                                         685.8 KiB   261 KiB/s 00:03 [###################################################################] 100%
- gettext-devel-0.19.8.1-1-x86_64                                                     1332.9 KiB   265 KiB/s 00:05 [###################################################################] 100%
- gperf-3.1-2-x86_64                                                                   102.0 KiB   378 KiB/s 00:00 [###################################################################] 100%
- groff-1.22.4-1-x86_64                                                               1938.5 KiB   284 KiB/s 00:07 [###################################################################] 100%
- perl-Locale-Gettext-1.07-7-x86_64                                                     13.8 KiB  4.48 MiB/s 00:00 [###################################################################] 100%
- help2man-1.48.3-1-x86_64                                                             178.5 KiB   338 KiB/s 00:01 [###################################################################] 100%
- perl-XML-Parser-2.46-3-x86_64                                                        160.2 KiB   384 KiB/s 00:00 [###################################################################] 100%
- intltool-0.51.0-2-x86_64                                                              39.4 KiB  12.8 MiB/s 00:00 [###################################################################] 100%
- tar-1.34-1-x86_64                                                                    814.9 KiB   344 KiB/s 00:02 [###################################################################] 100%
- libtool-2.4.6-11-x86_64                                                              389.5 KiB   369 KiB/s 00:01 [###################################################################] 100%
- libunrar-6.0.5-1-x86_64                                                              121.9 KiB   419 KiB/s 00:00 [###################################################################] 100%
- libunrar-devel-6.0.5-1-x86_64                                                        156.4 KiB   347 KiB/s 00:00 [###################################################################] 100%
- make-4.3-1-x86_64                                                                    456.7 KiB   360 KiB/s 00:01 [###################################################################] 100%
- libpipeline-1.5.3-2-x86_64                                                            29.7 KiB  5.81 MiB/s 00:00 [###################################################################] 100%
- man-db-2.9.4-1-x86_64                                                                568.5 KiB   309 KiB/s 00:02 [###################################################################] 100%
- libarchive-3.5.1-1-x86_64                                                           1047.6 KiB   328 KiB/s 00:03 [###################################################################] 100%
- libpcre16-8.44-1-x86_64                                                               96.7 KiB   601 KiB/s 00:00 [###################################################################] 100%
- libpcre32-8.44-1-x86_64                                                               90.8 KiB   578 KiB/s 00:00 [###################################################################] 100%
- libpcrecpp-8.44-1-x86_64                                                              29.5 KiB  14.4 MiB/s 00:00 [###################################################################] 100%
- libpcreposix-8.44-1-x86_64                                                            22.6 KiB  11.1 MiB/s 00:00 [###################################################################] 100%
- pcre-8.44-1-x86_64                                                                   589.4 KiB   405 KiB/s 00:01 [###################################################################] 100%
- pkgfile-21-1-x86_64                                                                   43.0 KiB  21.0 MiB/s 00:00 [###################################################################] 100%
- pactoys-git-r2.07ca37f-1-x86_64                                                       33.1 KiB  10.8 MiB/s 00:00 [###################################################################] 100%
- patch-2.7.6-1-x86_64                                                                 101.6 KiB   660 KiB/s 00:00 [###################################################################] 100%
- libpcre2_16-10.36-1-x86_64                                                           110.6 KiB   709 KiB/s 00:00 [###################################################################] 100%
- libpcre2_32-10.36-1-x86_64                                                           102.6 KiB   529 KiB/s 00:00 [###################################################################] 100%
- libpcre2posix-10.36-1-x86_64                                                           6.7 KiB  0.00   B/s 00:00 [###################################################################] 100%
- pcre2-10.36-1-x86_64                                                                 662.2 KiB   466 KiB/s 00:01 [###################################################################] 100%
- patchutils-0.4.2-1-x86_64                                                             81.7 KiB   534 KiB/s 00:00 [###################################################################] 100%
- pkgconf-1.7.4-1-x86_64                                                                58.0 KiB  18.9 MiB/s 00:00 [###################################################################] 100%
- quilt-0.66-2-any                                                                     545.3 KiB   543 KiB/s 00:01 [###################################################################] 100%
- reflex-20200715-1-x86_64                                                             109.2 KiB   733 KiB/s 00:00 [###################################################################] 100%
- scons-3.1.2-6-any                                                                    824.5 KiB   488 KiB/s 00:02 [###################################################################] 100%
- swig-4.0.2-1-x86_64                                                                 1084.8 KiB   434 KiB/s 00:03 [###################################################################] 100%
- texinfo-6.7-3-x86_64                                                                1168.1 KiB   391 KiB/s 00:03 [###################################################################] 100%
- texinfo-tex-6.7-3-x86_64                                                              27.7 KiB  27.1 MiB/s 00:00 [###################################################################] 100%
- ttyrec-1.0.8-2-x86_64                                                                 25.9 KiB  12.7 MiB/s 00:00 [###################################################################] 100%
- unrar-6.0.5-1-x86_64                                                                 130.1 KiB   491 KiB/s 00:00 [###################################################################] 100%
- perl-YAML-Syck-1.34-1-x86_64                                                          68.3 KiB   499 KiB/s 00:00 [###################################################################] 100%
- perl-inc-latest-0.500-1-any                                                           25.5 KiB  12.4 MiB/s 00:00 [###################################################################] 100%
- perl-Module-Build-0.4231-1-any                                                       193.4 KiB   469 KiB/s 00:00 [###################################################################] 100%
- perl-Test-Pod-1.52-1-any                                                              23.8 KiB  11.6 MiB/s 00:00 [###################################################################] 100%
- xmlto-0.0.28-2-x86_64                                                                 41.0 KiB  20.0 MiB/s 00:00 [###################################################################] 100%
-(125/125) checking keys in keyring                                                                                [###################################################################] 100%
-(125/125) checking package integrity                                                                              [###################################################################] 100%
-(125/125) loading package files                                                                                   [###################################################################] 100%
-(125/125) checking for file conflicts                                                                             [###################################################################] 100%
-(125/125) checking available disk space                                                                           [###################################################################] 100%
+ mingw-w64-x86_64-gcc-fortr...    11.1 MiB  3.53 MiB/s 00:03 [###############################] 100%
+ mingw-w64-x86_64-gcc-ada-1...    20.3 MiB  5.04 MiB/s 00:04 [###############################] 100%
+ mingw-w64-x86_64-libgccjit...    10.3 MiB  5.90 MiB/s 00:02 [###############################] 100%
+ mingw-w64-x86_64-gcc-objc-...    12.9 MiB  2.48 MiB/s 00:05 [###############################] 100%
+ mingw-w64-x86_64-python-3....    18.4 MiB  3.52 MiB/s 00:05 [###############################] 100%
+ mingw-w64-x86_64-gdb-multi...     6.5 MiB  5.52 MiB/s 00:01 [###############################] 100%
+ mingw-w64-x86_64-binutils-...     5.9 MiB  7.37 MiB/s 00:01 [###############################] 100%
+ mingw-w64-x86_64-openssl-1...     4.8 MiB  7.36 MiB/s 00:01 [###############################] 100%
+ mingw-w64-x86_64-headers-g...     5.6 MiB  7.43 MiB/s 00:01 [###############################] 100%
+ mingw-w64-x86_64-gdb-12.1-...     4.3 MiB  9.10 MiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-gettext-0...     3.1 MiB  7.33 MiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-crt-git-1...     3.3 MiB  6.62 MiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-tcl-8.6.1...     2.6 MiB  7.63 MiB/s 00:00 [###############################] 100%
+ groff-1.22.4-3-x86_64          2023.3 KiB  5.95 MiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-ncurses-6...  1757.8 KiB  4.39 MiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-sqlite3-3...  1433.3 KiB  4.71 MiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-isl-0.25-...  1396.6 KiB  3.59 MiB/s 00:00 [###############################] 100%
+ texinfo-6.8-4-x86_64           1186.2 KiB  3.37 MiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-gcc-libgf...   854.7 KiB  2.31 MiB/s 00:00 [###############################] 100%
+ bison-3.8.2-3-x86_64            770.0 KiB  2026 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-libiconv-...   720.2 KiB  2017 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-gmp-6.2.1...   558.6 KiB  1762 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-gcc-libs-...   876.2 KiB   445 KiB/s 00:02 [###############################] 100%
+ mingw-w64-x86_64-zstd-1.5....   494.9 KiB  1719 KiB/s 00:00 [###############################] 100%
+ binutils-2.37-5-x86_64            5.0 MiB  1096 KiB/s 00:05 [###############################] 100%
+ mingw-w64-x86_64-tk-8.6.11...  1972.9 KiB   583 KiB/s 00:03 [###############################] 100%
+ mingw-w64-x86_64-xz-5.2.6-...   427.7 KiB  1651 KiB/s 00:00 [###############################] 100%
+ make-4.3-3-x86_64               466.2 KiB   961 KiB/s 00:00 [###############################] 100%
+ dos2unix-7.4.3-1-x86_64         369.6 KiB   503 KiB/s 00:01 [###############################] 100%
+ mingw-w64-x86_64-readline-...   387.2 KiB   505 KiB/s 00:01 [###############################] 100%
+ diffutils-3.8-3-x86_64          362.2 KiB   464 KiB/s 00:01 [###############################] 100%
+ mingw-w64-x86_64-mpfr-4.1....   356.9 KiB  1214 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-p11-kit-0...   345.2 KiB  1158 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-ca-certif...   330.7 KiB   778 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-tools-git...   310.3 KiB  1373 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-mpdecimal...   321.9 KiB  1175 KiB/s 00:00 [###############################] 100%
+ flex-2.6.4-2-x86_64             302.6 KiB  1058 KiB/s 00:00 [###############################] 100%
+ m4-1.4.19-2-x86_64              238.1 KiB   996 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-gcc-12.2....    28.3 MiB  2.44 MiB/s 00:12 [###############################] 100%
+ mingw-w64-x86_64-tzdata-20...   230.4 KiB   904 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-libtasn1-...   189.7 KiB   791 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-expat-2.4...   153.5 KiB   734 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-make-4.3-...   151.6 KiB   634 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-xxhash-0....   106.1 KiB   474 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-zlib-1.2....   102.3 KiB   457 KiB/s 00:00 [###############################] 100%
+ patch-2.7.6-1-x86_64            101.6 KiB   491 KiB/s 00:00 [###############################] 100%
+ gperf-3.1-4-x86_64              101.4 KiB   490 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-bzip2-1.0...    89.1 KiB   349 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-pkgconf-1...    79.1 KiB   355 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-libtre-gi...    84.2 KiB   311 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-mpc-1.2.1...    72.7 KiB   211 KiB/s 00:00 [###############################] 100%
+ pkgconf-1.8.0-1-x86_64           58.4 KiB   177 KiB/s 00:00 [###############################] 100%
+ diffstat-1.64-1-x86_64           29.3 KiB   142 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-libffi-3....    42.1 KiB   181 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-winpthrea...    39.1 KiB   176 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-libwinpth...    28.1 KiB   109 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-termcap-1...    28.0 KiB   135 KiB/s 00:00 [###############################] 100%
+ texinfo-tex-6.8-4-x86_64         26.4 KiB   127 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-libsystre...    24.0 KiB   107 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-libmangle...    22.1 KiB  57.6 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-windows-d...     3.1 KiB  16.2 KiB/s 00:00 [###############################] 100%
+ base-devel-2022.01-2-any          2.4 KiB  13.0 KiB/s 00:00 [###############################] 100%
+ mingw-w64-x86_64-winstorec...    21.0 KiB  24.1 KiB/s 00:01 [###############################] 100%
+ Total (63/63)                   161.8 MiB  11.0 MiB/s 00:15 [###############################] 100%
+(63/63) checking keys in keyring                             [###############################] 100%
+(63/63) checking package integrity                           [###############################] 100%
+(63/63) loading package files                                [###############################] 100%
+(63/63) checking for file conflicts                          [###############################] 100%
+(63/63) checking available disk space                        [###############################] 100%
 :: Processing package changes...
-(  1/125) installing mpdecimal                                                                                    [###################################################################] 100%
-(  2/125) installing python                                                                                       [###################################################################] 100%
-(  3/125) installing docbook-xml                                                                                  [###################################################################] 100%
-(  4/125) installing docbook-xsl                                                                                  [###################################################################] 100%
-(  5/125) installing asciidoc                                                                                     [###################################################################] 100%
-(  6/125) installing m4                                                                                           [###################################################################] 100%
-(  7/125) installing diffutils                                                                                    [###################################################################] 100%
-(  8/125) installing autoconf                                                                                     [###################################################################] 100%
-(  9/125) installing autoconf2.13                                                                                 [###################################################################] 100%
-( 10/125) installing libatomic_ops                                                                                [###################################################################] 100%
-( 11/125) installing libgc                                                                                        [###################################################################] 100%
-( 12/125) installing libltdl                                                                                      [###################################################################] 100%
-( 13/125) installing libguile                                                                                     [###################################################################] 100%
-( 14/125) installing autogen                                                                                      [###################################################################] 100%
-( 15/125) installing automake1.6                                                                                  [###################################################################] 100%
-( 16/125) installing automake1.7                                                                                  [###################################################################] 100%
-( 17/125) installing automake1.8                                                                                  [###################################################################] 100%
-( 18/125) installing automake1.9                                                                                  [###################################################################] 100%
-( 19/125) installing automake1.10                                                                                 [###################################################################] 100%
-( 20/125) installing automake1.11                                                                                 [###################################################################] 100%
-( 21/125) installing automake1.12                                                                                 [###################################################################] 100%
-( 22/125) installing automake1.13                                                                                 [###################################################################] 100%
-( 23/125) installing automake1.14                                                                                 [###################################################################] 100%
-( 24/125) installing automake1.15                                                                                 [###################################################################] 100%
-( 25/125) installing automake1.16                                                                                 [###################################################################] 100%
-( 26/125) installing automake-wrapper                                                                             [###################################################################] 100%
-( 27/125) installing bison                                                                                        [###################################################################] 100%
-( 28/125) installing btyacc                                                                                       [###################################################################] 100%
-( 29/125) installing diffstat                                                                                     [###################################################################] 100%
-( 30/125) installing dos2unix                                                                                     [###################################################################] 100%
-( 31/125) installing flex                                                                                         [###################################################################] 100%
-( 32/125) installing expat                                                                                        [###################################################################] 100%
-( 33/125) installing libxxhash                                                                                    [###################################################################] 100%
-( 34/125) installing xxhash                                                                                       [###################################################################] 100%
-( 35/125) installing gdb                                                                                          [###################################################################] 100%
-( 36/125) installing libiconv-devel                                                                               [###################################################################] 100%
-( 37/125) installing gettext-devel                                                                                [###################################################################] 100%
-Optional dependencies for gettext-devel
-    cvs: for autopoint tool
-( 38/125) installing gperf                                                                                        [###################################################################] 100%
-( 39/125) installing groff                                                                                        [###################################################################] 100%
-( 40/125) installing perl-Locale-Gettext                                                                          [###################################################################] 100%
-( 41/125) installing help2man                                                                                     [###################################################################] 100%
-( 42/125) installing perl-XML-Parser                                                                              [###################################################################] 100%
-( 43/125) installing intltool                                                                                     [###################################################################] 100%
-( 44/125) installing tar                                                                                          [###################################################################] 100%
-( 45/125) installing libtool                                                                                      [###################################################################] 100%
-( 46/125) installing libunrar                                                                                     [###################################################################] 100%
-( 47/125) installing libunrar-devel                                                                               [###################################################################] 100%
-( 48/125) installing make                                                                                         [###################################################################] 100%
-( 49/125) installing libpipeline                                                                                  [###################################################################] 100%
-( 50/125) installing man-db                                                                                       [###################################################################] 100%
-it's recommended to create an initial
-database running as root:
-"/usr/bin/mandb --quiet"
-Optional dependencies for man-db
-    gzip [installed]
-( 51/125) installing libarchive                                                                                   [###################################################################] 100%
-( 52/125) installing libpcre16                                                                                    [###################################################################] 100%
-( 53/125) installing libpcre32                                                                                    [###################################################################] 100%
-( 54/125) installing libpcrecpp                                                                                   [###################################################################] 100%
-( 55/125) installing libpcreposix                                                                                 [###################################################################] 100%
-( 56/125) installing pcre                                                                                         [###################################################################] 100%
-( 57/125) installing pkgfile                                                                                      [###################################################################] 100%
-==> Run 'pkgfile --update' to initialize the database
-( 58/125) installing pactoys-git                                                                                  [###################################################################] 100%
-( 59/125) installing patch                                                                                        [###################################################################] 100%
+( 1/63) installing binutils                                  [###############################] 100%
+( 2/63) installing m4                                        [###############################] 100%
+( 3/63) installing bison                                     [###############################] 100%
+( 4/63) installing diffstat                                  [###############################] 100%
+( 5/63) installing diffutils                                 [###############################] 100%
+( 6/63) installing dos2unix                                  [###############################] 100%
+( 7/63) installing flex                                      [###############################] 100%
+( 8/63) installing gperf                                     [###############################] 100%
+( 9/63) installing groff                                     [###############################] 100%
+(10/63) installing texinfo                                   [###############################] 100%
+(11/63) installing texinfo-tex                               [###############################] 100%
+(12/63) installing make                                      [###############################] 100%
+(13/63) installing patch                                     [###############################] 100%
 Optional dependencies for patch
     ed: for patch -e functionality
-( 60/125) installing libpcre2_16                                                                                  [###################################################################] 100%
-( 61/125) installing libpcre2_32                                                                                  [###################################################################] 100%
-( 62/125) installing libpcre2posix                                                                                [###################################################################] 100%
-( 63/125) installing pcre2                                                                                        [###################################################################] 100%
-( 64/125) installing patchutils                                                                                   [###################################################################] 100%
-( 65/125) installing pkgconf                                                                                      [###################################################################] 100%
-( 66/125) installing quilt                                                                                        [###################################################################] 100%
-( 67/125) installing reflex                                                                                       [###################################################################] 100%
-( 68/125) installing scons                                                                                        [###################################################################] 100%
-( 69/125) installing swig                                                                                         [###################################################################] 100%
-( 70/125) installing texinfo                                                                                      [###################################################################] 100%
-( 71/125) installing texinfo-tex                                                                                  [###################################################################] 100%
-( 72/125) installing ttyrec                                                                                       [###################################################################] 100%
-( 73/125) installing unrar                                                                                        [###################################################################] 100%
-( 74/125) installing perl-YAML-Syck                                                                               [###################################################################] 100%
-( 75/125) installing perl-inc-latest                                                                              [###################################################################] 100%
-( 76/125) installing perl-Module-Build                                                                            [###################################################################] 100%
-( 77/125) installing perl-Test-Pod                                                                                [###################################################################] 100%
-( 78/125) installing xmlto                                                                                        [###################################################################] 100%
-( 79/125) installing mingw-w64-x86_64-libiconv                                                                    [###################################################################] 100%
-( 80/125) installing mingw-w64-x86_64-zlib                                                                        [###################################################################] 100%
-( 81/125) installing mingw-w64-x86_64-binutils                                                                    [###################################################################] 100%
-( 82/125) installing mingw-w64-x86_64-headers-git                                                                 [###################################################################] 100%
-( 83/125) installing mingw-w64-x86_64-crt-git                                                                     [###################################################################] 100%
-( 84/125) installing mingw-w64-x86_64-isl                                                                         [###################################################################] 100%
-( 85/125) installing mingw-w64-x86_64-gmp                                                                         [###################################################################] 100%
-( 86/125) installing mingw-w64-x86_64-mpfr                                                                        [###################################################################] 100%
-( 87/125) installing mingw-w64-x86_64-mpc                                                                         [###################################################################] 100%
-( 88/125) installing mingw-w64-x86_64-libwinpthread-git                                                           [###################################################################] 100%
-( 89/125) installing mingw-w64-x86_64-gcc-libs                                                                    [###################################################################] 100%
-( 90/125) installing mingw-w64-x86_64-windows-default-manifest                                                    [###################################################################] 100%
-( 91/125) installing mingw-w64-x86_64-winpthreads-git                                                             [###################################################################] 100%
-( 92/125) installing mingw-w64-x86_64-zstd                                                                        [###################################################################] 100%
-( 93/125) installing mingw-w64-x86_64-gcc                                                                         [###################################################################] 100%
-( 94/125) installing mingw-w64-x86_64-gcc-ada                                                                     [###################################################################] 100%
-( 95/125) installing mingw-w64-x86_64-gcc-libgfortran                                                             [###################################################################] 100%
-( 96/125) installing mingw-w64-x86_64-gcc-fortran                                                                 [###################################################################] 100%
-( 97/125) installing mingw-w64-x86_64-gcc-objc                                                                    [###################################################################] 100%
-( 98/125) installing mingw-w64-x86_64-expat                                                                       [###################################################################] 100%
-( 99/125) installing mingw-w64-x86_64-gettext                                                                     [###################################################################] 100%
-(100/125) installing mingw-w64-x86_64-libtre-git                                                                  [###################################################################] 100%
-(101/125) installing mingw-w64-x86_64-libsystre                                                                   [###################################################################] 100%
-(102/125) installing mingw-w64-x86_64-ncurses                                                                     [###################################################################] 100%
-(103/125) installing mingw-w64-x86_64-bzip2                                                                       [###################################################################] 100%
-(104/125) installing mingw-w64-x86_64-libffi                                                                      [###################################################################] 100%
-(105/125) installing mingw-w64-x86_64-mpdecimal                                                                   [###################################################################] 100%
-(106/125) installing mingw-w64-x86_64-libtasn1                                                                    [###################################################################] 100%
-(107/125) installing mingw-w64-x86_64-p11-kit                                                                     [###################################################################] 100%
-(108/125) installing mingw-w64-x86_64-ca-certificates                                                             [###################################################################] 100%
-(109/125) installing mingw-w64-x86_64-openssl                                                                     [###################################################################] 100%
-(110/125) installing mingw-w64-x86_64-termcap                                                                     [###################################################################] 100%
-(111/125) installing mingw-w64-x86_64-readline                                                                    [###################################################################] 100%
-(112/125) installing mingw-w64-x86_64-tcl                                                                         [###################################################################] 100%
-(113/125) installing mingw-w64-x86_64-sqlite3                                                                     [###################################################################] 100%
-(114/125) installing mingw-w64-x86_64-tk                                                                          [###################################################################] 100%
-(115/125) installing mingw-w64-x86_64-xz                                                                          [###################################################################] 100%
-(116/125) installing mingw-w64-x86_64-python                                                                      [###################################################################] 100%
-(117/125) installing mingw-w64-x86_64-xxhash                                                                      [###################################################################] 100%
-(118/125) installing mingw-w64-x86_64-gdb                                                                         [###################################################################] 100%
-(119/125) installing mingw-w64-x86_64-gdb-multiarch                                                               [###################################################################] 100%
-(120/125) installing mingw-w64-x86_64-libgccjit                                                                   [###################################################################] 100%
-(121/125) installing mingw-w64-x86_64-libmangle-git                                                               [###################################################################] 100%
-(122/125) installing mingw-w64-x86_64-make                                                                        [###################################################################] 100%
-(123/125) installing mingw-w64-x86_64-pkgconf                                                                     [###################################################################] 100%
-(124/125) installing mingw-w64-x86_64-tools-git                                                                   [###################################################################] 100%
-(125/125) installing mingw-w64-x86_64-winstorecompat-git                                                          [###################################################################] 100%
+(14/63) installing pkgconf                                   [###############################] 100%
+(15/63) installing base-devel                                [###############################] 100%
+(16/63) installing mingw-w64-x86_64-libiconv                 [###############################] 100%
+(17/63) installing mingw-w64-x86_64-zlib                     [###############################] 100%
+(18/63) installing mingw-w64-x86_64-binutils                 [###############################] 100%
+(19/63) installing mingw-w64-x86_64-headers-git              [###############################] 100%
+(20/63) installing mingw-w64-x86_64-crt-git                  [###############################] 100%
+(21/63) installing mingw-w64-x86_64-gmp                      [###############################] 100%
+(22/63) installing mingw-w64-x86_64-isl                      [###############################] 100%
+(23/63) installing mingw-w64-x86_64-mpfr                     [###############################] 100%
+(24/63) installing mingw-w64-x86_64-mpc                      [###############################] 100%
+(25/63) installing mingw-w64-x86_64-libwinpthread-git        [###############################] 100%
+(26/63) installing mingw-w64-x86_64-gcc-libs                 [###############################] 100%
+(27/63) installing mingw-w64-x86_64-windows-default-manifest [###############################] 100%
+(28/63) installing mingw-w64-x86_64-winpthreads-git          [###############################] 100%
+(29/63) installing mingw-w64-x86_64-zstd                     [###############################] 100%
+(30/63) installing mingw-w64-x86_64-gcc                      [###############################] 100%
+(31/63) installing mingw-w64-x86_64-gcc-ada                  [###############################] 100%
+(32/63) installing mingw-w64-x86_64-gcc-libgfortran          [###############################] 100%
+(33/63) installing mingw-w64-x86_64-gcc-fortran              [###############################] 100%
+(34/63) installing mingw-w64-x86_64-gcc-objc                 [###############################] 100%
+(35/63) installing mingw-w64-x86_64-expat                    [###############################] 100%
+(36/63) installing mingw-w64-x86_64-gettext                  [###############################] 100%
+(37/63) installing mingw-w64-x86_64-libtre-git               [###############################] 100%
+(38/63) installing mingw-w64-x86_64-libsystre                [###############################] 100%
+(39/63) installing mingw-w64-x86_64-ncurses                  [###############################] 100%
+(40/63) installing mingw-w64-x86_64-bzip2                    [###############################] 100%
+(41/63) installing mingw-w64-x86_64-libffi                   [###############################] 100%
+(42/63) installing mingw-w64-x86_64-mpdecimal                [###############################] 100%
+(43/63) installing mingw-w64-x86_64-libtasn1                 [###############################] 100%
+(44/63) installing mingw-w64-x86_64-p11-kit                  [###############################] 100%
+(45/63) installing mingw-w64-x86_64-ca-certificates          [###############################] 100%
+(46/63) installing mingw-w64-x86_64-openssl                  [###############################] 100%
+(47/63) installing mingw-w64-x86_64-termcap                  [###############################] 100%
+(48/63) installing mingw-w64-x86_64-readline                 [###############################] 100%
+(49/63) installing mingw-w64-x86_64-tcl                      [###############################] 100%
+(50/63) installing mingw-w64-x86_64-sqlite3                  [###############################] 100%
+(51/63) installing mingw-w64-x86_64-tk                       [###############################] 100%
+(52/63) installing mingw-w64-x86_64-xz                       [###############################] 100%
+(53/63) installing mingw-w64-x86_64-tzdata                   [###############################] 100%
+(54/63) installing mingw-w64-x86_64-python                   [###############################] 100%
+(55/63) installing mingw-w64-x86_64-xxhash                   [###############################] 100%
+(56/63) installing mingw-w64-x86_64-gdb                      [###############################] 100%
+Optional dependencies for mingw-w64-x86_64-gdb
+    mingw-w64-x86_64-python-pygments: for syntax highlighting
+(57/63) installing mingw-w64-x86_64-gdb-multiarch            [###############################] 100%
+Optional dependencies for mingw-w64-x86_64-gdb-multiarch
+    mingw-w64-x86_64-python-pygments: for syntax highlighting
+(58/63) installing mingw-w64-x86_64-libgccjit                [###############################] 100%
+(59/63) installing mingw-w64-x86_64-libmangle-git            [###############################] 100%
+(60/63) installing mingw-w64-x86_64-make                     [###############################] 100%
+(61/63) installing mingw-w64-x86_64-pkgconf                  [###############################] 100%
+(62/63) installing mingw-w64-x86_64-tools-git                [###############################] 100%
+(63/63) installing mingw-w64-x86_64-winstorecompat-git       [###############################] 100%
 :: Running post-transaction hooks...
 (1/1) Updating the info directory file...
 ```
 
-Use ***MSYS2 64bit / MSYS2 MinGW 64-bit*** to open a terminal window for 64-bit compilers.
+Use the ***Start*** menu ***MSYS2 / MSYS2 MINGW64*** to open a new terminal window for 64-bit compilers.
+This may be necessary because there may have been changes to the environment necessary to use the compilers.
 The default prompt indicates that the environment is for MINGW64, as shown in the following figure.
 
 **<p style="text-align: center;">
@@ -650,23 +585,35 @@ The compiler versions can be confirmed, as follows.
 
 ```com
 $ gcc --version
-gcc.exe (Rev2, Built by MSYS2 project) 10.3.0
-Copyright (C) 2020 Free Software Foundation, Inc.
+gcc.exe (Rev1, Built by MSYS2 project) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 $ gfortran --version
-GNU Fortran (Rev2, Built by MSYS2 project) 10.3.0
-Copyright (C) 2020 Free Software Foundation, Inc.
+GNU Fortran (Rev1, Built by MSYS2 project) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-The home folder is `/home/user` and are separate from normal Windows users files.
+The home folder is `/home/user` within the MinGW environment
+and user files are separate from normal Windows users files.
 Similar to Git Bash, the user's Windows files can be accessed using path `/C/Users/user`.
-Modify files in `/home/user` to impact the MinGW environment.
+Modify files in `/home/user` to impact only the MinGW environment.
+
+A useful utility is `cygpath`.
+For example, use the following to print the Windows equivalent folder for MinGW folder:
+
+```
+$ cygpath -w /home/steve
+C:\msys64\home\steve
+```
 
 #### Install 32-bit MinGW Software ####
+
+**These instructions have not been updated recently.
+It is recommended to use the 64-bit tools.**
 
 The above process installed 64-bit compiler tools.
 It may also be useful to install the 32-bit compiler tools.

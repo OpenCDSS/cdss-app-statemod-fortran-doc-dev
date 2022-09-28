@@ -146,7 +146,7 @@ syncFiles() {
   # - the -r option means recursive to sync the whole folder tree
   # For now always upload to the versioned copy.
   echo ""
-  echo "Copying the documentation to the versioned folder: ${gsFolderVersion}"
+  echo "Copying the documentation to the versioned folder:"
   echo "  from: ${siteFolder}"
   echo "    to: ${gsFolderVersion}"
   read -p "Continue with upload (Y/n)? " answer

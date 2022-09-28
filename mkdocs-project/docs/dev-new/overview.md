@@ -23,10 +23,10 @@ The following sections are available in this page:
 * [Minimal Development Environment Setup (for command line compiling)](#minimal-development-environment-setup-for-command-line-compiling)
 * [Full Eclipse Development Environment Setup (for interactive development environment)](#full-eclipse-development-environment-setup-for-interactive-development-environment)
 * Supporting Information (used in the above sections):
-	+ [Create Folder for Development Files](#create-folder-for-development-files)
-	+ [Clone Git Repositories](#clone-git-repositories)
-	+ [Create Eclipse Workspace Folder](#create-eclipse-workspace-folder)
-	+ [Import the Existing Eclipse StateMod Project from the Git Repository Folder](#import-the-existing-eclipse-statemod-project-from-the-git-repository-folder)
+    + [Create Folder for Development Files](#create-folder-for-development-files)
+    + [Clone Git Repositories](#clone-git-repositories)
+    + [Create Eclipse Workspace Folder](#create-eclipse-workspace-folder)
+    + [Import the Existing Eclipse StateMod Project from the Git Repository Folder](#import-the-existing-eclipse-statemod-project-from-the-git-repository-folder)
 
 -----------------
 
@@ -37,21 +37,21 @@ a text editor and command line compiler.
 
 1. [Create folder for development files](#create-folder-for-development-files) - where development will occur - **required - see details below**
 2. Development Environment software install part 1 (version control)
-	* [Development Environment / Git](../dev-env/git.md) - install Git software so the repositories can be cloned - **required if not already installed**
+    * [Development Environment / Git](../dev-env/git.md) - install Git software so the repositories can be cloned - **required if not already installed**
 3. [Clone Git Repositories](#clone-git-repositories) - clone the repositories to get access to all files - **required - see details below**
 4. Development Environment software install part 2 (documentation tools) - **optional, install if will view and edit documentation within development environment**
-	* [Development Environment / Python and pip](../dev-env/python.md) - install Python, which is needed by MkDocs
-	* [Development Environment / MkDocs](../dev-env/mkdocs.md) - install MkDocs to view/edit full documentation locally.
-	See [Development Tasks / Documenting](../dev-tasks/documenting.md#developer-documentation-using-mkdocs)
-	for instructions on viewing documentation.
+    * [Development Environment / Python and pip](../dev-env/python.md) - install Python, which is needed by MkDocs
+    * [Development Environment / MkDocs](../dev-env/mkdocs.md) - install MkDocs to view/edit full documentation locally.
+      See [Development Tasks / Documenting](../dev-tasks/documenting.md#developer-documentation-using-mkdocs)
+      for instructions on viewing documentation.
 5. Development Environment software install part 3 (Fortran development tools)
-	* [Development Environment / Machine](../dev-env/machine.md) - configure machine for development - **required - to provide core environment**
-	* [Development Environment / gfortran](../dev-env/gfortran.md) - install `gfortran` Fortran compiler - **required**
-	* [Development Environment / Text Editor](../dev-env/text-editor.md) - install text editor of choice - **required, if not already done**
-	* [Development Environment / Doxygen](../dev-env/doxygen.md) - install Doxygen to auto-generate code API documentation -
-	**optional, install to auto-generate code API documentation and graphs from code and code comments**
-	* [Development Environment / KDiff3](../dev-env/kdiff3.md) - install software to facilitate comparing files -
-	**optional - highly useful and can be used with Git**
+    * [Development Environment / Machine](../dev-env/machine.md) - configure machine for development - **required - to provide core environment**
+    * [Development Environment / gfortran](../dev-env/gfortran.md) - install `gfortran` Fortran compiler - **required**
+    * [Development Environment / Text Editor](../dev-env/text-editor.md) - install text editor of choice - **required, if not already done**
+    * [Development Environment / Doxygen](../dev-env/doxygen.md) - install Doxygen to auto-generate code API documentation -
+      **optional, install to auto-generate code API documentation and graphs from code and code comments**
+    * [Development Environment / KDiff3](../dev-env/kdiff3.md) - install software to facilitate comparing files -
+      **optional - highly useful and can be used with Git**
 6. [Next Steps - Development Tasks](../dev-tasks/compiling.md) - compile software
 
 ## Full Eclipse Development Environment Setup (for interactive development environment) ##
@@ -61,31 +61,31 @@ the Eclipse integrated development environment.
 
 1. [Create folder for development files](#create-folder-for-development-files) - where development will occur - **required - see details below**
 2. Development Environment software install part 1 (version control)
-	* [Development Environment / Git](../dev-env/git.md) - install Git software so the repositories can be cloned,
-	**required (if not already installed)**
+    * [Development Environment / Git](../dev-env/git.md) - install Git software so the repositories can be cloned,
+    **required (if not already installed)**
 3. [Clone Git Repositories](#clone-git-repositories) - clone the repositories to get access to all files - **required - see details below**
 4. Development Environment software install part 2 (documentation tools) - **optional, install if will view and edit documentation within development environment**
-	* [Development Environment / Python and pip](../dev-env/python.md) - install Python, which is needed by MkDocs
-	* [Development Environment / MkDocs](../dev-env/mkdocs.md) - install MkDocs to view/edit full documentation locally.
-	See [Development Tasks / Documenting](../dev-tasks/documenting.md#developer-documentation-using-mkdocs)
-	for instructions on viewing documentation.
+    * [Development Environment / Python and pip](../dev-env/python.md) - install Python, which is needed by MkDocs
+    * [Development Environment / MkDocs](../dev-env/mkdocs.md) - install MkDocs to view/edit full documentation locally.
+      See [Development Tasks / Documenting](../dev-tasks/documenting.md#developer-documentation-using-mkdocs)
+      for instructions on viewing documentation.
 5. Development Environment software install part 3 (Fortran development tools)
-	* [Development Environment / Machine](../dev-env/machine.md) - configure machine for development - **required - to provide core environment**
-	* [Development Environment / Java 8](../dev-env/java8.md) - make sure Java 8 is available on system - **required to use Eclipse/Photran IDE**
-	* [Development Environment / gfortran](../dev-env/gfortran.md) - install `gfortran` Fortran compiler, **required**
-	* [Development Environment / Eclipse and Photran](../dev-env/eclipse.md) - install Eclipse for use as IDE,
-	**optional, not needed for command-line compile, install if Eclipse/Photran IDE is used**
-	* [Development Environment / Doxygen](../dev-env/doxygen.md) - install Doxygen to auto-generate code API documentation,
-	**optional, install to auto-generate code API documentation and graphs from code and code comments**
-	* [Development Environment / pytest](../dev-env/pytest.md) - install to facilitate automated testing,
-	**optional, being evaluated**
-	* [Development Environment / KDiff3](../dev-env/kdiff3.md) - install software to facilitate comparing files,
-	**optional, highly useful and can be used with Git**
+    * [Development Environment / Machine](../dev-env/machine.md) - configure machine for development - **required - to provide core environment**
+    * [Development Environment / Java 8](../dev-env/java8.md) - make sure Java 8 is available on system - **required to use Eclipse/Photran IDE**
+    * [Development Environment / gfortran](../dev-env/gfortran.md) - install `gfortran` Fortran compiler, **required**
+    * [Development Environment / Eclipse and Photran](../dev-env/eclipse.md) - install Eclipse for use as IDE,
+      **optional, not needed for command-line compile, install if Eclipse/Photran IDE is used**
+    * [Development Environment / Doxygen](../dev-env/doxygen.md) - install Doxygen to auto-generate code API documentation,
+      **optional, install to auto-generate code API documentation and graphs from code and code comments**
+    * [Development Environment / pytest](../dev-env/pytest.md) - install to facilitate automated testing,
+      **optional, being evaluated**
+    * [Development Environment / KDiff3](../dev-env/kdiff3.md) - install software to facilitate comparing files,
+      **optional, highly useful and can be used with Git**
 6. Eclipse Workspace Setup (interactive development environment),
-	**optional, not needed for command-line compile, install if Eclipse/Photran IDE is used**
-	* [Create Eclipse Workspace Folder](#create-eclipse-workspace-folder) - simple manual step - **see details below**
-	* [Import the Existing Eclipse StateMod Project from the Git Repository Folder](#import-the-existing-eclipse-statemod-project-from-the-git-repository-folder) - import
-	from Git repository working files - **see details below**
+    **optional, not needed for command-line compile, install if Eclipse/Photran IDE is used**
+    * [Create Eclipse Workspace Folder](#create-eclipse-workspace-folder) - simple manual step - **see details below**
+    * [Import the Existing Eclipse StateMod Project from the Git Repository Folder](#import-the-existing-eclipse-statemod-project-from-the-git-repository-folder) - import
+      from Git repository working files - **see details below**
 7. [Next Steps - Development Tasks](#next-steps-development-tasks) - compile software
 
 -------------
