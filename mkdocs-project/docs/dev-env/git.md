@@ -13,3 +13,11 @@ Git integration with other tools such as text editors is not currently documente
 
 Refer to the [CDSS / Learn Git](http://opencdss.state.co.us/cdss-learn-git/)
 documentation for information about installing, configuring, and using Git software within the CDSS environment.
+
+Currently, for StateMod development on Windows,
+it is recommended to install Git for Windows and use a Git Bash window to run Git commands.
+It is possible to install Git within the MSys2 MinGW environment but the process has not been tested or documented.
+Because both Git for Windows and MSYS2 use MinGW, the command line environments are consistent
+for file permissions, text file end of line, etc.
+Using Git Bash requires changing to the `/c/Users/someuser/...` folders to run Git commands on StateMod files
+rather than `/home/someuser`, for example.
