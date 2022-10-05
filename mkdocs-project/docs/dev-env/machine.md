@@ -1,10 +1,11 @@
 # Development Environment / Machine #
 
-This documentation describes the latest tested development environments.
+This documentation describes the latest tested development 64-bit environments.
 See also:
 
 * older [MinGW 32-bit installation instructions](machine-32bit.md),
   used for initial transition to `gfortran` but not used for current development
+  (**not recommended and documentation will be removed in the future**)
 
 The computer and operating system used for development control how other software components are installed.
 The target environment is Windows 10 and Linux, with initial focus being Windows given the
@@ -30,20 +31,24 @@ See the following resources:
 
 The following sections are included in this documentation for various operating systems.
 **The choice of development environment by the software developer will drive many other configuration steps.
-Again, Windows MinGW is the initial focus.**
+Windows MinGW is the initial focus.**
 
 * ![Linux](../images/linux-32.png) [Linux](#linux)
 * ![Windows](../images/windows-32.ico) [Windows](#windows)
     + [Install MSYS2 64-bit Software](#install-msys2-64-bit-software) - focus of this documentation
         - [Install 64-bit MinGW Software](#install-64-bit-mingw-software) - needed to create 64-bit executables
-        - [Install 32-bit MinGW Software](#install-32-bit-mingw-software) - needed to create 32-bit executables - **64-bit is recommended**
-    + ![Cygwin](../images/cygwin-32.png) [Install Cygwin](#install-cygwin) - alternative to MinGW environment (not tested)
+        - [Install Useful MinGW Software](#install-useful-mingw-software) - useful software development tools
+* ![Cygwin](../images/cygwin-32.png) [Install Cygwin](#install-cygwin) - alternative to MinGW environment (not tested)
+* [OLD: Windows - Install 32-bit MinGW Software](#old-windows-install-32-bit-mingw-software) - needed to create 32-bit executables - **64-bit is recommended**
 
 -------------------
 
 ## ![Linux](../images/linux-32.png) Linux ##
 
 This section will be completed when resources are available for Linux development and testing.
+
+A Linux environment is known to have been successfully used with StateMod using the standard `gfortran` compiler
+and makefile provided with the StateMod source code.
 
 ## ![Windows](../images/windows-32.ico) Windows ##
 
@@ -610,9 +615,40 @@ $ cygpath -w /home/steve
 C:\msys64\home\steve
 ```
 
-#### Install 32-bit MinGW Software ####
+#### Install Useful MinGW Software ####
 
-**These instructions have not been updated recently.
+It may be useful to install additional software, for example `vim` text editor and `git` version control software.
+
+```
+$ pacman -S vim
+$ pacman -S git
+```
+
+Similar to other Linux distributions, software is distributed in packages and can
+be installed with `pacman -S package-name`.
+See the [MSYS2 Packages](https://packages.msys2.org/package/) page for a list of available packages
+(the search tool does not seem to match substrings and does not match some known packages such as used in the instructions above).
+The following are useful packages.
+
+**<p style="text-align: center;">
+Optional Software Packages to Install
+</p>**
+
+| **MSYS2 Package** | **Description** |
+| -- | -- |
+| [`git`](https://packages.msys2.org/package/git) | Git version control. If Git is installed, it should be configured consistent with Git for Windows (Git Bash), and other Git utilities that may be used with CDSS development. Because the `/home/user` folder for MSys2 MinGW is different from other similar installations, it is necessary to set the Git configuration for the user. It will also be necessary to configure other user environment settings that a developer may be accustomed to. |
+| [`vim`](https://packages.msys2.org/package/vim) | Vim editor - optionally configure with `.vimrc`. |
+
+### ![Cygwin](../images/cygwin-32.png) Install Cygwin ###
+
+This section can be completed if necessary.
+
+Cygwin can be useful in cases where software is not available in Git Bash or Windows.
+The Cygwin environment is similar to Linux and should work if `gfortran` is installed.
+
+### ![Windows](../images/windows-32.ico) Old: Windows - Install 32-bit MinGW Software ###
+
+**These instructions have not been updated recently and may be removed in the future.
 It is recommended to use the 64-bit tools.**
 
 The above process installed 64-bit compiler tools.
@@ -875,23 +911,3 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Similar to 64-bit environment, the home folder is `/home/user` and are separate from normal Windows users files.
 The user's Windows files can be accessed using path `/C/Users/user`.
 Modify files in `/home/user` to impact the MinGW environment.
-
-#### Install Useful Software ####
-
-It may be useful to install additional software, for example `vim` text editor and `git` version control software.
-
-```
-$ pacman -S vim
-$ pacman -S git
-```
-
-If Git is installed, it should be configured consistent with Git for Windows (Git Bash),
-and other Git utilities that may be used with CDSS development.
-Because the `/home/user` folder for MSys2 MinGW is different from other similar installations,
-it is necessary to set the Git configuration for the user.
-It will also be necessary to configure other user environment settings that a developer may be accustomed to.
-
-### ![Cygwin](../images/cygwin-32.png) Install Cygwin ###
-
-This section can be completed if necessary.  The Native Windows MinGW development environment is currently the focus.
-Cygwin can be useful in cases where software is not available in Git Bash or Windows.
