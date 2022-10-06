@@ -24,8 +24,8 @@ Compiling on Linux is similar to Windows.  Use the `make` command targets.
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW ###
 
-To compile StateMod, open an ***MSYS2 64bit / MSYS2 MinGW 64-bit*** window.
-There is no need for any additional configuration (as was required in earlier 32-bit StateMod development environment).
+To compile StateMod, open an ***MSYS2 64bit / MSYS2 MinGW 64-bit*** window,
+which will automatically be configured for software development tools.
 
 Then change to the code location and run the makefile,
 replacing `user` with the appropriate user name:
@@ -67,33 +67,6 @@ A typical development session will involve repeating:
 2. `make statemod`
 3. Copy the executable to `StateMod` folder of a dataset for testing.  See the [Testing](testing.md) documentation.
 
-### ![Windows](../images/windows-32.ico) Windows - MinGW (Old Environment) ###
-
-**These instructions are for the initial environment.  A newer environment consistent with previous section should be used instead.**
-
-To compile StateMod on the command line it is first necessary to configure the environment to run the compiler.
-Open a Windows command prompt window and change to the folder where the setup script exists.
-Then run the `build-util/mingw/setup-mingw-env.bat` batch file to configure the MinGW environment (note that setting up the environment in the window only needs
-to be done once after the window is opened).
-
-```
-> C:
-> cd \Users\user\cdss-dev\StateMod\git-repos\cdss-app-statemod-fortran\build-util\mingw
-> setup-mingw-env.bat
-```
-
-Then change to the code location and run the makefile:
-
-```
-> C:
-> cd \Users\user\cdss-dev\StateMod\git-repos\cdss-app-statemod-fortran\src\main\fortran
-> make clean
-> make statemod
-```
-
-The executable `statemod-gfortran-32bit.exe` is created in the same folder and can be run with model input,
-typically in a test folder separate from the code folder.
-
 ## Compile StateMod on Command Line with Lahey Compiler ##
 
 The ability to compile StateMod with the Lahey compiler that has previously been used
@@ -114,12 +87,13 @@ Then change to the code location and run the `AM` batch file:
 
 The executable `statemod.exe` is created in the same folder and can be run with model input,
 typically in a test folder separate from the code folder.
-***TODO smalers 2017-11-30 need to output as `statemod-lahey-32bit.exe`.***
+Note that the current `gfortran` convention is to use a more explicit filename
+including the operating system, compiler, and version.
 
 Note that the legacy StateMod Lahey `AM.bat` file has been updated to ignore
 `gfortran`-specific source file.  See the following for more information about compiling with Lahey:
 
-* [Lahey Fortran 95 Automake](http://www.lahey.com/docs/lfenthelp/F95UGMUAUTOMAKE.htm)
+* [Lahey Fortran 95 Automake](https://www.lahey.com/docs/lfenthelp/F95UGMUAUTOMAKE.htm)
 
 ## Compile StateMod in Eclipse ##
 

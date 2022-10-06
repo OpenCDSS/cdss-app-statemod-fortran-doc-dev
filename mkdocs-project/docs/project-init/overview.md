@@ -12,11 +12,11 @@ such as configuring the Eclipse workspace.
 
 This documentation includes the following sections:
 
-* [Background on Code Versions](#background-on-code-versions) - recent code history
-* [Development Folder Structure](#development-folder-structure) - overview of the development files
-* [Eclipse File Location Overview](#eclipse-file-location-overview) - locations of various Eclipse files
-* [Project Initialization Steps](#project-initialization-steps) - steps to initialize the StateMod software project,
-done once and thereafter [New Developer](../dev-new/overview/) instructions apply
+*   [Background on Code Versions](#background-on-code-versions) - recent code history
+*   [Development Folder Structure](#development-folder-structure) - overview of the development files
+*   [Eclipse File Location Overview](#eclipse-file-location-overview) - locations of various Eclipse files
+*   [Project Initialization Steps](#project-initialization-steps) - steps to initialize the StateMod software project,
+    done once and thereafter [New Developer](../dev-new/overview/) instructions apply
 
 ----------------
 
@@ -58,35 +58,35 @@ Consequently, the code from Ray Bennett's versions and Jim Brannon' repository w
 retaining Ray's code history from versions 13.00.01 through 15.00.01, in order to retain recent history as well as
 bracketing the changes made by Jim Brannon.  This migration involved the following changes in order to provide consistency:
 
-* OWF adopted a file structure compatible with development environments for other languages
-and providing flexibility for expansion,
-including placing source code in a folder `src/main/fortran`.
-This allows the following:
-	+ Add code for other languages if necessary, such a wrappers to call from other languages.
-	+ Add folders for utility programs outside of `src/main`.
-	+ Add other files in a `resources` folder, if appropriate.
-* All source files were renamed to lowercase to ensure consistency and proper handling across platforms.
-Ray's code used inconsistent filenames, some mixed case, some all uppercase, and some lowercase.
-This worked OK on Windows, which tends to ignore case, but is problematic with new developer tools.
-The lowercase filename approach had been adopted by Jim Brannon but Ray had not incorporated.
-Ray concurred that this approach was OK to move forward.
-OWF used lowercase names for all versions loaded into Git (13.00.01 through 15.00.01) in order to simplify version comparisons.
-* A general `makefile` was created based on Jim Brannon's work, but with OWF enhancements to be more robust and
-work with Windows and Linux.  It is expected that additional changes will be needed because OWF did
-not initially test the Linux compile.
-* Several files are handled specifically due to windows/linux, or Lahey/gfortran requirements:
-	+ `dattim_gfortran.for` - date/time code
-	+ `getpath_linux.for` - handle file paths
-	+ `parse_gfortran.for` - parse command line
-	+ `putpath_linux.for` - handle file paths
-* Files were checked for line ending issues and were updated accordingly, with the goal being to ensure that
-line endings were consistent throughout each file.
-For example, some older files used `CTRL-Z` characters to indicate end of file, but this practice is no longer needed.
-This minimized differences between versions.
-* Each version that was loaded was compiled and run to ensure a valid executable, but was not executed on full datasets,
-pending more detailed testing on the final 15.00.01 version.
-Only the 13.00.01 version failed to compile with `gfortran`,
-consistent with the fact that version 14.01.01 was the first to include `gfortran` support.
+*   OWF adopted a file structure compatible with development environments for other languages
+    and providing flexibility for expansion,
+    including placing source code in a folder `src/main/fortran`.
+    This allows the following:
+    +   Add code for other languages if necessary, such a wrappers to call from other languages.
+    +   Add folders for utility programs outside of `src/main`.
+    +   Add other files in a `resources` folder, if appropriate.
+*   All source files were renamed to lowercase to ensure consistency and proper handling across platforms.
+    Ray's code used inconsistent filenames, some mixed case, some all uppercase, and some lowercase.
+    This worked OK on Windows, which tends to ignore case, but is problematic with new developer tools.
+    The lowercase filename approach had been adopted by Jim Brannon but Ray had not incorporated.
+    Ray concurred that this approach was OK to move forward.
+    OWF used lowercase names for all versions loaded into Git (13.00.01 through 15.00.01) in order to simplify version comparisons.
+*   A general `makefile` was created based on Jim Brannon's work, but with OWF enhancements to be more robust and
+    work with Windows and Linux.  It is expected that additional changes will be needed because OWF did
+    not initially test the Linux compile.
+*   Several files are handled specifically due to windows/linux, or Lahey/gfortran requirements:
+    +   `dattim_gfortran.for` - date/time code
+    +   `getpath_linux.for` - handle file paths
+    +   `parse_gfortran.for` - parse command line
+    +   `putpath_linux.for` - handle file paths
+*   Files were checked for line ending issues and were updated accordingly, with the goal being to ensure that
+    line endings were consistent throughout each file.
+    For example, some older files used `CTRL-Z` characters to indicate end of file, but this practice is no longer needed.
+    This minimized differences between versions.
+*   Each version that was loaded was compiled and run to ensure a valid executable, but was not executed on full datasets,
+    pending more detailed testing on the final 15.00.01 version.
+    Only the 13.00.01 version failed to compile with `gfortran`,
+    consistent with the fact that version 14.01.01 was the first to include `gfortran` support.
 
 The code organization was restructured as per the folder structure discussed in the
 following section and additional content was added, including this developer documentation.
@@ -166,20 +166,20 @@ The following are the project initialization steps in the recommended order,
 although some steps were actually implemented in slightly different order for practical reasons such as
 scripts to run steps were created after running the steps on the command line the first time.
 
-* Initialize software development folder and Git repository to receive files
-	+ [Create Development Home Folder](home-folder.md) - manually create project home folder that will hold all the software development files
-	+ [GitHub Git Repository](github.md) - create empty GitHub repository
-* Initialize Eclipse development environment
-	+ [Eclipse Run Script](eclipse-run-script.md) - the script ensures that the proper version of Eclipse and Java are used
-	+ [Eclipse Workspace](eclipse-workspace.md) - create an Eclipse workspace for the StateMod software project
-	+ [Eclipse StateMod Project](eclipse-statemod-project.md) - configure the project connected to the Git repository files
-	+ [Eclipse Folder Structure](eclipse-folder-structure.md) - implement the development folder structure
-* Initialize build utility scripts
-	+ [Build Utility Scripts](build-util.md) - helpful build utility scripts for developers 
-* Initialize documentation
-	+ [Documentation, Legacy (Word)](doc.md) - Word documentation
-	+ [Documentation, Developer (MkDocs)](doc-dev.md) - create initial MkDocs project for developer documentation
-	+ [Documentation, User (MkDocs)](doc-user.md) - create initial MkDocs project for user documentation
-	+ [Doxygen](doc-doxygen.md) - configure Doxygen project to generate API documentation
-* Initialize repository with recent history of versions - the following was executed for each StateMod code version
-	+ [Save StateMod version history in GitHub](git-statemod-history.md) - save StateMod versions in repository
+*   Initialize software development folder and Git repository to receive files
+    +   [Create Development Home Folder](home-folder.md) - manually create project home folder that will hold all the software development files
+    +   [GitHub Git Repository](github.md) - create empty GitHub repository
+*   Initialize Eclipse development environment
+    +   [Eclipse Run Script](eclipse-run-script.md) - the script ensures that the proper version of Eclipse and Java are used
+    +   [Eclipse Workspace](eclipse-workspace.md) - create an Eclipse workspace for the StateMod software project
+    +   [Eclipse StateMod Project](eclipse-statemod-project.md) - configure the project connected to the Git repository files
+    +   [Eclipse Folder Structure](eclipse-folder-structure.md) - implement the development folder structure
+*   Initialize build utility scripts
+    +   [Build Utility Scripts](build-util.md) - helpful build utility scripts for developers 
+*   Initialize documentation
+    +   [Documentation, Legacy (Word)](doc.md) - Word documentation
+    +   [Documentation, Developer (MkDocs)](doc-dev.md) - create initial MkDocs project for developer documentation
+    +   [Documentation, User (MkDocs)](doc-user.md) - create initial MkDocs project for user documentation
+    +   [Doxygen](doc-doxygen.md) - configure Doxygen project to generate API documentation
+*   Initialize repository with recent history of versions - the following was executed for each StateMod code version
+    +   [Save StateMod version history in GitHub](git-statemod-history.md) - save StateMod versions in repository

@@ -6,8 +6,8 @@ This documentation is retained in case it is useful in the future.**
 The `pytest` software is a useful tool that provides enhanced unit test features,
 which can can also be used for functional testing of Python and other software (in this case StateMod).  See also:
 
-* [pytest documentation](http://doc.pytest.org/en/latest/)
-* [Comparison of Python testing frameworks](http://pythontesting.net/podcast/pytest-vs-unittest-vs-nose-pt002/)
+* [pytest documentation](https://doc.pytest.org/en/latest/)
+* [Comparison of Python testing frameworks](https://pythontest.com/transcripts/2-pytest-vs-unittest-vs-nose/)
 
 **pytest has not yet been adopted as the testing tool but may be evaluated.
 It may also be possible to use a Fortran unit test tool, but Fortran tools seem limited.
@@ -53,7 +53,7 @@ This is pytest version 3.0.5, imported from c:\program files\python35\lib\site-p
 
 ## Additional `pytest` Configuration ##
 
-The following may be useful:  [improve slow startup](http://stackoverflow.com/questions/30768254/pytest-py-test-very-slow-startup-in-cygwin).
+The following may be useful:  [improve slow startup](https://stackoverflow.com/questions/30768254/pytest-py-test-very-slow-startup-in-cygwin).
 
 ## Writing `pytest` Tests ##
 

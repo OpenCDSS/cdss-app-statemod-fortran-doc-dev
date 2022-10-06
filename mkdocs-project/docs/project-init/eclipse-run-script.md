@@ -1,5 +1,8 @@
 # Initial Project Setup / Eclipse Run Script #
 
+**Eclipse is currently not used for development.
+This decumentation was created while investigating using Eclipse.**
+
 It is helpful to run Eclipse with a script to ensure that proper versions of Eclipse and Java are used.
 Note that the script described below
 was initially created before setting up the Eclipse workspace and thereafter can be run to start Eclipse.
@@ -9,8 +12,8 @@ The following sections are included in this documentation:
 
 * [Prerequisites](#prerequisites)
 * [Default Eclipse Run Script](#default-eclipse-run-script) - run script provided in repository for standard project configuration
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Windows](../images/windows-32.ico) [Windows](#windows)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Windows](../images/windows-32.ico) [Windows](#windows)
 * [Developer-specific Run Script](#developer-specific-run-script) - modify the default for a specific user
 * [Next Step](#next-step)
 

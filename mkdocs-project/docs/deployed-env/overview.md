@@ -73,7 +73,7 @@ See the following resources to understand whether a program has been compiled as
 
 * [10 Ways to Determine if Application is Compiled for 32-bit or 64-bit](https://www.raymond.cc/blog/determine-application-compiled-32-64-bit/)
 
-Based on the above, a useful utility to examine executable properties is the [7zip](http://www.7-zip.org/download.html) software.
+Based on the above, a useful utility to examine executable properties is the [7zip](https://www.7-zip.org/download.html) software.
 Once installed, 7Zip can be used to examine the `statemod.exe` file as follows (the following uses an "el" not "one" 7zip command).
 The `CPU = x86` indicates 32-bit, corresponding to i386 computer chips.  A 64-bit executable has `CPU = x64`.
 

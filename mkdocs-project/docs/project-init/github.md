@@ -33,7 +33,6 @@ Git Bash was used to create a local clone of the empty repository.
 ```sh
 $ cd ~/cdss-dev/StateMod/git-repos
 $ git clone https://github.com/OpenWaterFoundation/cdss-app-statemod-fortran.git
-
 ```
 
 This copies the existing repository to the local computer with repository name `cdss-app-statemod-fortran`.

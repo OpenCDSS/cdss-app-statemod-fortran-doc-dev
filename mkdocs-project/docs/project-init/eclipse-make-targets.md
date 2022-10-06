@@ -1,5 +1,8 @@
 # Initial Project Setup / Eclipse Make Targets #
 
+**Eclipse is currently not used for development.
+This decumentation was created while investigating using Eclipse.**
+
 **TODO smalers 2017-10-24 need to confirm - content was copied from StateCU**
 
 Eclipse uses a makefile to build the software.  A makefile is text file that includes dependencies and rules to ensure that changes to a file

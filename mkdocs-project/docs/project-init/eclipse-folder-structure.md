@@ -1,5 +1,8 @@
 # Initial Project Setup / Eclipse Folder Structure #
 
+**Eclipse is currently not used for development.
+This decumentation was created while investigating using Eclipse.**
+
 Versions of the legacy StateMod code were maintained in separate folders.
 This facilitates basic use but is not consistent with a more formal development environment needed for OpenCDSS
 and multiple collaborators.
@@ -9,7 +12,6 @@ To facilitate use in Eclipse, it is necessary to restructure the files in a cons
 Helpful information is:
 
 * [Development folder structure](overview.md#development-folder-structure) - development folder structure for StateMod files
-
 
 This documentation includes the following sections:
 

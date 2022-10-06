@@ -1,5 +1,8 @@
 # Initial Project Setup / Eclipse Workspace #
 
+**Eclipse is currently not used for development.
+This decumentation was created while investigating using Eclipse.**
+
 The Eclipse workspace folder should be created as per
 the [development folder structure](overview#development-folder-structure):
 
@@ -28,12 +31,12 @@ is run using an [Eclipse run script](eclipse-run-script.md).
 
 An Eclipse workspace contains numerous files including:
 
-1. `.metadata` folder containing the files in the workspace, in particular the list of projects, which are in:
-`.metadata/plugins/org.eclipse.core.resources/.projects`.
-Each project has a folder with name matching the eclipse project name and under that is a `.location` file that
-indicates the location of the project files on the file system (this location will match repository folder after
-configuration of the Eclipse project).
-2. Plugin files that contain dynamic content generated during the Eclipse session.
+1.  `.metadata` folder containing the files in the workspace, in particular the list of projects, which are in:
+    `.metadata/plugins/org.eclipse.core.resources/.projects`.
+    Each project has a folder with name matching the eclipse project name and under that is a `.location` file that
+    indicates the location of the project files on the file system (this location will match repository folder after
+    configuration of the Eclipse project).
+2.  Plugin files that contain dynamic content generated during the Eclipse session.
 
 Although it is possible to create one workspace and manage multiple development efforts under one workspace,
 it can become confusing.

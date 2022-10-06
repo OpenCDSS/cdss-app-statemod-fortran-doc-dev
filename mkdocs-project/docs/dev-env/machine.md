@@ -1,19 +1,16 @@
 # Development Environment / Machine #
 
 This documentation describes the latest tested development 64-bit environments.
-See also:
-
-* older [MinGW 32-bit installation instructions](machine-32bit.md),
-  used for initial transition to `gfortran` but not used for current development
-  (**not recommended and documentation will be removed in the future**)
 
 The computer and operating system used for development control how other software components are installed.
 The target environment is Windows 10 and Linux, with initial focus being Windows given the
 needs of the State of Colorado and its contractors.
 
-StateMod code is Fortran and there is a desire to use the free and open source recent `gfortran` compiler,
+StateMod code is Fortran and there is a desire to use a recent version of the free and open source `gfortran` compiler,
 rather than the previous Lahey 95 compiler.
-The 32-bit MinGW `gfortran` development environment was previously implemented to create 32-bit StateMod executables.
+The 32-bit MinGW `gfortran` development environment was previously implemented to create 32-bit StateMod executables
+and testing showed close agreement with 64-bit executable.
+Therefore, the 64-bit executable is the focus.
 Lahey and `gfortran` executables have been created during transition to `gfortran`.
 This documentation describes how to install the 64-bit MSYS2 MinGW development environment,
 which is used to create 64-bit StateMod executables.
@@ -21,13 +18,14 @@ which is used to create 64-bit StateMod executables.
 **The initial approach for StateMod is to use a MinGW environment within Windows,
 given that this approach has previously been implemented with success.
 When more time is available, Cygwin and Linux development environments will also be tested and documented,
-to allow more flexibility for developers that prefer or require those environments.**
+to allow more flexibility for developers that prefer or require those environments.
+StateMod is known to have been compiled and used on Linux.**
 
 See the following resources:
 
 * [Binaries available for gfortran](https://gcc.gnu.org/wiki/GFortranBinaries) - access to various `gfortran` distributions
-* [mingw-w64](http://mingw-w64.org/doku.php) - MinGW for Windows 64-bit, can also compile 32-bit executables
-* [GFortran release notes](https://gcc.gnu.org/wiki/GFortran/News)
+* [mingw-w64](https://www.mingw-w64.org/) - MinGW for Windows 64-bit, can also compile 32-bit executables
+* [GFortran release notes](https://gcc.gnu.org/wiki/GFortran/News) - these release notes may lag the version that is available in MSYS2
 
 The following sections are included in this documentation for various operating systems.
 **The choice of development environment by the software developer will drive many other configuration steps.
@@ -35,11 +33,10 @@ Windows MinGW is the initial focus.**
 
 * ![Linux](../images/linux-32.png) [Linux](#linux)
 * ![Windows](../images/windows-32.ico) [Windows](#windows)
-    + [Install MSYS2 64-bit Software](#install-msys2-64-bit-software) - focus of this documentation
-        - [Install 64-bit MinGW Software](#install-64-bit-mingw-software) - needed to create 64-bit executables
-        - [Install Useful MinGW Software](#install-useful-mingw-software) - useful software development tools
+    +  [Install MSYS2 64-bit Software](#install-msys2-64-bit-software) - development environment that is the focus of this documentation
+    +  [Install 64-bit MinGW Software](#install-64-bit-mingw-software) - needed to compile 64-bit executables
+    +  [Install Useful MinGW Software](#install-useful-mingw-software) - useful software development tools
 * ![Cygwin](../images/cygwin-32.png) [Install Cygwin](#install-cygwin) - alternative to MinGW environment (not tested)
-* [OLD: Windows - Install 32-bit MinGW Software](#old-windows-install-32-bit-mingw-software) - needed to create 32-bit executables - **64-bit is recommended**
 
 -------------------
 
@@ -67,7 +64,7 @@ and is straightforward to install.
 
 ### Install MSYS2 64-bit Software ###
 
-**The following documentation was created on 2021-09-27 (`gcc` 12.2 and `gfortran` 10.2)
+**The following documentation was created on 2022-09-27 (`gcc` 12.2 and `gfortran` 12.2)
 using the MSYS2 installer available at the time.
 The process may be different if run at a different time, but will hopefully be similar.
 MSYS2 developers change the configuration over time.**
@@ -359,7 +356,7 @@ $ pacman -Sy
 ...additional output follows...
 ```
 
-#### Install 64-bit MinGW Software ####
+### Install 64-bit MinGW Software ###
 
 The environment is now ready to install 64-bit compiler software including GCC (`gcc`) and Fortran (`gfortran`).
 If not already open, open a new MSYS2 terminal using ***Start*** menu ***MSYS2 / MSYS2 MINGW64***
@@ -615,7 +612,7 @@ $ cygpath -w /home/steve
 C:\msys64\home\steve
 ```
 
-#### Install Useful MinGW Software ####
+### Install Useful MinGW Software ###
 
 It may be useful to install additional software, for example `vim` text editor and `git` version control software.
 
@@ -639,275 +636,9 @@ Optional Software Packages to Install
 | [`git`](https://packages.msys2.org/package/git) | Git version control. If Git is installed, it should be configured consistent with Git for Windows (Git Bash), and other Git utilities that may be used with CDSS development. Because the `/home/user` folder for MSys2 MinGW is different from other similar installations, it is necessary to set the Git configuration for the user. It will also be necessary to configure other user environment settings that a developer may be accustomed to. |
 | [`vim`](https://packages.msys2.org/package/vim) | Vim editor - optionally configure with `.vimrc`. |
 
-### ![Cygwin](../images/cygwin-32.png) Install Cygwin ###
+## ![Cygwin](../images/cygwin-32.png) Install Cygwin ##
 
 This section can be completed if necessary.
 
 Cygwin can be useful in cases where software is not available in Git Bash or Windows.
 The Cygwin environment is similar to Linux and should work if `gfortran` is installed.
-
-### ![Windows](../images/windows-32.ico) Old: Windows - Install 32-bit MinGW Software ###
-
-**These instructions have not been updated recently and may be removed in the future.
-It is recommended to use the 64-bit tools.**
-
-The above process installed 64-bit compiler tools.
-It may also be useful to install the 32-bit compiler tools.
-
-If not already open, open a new MSys2 terminal using ***Start*** menu ***MSYS2 64bit / MSYS2 MSYS***.
-Run the following command to install 32-bit compiler software including GCC (`gcc`) and Fortran (`gfortran`).
-See [this Stack Overflow article](https://stackoverflow.com/questions/51724007/msys2-install-gcc-or-toolchain)
-for more information.
-The `i686` indicates 32-bit installer.
-This will install many packages requiring several minutes.
-Full output is shown below.
-Running 32-bit compiler tools after completing the following installation step requires
-opening a 32-bit ***MSYS2 64bit / MinGW 32-bit*** terminal.
-
-```
-$ pacman -S --needed base-devel mingw-w64-i686-toolchain
-warning: asciidoc-9.1.0-2 is up to date -- skipping
-warning: autoconf-2.71-1 is up to date -- skipping
-warning: autoconf2.13-2.13-3 is up to date -- skipping
-warning: autogen-5.18.16-1 is up to date -- skipping
-warning: automake-wrapper-11-1 is up to date -- skipping
-warning: automake1.10-1.10.3-4 is up to date -- skipping
-warning: automake1.11-1.11.6-4 is up to date -- skipping
-warning: automake1.12-1.12.6-4 is up to date -- skipping
-warning: automake1.13-1.13.4-5 is up to date -- skipping
-warning: automake1.14-1.14.1-4 is up to date -- skipping
-warning: automake1.15-1.15.1-2 is up to date -- skipping
-warning: automake1.16-1.16.3-1 is up to date -- skipping
-warning: automake1.6-1.6.3-3 is up to date -- skipping
-warning: automake1.7-1.7.9-3 is up to date -- skipping
-warning: automake1.8-1.8.5-4 is up to date -- skipping
-warning: automake1.9-1.9.6-3 is up to date -- skipping
-warning: bison-3.7.6-1 is up to date -- skipping
-warning: btyacc-20210328-1 is up to date -- skipping
-warning: diffstat-1.64-1 is up to date -- skipping
-warning: diffutils-3.7-1 is up to date -- skipping
-warning: dos2unix-7.4.2-1 is up to date -- skipping
-warning: file-5.40-2 is up to date -- skipping
-warning: flex-2.6.4-1 is up to date -- skipping
-warning: gawk-5.1.0-1 is up to date -- skipping
-warning: gdb-10.2-3 is up to date -- skipping
-warning: gettext-0.19.8.1-1 is up to date -- skipping
-warning: gettext-devel-0.19.8.1-1 is up to date -- skipping
-warning: gperf-3.1-2 is up to date -- skipping
-warning: grep-3.0-2 is up to date -- skipping
-warning: groff-1.22.4-1 is up to date -- skipping
-warning: help2man-1.48.3-1 is up to date -- skipping
-warning: intltool-0.51.0-2 is up to date -- skipping
-warning: libtool-2.4.6-11 is up to date -- skipping
-warning: libunrar-6.0.5-1 is up to date -- skipping
-warning: libunrar-devel-6.0.5-1 is up to date -- skipping
-warning: m4-1.4.18-2 is up to date -- skipping
-warning: make-4.3-1 is up to date -- skipping
-warning: man-db-2.9.4-1 is up to date -- skipping
-warning: pacman-5.2.2-23 is up to date -- skipping
-warning: pactoys-git-r2.07ca37f-1 is up to date -- skipping
-warning: patch-2.7.6-1 is up to date -- skipping
-warning: patchutils-0.4.2-1 is up to date -- skipping
-warning: perl-5.32.1-1 is up to date -- skipping
-warning: pkgconf-1.7.4-1 is up to date -- skipping
-warning: pkgfile-21-1 is up to date -- skipping
-warning: quilt-0.66-2 is up to date -- skipping
-warning: reflex-20200715-1 is up to date -- skipping
-warning: scons-3.1.2-6 is up to date -- skipping
-warning: sed-4.8-1 is up to date -- skipping
-warning: swig-4.0.2-1 is up to date -- skipping
-warning: texinfo-6.7-3 is up to date -- skipping
-warning: texinfo-tex-6.7-3 is up to date -- skipping
-warning: ttyrec-1.0.8-2 is up to date -- skipping
-warning: unrar-6.0.5-1 is up to date -- skipping
-warning: wget-1.21.1-2 is up to date -- skipping
-warning: xmlto-0.0.28-2 is up to date -- skipping
-:: There are 19 members in group mingw-w64-i686-toolchain:
-:: Repository mingw32
-   1) mingw-w64-i686-binutils  2) mingw-w64-i686-crt-git  3) mingw-w64-i686-gcc
-   4) mingw-w64-i686-gcc-ada  5) mingw-w64-i686-gcc-fortran
-   6) mingw-w64-i686-gcc-libgfortran  7) mingw-w64-i686-gcc-libs
-   8) mingw-w64-i686-gcc-objc  9) mingw-w64-i686-gdb
-   10) mingw-w64-i686-gdb-multiarch  11) mingw-w64-i686-headers-git
-   12) mingw-w64-i686-libgccjit  13) mingw-w64-i686-libmangle-git
-   14) mingw-w64-i686-libwinpthread-git  15) mingw-w64-i686-make
-   16) mingw-w64-i686-pkgconf  17) mingw-w64-i686-tools-git
-   18) mingw-w64-i686-winpthreads-git  19) mingw-w64-i686-winstorecompat-git
-
-Enter a selection (default=all):
-resolving dependencies...
-looking for conflicting packages...
-
-Packages (47) mingw-w64-i686-bzip2-1.0.8-2
-              mingw-w64-i686-ca-certificates-20200601-3
-              mingw-w64-i686-expat-2.2.10-1  mingw-w64-i686-gettext-0.19.8.1-10
-              mingw-w64-i686-gmp-6.2.1-2  mingw-w64-i686-isl-0.24-1
-              mingw-w64-i686-libffi-3.3-4  mingw-w64-i686-libiconv-1.16-2
-              mingw-w64-i686-libsystre-1.0.1-4
-              mingw-w64-i686-libtasn1-4.16.0-2
-              mingw-w64-i686-libtre-git-r128.6fb7206-2
-              mingw-w64-i686-mpc-1.2.1-1  mingw-w64-i686-mpdecimal-2.5.0-2
-              mingw-w64-i686-mpfr-4.1.0-3  mingw-w64-i686-ncurses-6.2-3
-              mingw-w64-i686-openssl-1.1.1.k-2
-              mingw-w64-i686-p11-kit-0.23.22-1  mingw-w64-i686-python-3.8.9-2
-              mingw-w64-i686-readline-8.0.004-2
-              mingw-w64-i686-sqlite3-3.35.5-1  mingw-w64-i686-tcl-8.6.11-3
-              mingw-w64-i686-termcap-1.3.1-6  mingw-w64-i686-tk-8.6.11.1-2
-              mingw-w64-i686-windows-default-manifest-6.4-3
-              mingw-w64-i686-xxhash-0.8.0-1  mingw-w64-i686-xz-5.2.5-2
-              mingw-w64-i686-zlib-1.2.11-9  mingw-w64-i686-zstd-1.5.0-1
-              mingw-w64-i686-binutils-2.36.1-3
-              mingw-w64-i686-crt-git-9.0.0.6200.a528542c8-1
-              mingw-w64-i686-gcc-10.3.0-2  mingw-w64-i686-gcc-ada-10.3.0-2
-              mingw-w64-i686-gcc-fortran-10.3.0-2
-              mingw-w64-i686-gcc-libgfortran-10.3.0-2
-              mingw-w64-i686-gcc-libs-10.3.0-2
-              mingw-w64-i686-gcc-objc-10.3.0-2  mingw-w64-i686-gdb-10.2-1
-              mingw-w64-i686-gdb-multiarch-10.2-1
-              mingw-w64-i686-headers-git-9.0.0.6200.a528542c8-1
-              mingw-w64-i686-libgccjit-10.3.0-2
-              mingw-w64-i686-libmangle-git-9.0.0.6200.a528542c8-1
-              mingw-w64-i686-libwinpthread-git-9.0.0.6200.a528542c8-1
-              mingw-w64-i686-make-4.3-1  mingw-w64-i686-pkgconf-1.7.4-2
-              mingw-w64-i686-tools-git-9.0.0.6200.a528542c8-1
-              mingw-w64-i686-winpthreads-git-9.0.0.6200.a528542c8-1
-              mingw-w64-i686-winstorecompat-git-9.0.0.6200.a528542c8-1
-
-Total Download Size:   149.57 MiB
-Total Installed Size:  987.87 MiB
-
-:: Proceed with installation? [Y/n]
-:: Retrieving packages...
- mingw-w64-i686-l...   750.5 KiB   944 KiB/s 00:01 [#####################] 100%
- mingw-w64-i686-z...   105.3 KiB  12.9 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-b...     6.6 MiB  3.24 MiB/s 00:02 [#####################] 100%
- mingw-w64-i686-h...     5.3 MiB  1990 KiB/s 00:03 [#####################] 100%
- mingw-w64-i686-c...     2.4 MiB  1955 KiB/s 00:01 [#####################] 100%
- mingw-w64-i686-i...   983.5 KiB  2.35 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-g...   486.9 KiB  1837 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-m...   339.0 KiB  2.33 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-m...    73.3 KiB  11.9 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-l...    32.3 KiB  10.5 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-g...   848.4 KiB  1486 KiB/s 00:01 [#####################] 100%
- mingw-w64-i686-w...    12.9 KiB  6.29 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-w...    40.6 KiB  19.8 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-z...   510.7 KiB  1731 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-g...    27.8 MiB   947 KiB/s 00:30 [#####################] 100%
- mingw-w64-i686-g...    18.9 MiB   639 KiB/s 00:30 [#####################] 100%
- mingw-w64-i686-g...   683.1 KiB  1160 KiB/s 00:01 [#####################] 100%
- mingw-w64-i686-g...    10.3 MiB   918 KiB/s 00:12 [#####################] 100%
- mingw-w64-i686-g...    11.8 MiB  1118 KiB/s 00:11 [#####################] 100%
- mingw-w64-i686-e...   142.4 KiB  15.5 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-g...     3.4 MiB  1484 KiB/s 00:02 [#####################] 100%
- mingw-w64-i686-l...    84.1 KiB  8.21 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-l...    23.7 KiB  4.63 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-n...  1582.2 KiB  1523 KiB/s 00:01 [#####################] 100%
- mingw-w64-i686-b...    92.0 KiB   261 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-l...    43.7 KiB  6.10 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-m...   326.8 KiB  1229 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-l...   170.4 KiB  1281 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-p...   346.9 KiB  1294 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-c...   349.8 KiB  1300 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-o...     4.7 MiB  1452 KiB/s 00:03 [#####################] 100%
- mingw-w64-i686-t...    30.1 KiB  14.7 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-r...   375.7 KiB  2.34 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-t...     2.6 MiB  1239 KiB/s 00:02 [#####################] 100%
- mingw-w64-i686-s...     6.7 MiB  1159 KiB/s 00:06 [#####################] 100%
- mingw-w64-i686-t...  1985.6 KiB  1084 KiB/s 00:02 [#####################] 100%
- mingw-w64-i686-x...   367.1 KiB  1292 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-p...    17.0 MiB   884 KiB/s 00:20 [#####################] 100%
- mingw-w64-i686-x...   115.2 KiB  18.8 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-g...     4.3 MiB  1055 KiB/s 00:04 [#####################] 100%
- mingw-w64-i686-g...     6.8 MiB  1285 KiB/s 00:05 [#####################] 100%
- mingw-w64-i686-l...     9.6 MiB  1309 KiB/s 00:08 [#####################] 100%
- mingw-w64-i686-l...    22.4 KiB  7.28 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-m...   155.1 KiB  18.9 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-p...    83.9 KiB  8.20 MiB/s 00:00 [#####################] 100%
- mingw-w64-i686-t...   304.4 KiB  1903 KiB/s 00:00 [#####################] 100%
- mingw-w64-i686-w...    20.4 KiB  9.95 MiB/s 00:00 [#####################] 100%
-(47/47) checking keys in keyring                   [#####################] 100%
-(47/47) checking package integrity                 [#####################] 100%
-(47/47) loading package files                      [#####################] 100%
-(47/47) checking for file conflicts                [#####################] 100%
-(47/47) checking available disk space              [#####################] 100%
-:: Processing package changes...
-( 1/47) installing mingw-w64-i686-libiconv         [#####################] 100%
-( 2/47) installing mingw-w64-i686-zlib             [#####################] 100%
-( 3/47) installing mingw-w64-i686-binutils         [#####################] 100%
-( 4/47) installing mingw-w64-i686-headers-git      [#####################] 100%
-( 5/47) installing mingw-w64-i686-crt-git          [#####################] 100%
-( 6/47) installing mingw-w64-i686-isl              [#####################] 100%
-( 7/47) installing mingw-w64-i686-gmp              [#####################] 100%
-( 8/47) installing mingw-w64-i686-mpfr             [#####################] 100%
-( 9/47) installing mingw-w64-i686-mpc              [#####################] 100%
-(10/47) installing mingw-w64-i686-libwinpthrea...  [#####################] 100%
-(11/47) installing mingw-w64-i686-gcc-libs         [#####################] 100%
-(12/47) installing mingw-w64-i686-windows-defa...  [#####################] 100%
-(13/47) installing mingw-w64-i686-winpthreads-git  [#####################] 100%
-(14/47) installing mingw-w64-i686-zstd             [#####################] 100%
-(15/47) installing mingw-w64-i686-gcc              [#####################] 100%
-(16/47) installing mingw-w64-i686-gcc-ada          [#####################] 100%
-(17/47) installing mingw-w64-i686-gcc-libgfortran  [#####################] 100%
-(18/47) installing mingw-w64-i686-gcc-fortran      [#####################] 100%
-(19/47) installing mingw-w64-i686-gcc-objc         [#####################] 100%
-(20/47) installing mingw-w64-i686-expat            [#####################] 100%
-(21/47) installing mingw-w64-i686-gettext          [#####################] 100%
-(22/47) installing mingw-w64-i686-libtre-git       [#####################] 100%
-(23/47) installing mingw-w64-i686-libsystre        [#####################] 100%
-(24/47) installing mingw-w64-i686-ncurses          [#####################] 100%
-(25/47) installing mingw-w64-i686-bzip2            [#####################] 100%
-(26/47) installing mingw-w64-i686-libffi           [#####################] 100%
-(27/47) installing mingw-w64-i686-mpdecimal        [#####################] 100%
-(28/47) installing mingw-w64-i686-libtasn1         [#####################] 100%
-(29/47) installing mingw-w64-i686-p11-kit          [#####################] 100%
-(30/47) installing mingw-w64-i686-ca-certificates  [#####################] 100%
-(31/47) installing mingw-w64-i686-openssl          [#####################] 100%
-(32/47) installing mingw-w64-i686-termcap          [#####################] 100%
-(33/47) installing mingw-w64-i686-readline         [#####################] 100%
-(34/47) installing mingw-w64-i686-tcl              [#####################] 100%
-(35/47) installing mingw-w64-i686-sqlite3          [#####################] 100%
-(36/47) installing mingw-w64-i686-tk               [#####################] 100%
-(37/47) installing mingw-w64-i686-xz               [#####################] 100%
-(38/47) installing mingw-w64-i686-python           [#####################] 100%
-(39/47) installing mingw-w64-i686-xxhash           [#####################] 100%
-(40/47) installing mingw-w64-i686-gdb              [#####################] 100%
-(41/47) installing mingw-w64-i686-gdb-multiarch    [#####################] 100%
-(42/47) installing mingw-w64-i686-libgccjit        [#####################] 100%
-(43/47) installing mingw-w64-i686-libmangle-git    [#####################] 100%
-(44/47) installing mingw-w64-i686-make             [#####################] 100%
-(45/47) installing mingw-w64-i686-pkgconf          [#####################] 100%
-(46/47) installing mingw-w64-i686-tools-git        [#####################] 100%
-(47/47) installing mingw-w64-i686-winstorecomp...  [#####################] 100%
-```
-
-Use ***MSYS2 64bit / MSYS2 MinGW 32-bit*** to open a terminal window for 32-bit compilers.
-The window title indicates that the environment is for MinGW32, as shown in the following figure.
-
-**<p style="text-align: center;">
-![install msys2-10.png](machine-images/install-msys2-10.png)
-</p>**
-
-**<p style="text-align: center;">
-MinGW 32-bit Terminal Window (<a href="../machine-images/install-msys2-10.png">see full-size image</a>)
-</p>**
-
-The environment is now configured, including the `PATH`.
-The compiler versions can be confirmed, as follows.
-
-```com
-$ gcc --version
-gcc.exe (Rev2, Built by MSYS2 project) 10.3.0
-Copyright (C) 2020 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-$ gfortran --version
-GNU Fortran (Rev2, Built by MSYS2 project) 10.3.0
-Copyright (C) 2020 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-```
-
-Similar to 64-bit environment, the home folder is `/home/user` and are separate from normal Windows users files.
-The user's Windows files can be accessed using path `/C/Users/user`.
-Modify files in `/home/user` to impact the MinGW environment.

@@ -7,7 +7,7 @@ This documentation was created with MkDocs.
 Although the latest published version of this documentation can be viewed on the web,
 MkDocs must be installed and run locally if the documentation is to be viewed locally
 and changes to documentation are made by developers.
-See the installation instructions on the [MkDocs website](http://www.mkdocs.org/),
+See the installation instructions on the [MkDocs website](https://www.mkdocs.org/),
 which are summarized below.
 MkDocs installation can be skipped if the developer will never look at the developer documentation locally
 or make edits to the documentation.
@@ -16,8 +16,8 @@ This documentation includes the following sections:
 
 * [Prerequisites](#prerequisites)
 * [Install MkDocs](#install-mkdocs)
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Windows](../images/windows-32.ico) [Windows](#windows)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Windows](../images/windows-32.ico) [Windows](#windows)
 
 ----------------------
 

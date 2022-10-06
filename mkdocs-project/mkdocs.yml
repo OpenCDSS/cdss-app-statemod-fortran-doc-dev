@@ -30,9 +30,7 @@ nav:
   - 'Overview': deployed-env/overview.md
 - 'REFERENCE: Development Environment':
   - 'Overview': dev-env/overview.md
-  - 'Machine':
-    - 'Latest': dev-env/machine.md
-    - 'MinGW 32-bit (old)': dev-env/machine-32bit.md
+  - 'Machine': dev-env/machine.md
   - 'Git': dev-env/git.md
   - 'Python and pip': dev-env/python.md
   - 'pytest': dev-env/pytest.md

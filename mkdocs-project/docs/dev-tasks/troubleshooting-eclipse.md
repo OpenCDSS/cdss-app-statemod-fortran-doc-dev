@@ -1,3 +1,4 @@
 # Development Tasks / Troubleshooting Eclipse
 
-**Need to fill in some common Eclipse support items.**
+**Eclipse is currently not used for development.
+This documentation can be filled in if Eclipse is used.**

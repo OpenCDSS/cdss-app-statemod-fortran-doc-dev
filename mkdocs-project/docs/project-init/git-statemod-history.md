@@ -17,7 +17,7 @@ can be used for testing.
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder, `StateMod13_0003` executable)
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder, `StateMod14_0204` executable)
 * 14.02.06 (`Statem/Forwell/for14_0206` folder, no executable archived)
 * 14.02.07 (`Statem/Forwell/for14_0207` folder, `StateMod14_0207`, executable)
@@ -59,33 +59,33 @@ cp -rp for13_0003 for13_0003_work
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ only source files, no AUTOMAKE, and executable
+    + only source files, no AUTOMAKE, and executable
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ only source files, no AUTOMAKE, executable
+    + only source files, no AUTOMAKE, executable
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ only source files, AUTOMAKE, and executable
+    + only source files, AUTOMAKE, and executable
 * 15.00.01 (`Statem/Forwell` folder)
-	+ focus on source files and AUTOMAKE
+    + focus on source files and AUTOMAKE
 
 ## Rename Files to Lowercase and remove CTRL-Z ##
 
@@ -109,47 +109,47 @@ compatible with the lowercase name:
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ 251 `*.for` files
-	+ `common.inc`
-	+ many files had Ctrl-Z character
+    + 251 `*.for` files
+    + `common.inc`
+    + many files had Ctrl-Z character
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 * 15.00.01 (`Statem/Forwell` folder)
-	+ 253 `*.for` files
-	+ `common.inc`
+    + 253 `*.for` files
+    + `common.inc`
 
 ## Cleanup End of Line Issues ##
 
@@ -190,82 +190,82 @@ It does not appear possible to add a newline at the end of the last line when `L
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `calldat.for`
-		- `chkrivrf.for`
-		- `chkver.for`
-		- `common.inc`
-		- `dayrate.for`
-		- `directby.for`
-		- `divalt.for`
-		- `getrig.for`
-		- `outgvc.for`
-		- `powresp.for`
-		- `rtnmax.for`
-		- `splatte.for`
-		- `takout.for`
-	+ `LF` files where end of line on last line was manually added to last line in file:
-		- `comment.for`
-		- `divrplp2.for`
-		- `geteomx.for`
-		- `getopr.for`
-		- `getplnr.for`
-		- `getplnw.for`
-		- `getrch.for`
-		- `oprinout.for`
-		- `outrch.for`
-		- `setcarl.for`
-		- `setloss.for`
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `calldat.for`
+        - `chkrivrf.for`
+        - `chkver.for`
+        - `common.inc`
+        - `dayrate.for`
+        - `directby.for`
+        - `divalt.for`
+        - `getrig.for`
+        - `outgvc.for`
+        - `powresp.for`
+        - `rtnmax.for`
+        - `splatte.for`
+        - `takout.for`
+    + `LF` files where end of line on last line was manually added to last line in file:
+        - `comment.for`
+        - `divrplp2.for`
+        - `geteomx.for`
+        - `getopr.for`
+        - `getplnr.for`
+        - `getplnw.for`
+        - `getrch.for`
+        - `oprinout.for`
+        - `outrch.for`
+        - `setcarl.for`
+        - `setloss.for`
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 * 15.00.01 (`Statem/Forwell` folder)
-	+ `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
-		- `common.inc`
-	+ most files use CRLF because only file rename was needed
+    + `CRLF` files where `dos2unix` was run and end of line on last line was manually added to last line in file:
+        - `common.inc`
+    + most files use CRLF because only file rename was needed
 
 ## Compare File Lists ##
 
@@ -288,47 +288,47 @@ need to be modified to compile the specific version.
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ most recent `makefile_windows` file list has gfortran and windows specific files but change to use legacy files
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + most recent `makefile_windows` file list has gfortran and windows specific files but change to use legacy files
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
-	+ new files are `directwr.for`, `divimpr2.for`
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
+    + new files are `directwr.for`, `divimpr2.for`
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ no `AUTOMAKE.RSP` but folder listing is as before
-	+ therefore, use the same makefile as previous and adjust
+    + no `AUTOMAKE.RSP` but folder listing is as before
+    + therefore, use the same makefile as previous and adjust
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ no `AUTOMAKE.RSP` but folder listing is as before
-	+ therefore, use the same makefile as previous and adjust
+    + no `AUTOMAKE.RSP` but folder listing is as before
+    + therefore, use the same makefile as previous and adjust
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 * 15.00.01 (`Statem/Forwell` folder)
-	+ file list from `AUTOMAKE.RSP` and folder listing match
-	+ therefore, use the same makefile as previous and adjust
+    + file list from `AUTOMAKE.RSP` and folder listing match
+    + therefore, use the same makefile as previous and adjust
 
 ## Copy Source files to Clean Folder ##
 
@@ -338,33 +338,33 @@ where only the needed files are copied.
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ Keep Lahey compiler control files as a historical reference
+    + Keep Lahey compiler control files as a historical reference
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ No issues
+    + No issues
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ No issues
+    + No issues
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ No issues
+    + No issues
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ No issues
+    + No issues
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ No issues
+    + No issues
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ No issues
+    + No issues
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ No issues
+    + No issues
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ No issues
+    + No issues
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ No issues
+    + No issues
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ Remove `AM.bat` and `AMTEMP.BAT`
+    + Remove `AM.bat` and `AMTEMP.BAT`
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ No issues
+    + No issues
 * 15.00.01 (`Statem/Forwell` folder)
-	+ Copied `*.for`, `*.FOR`, `*.inc`, `AUTOMAKE.RSP`, `automake.fig`
+    + Copied `*.for`, `*.FOR`, `*.inc`, `AUTOMAKE.RSP`, `automake.fig`
 
 ## Compare Code with Previous Version ##
 
@@ -376,46 +376,46 @@ using the "work" folder contents.
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ No comparison since first version processed
+    + No comparison since first version processed
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ Compared with 13.00.03, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 175 files the same, 82 different
-	+ Changes include array bounds changes from Jim Brannon (Ray must have coordinated changes with Jim)
+    + Compared with 13.00.03, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 175 files the same, 82 different
+    + Changes include array bounds changes from Jim Brannon (Ray must have coordinated changes with Jim)
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ Compared with 14.02.04, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 247 files the same, 10 different, changes appear to be focused
+    + Compared with 14.02.04, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 247 files the same, 10 different, changes appear to be focused
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ Compared with 14.02.06, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 251 files the same, 6 different, changes appear to be focused
+    + Compared with 14.02.06, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 251 files the same, 6 different, changes appear to be focused
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ Compared with 14.02.07, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 250 files the same, 7 different, changes appear to be focused
+    + Compared with 14.02.07, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 250 files the same, 7 different, changes appear to be focused
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ Compared with 14.02.08, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 251 files the same, 6 different, changes appear to be focused
+    + Compared with 14.02.08, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 251 files the same, 6 different, changes appear to be focused
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ Compared with 14.02.09, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 247 files the same, 10 different, changes appear to be focused
+    + Compared with 14.02.09, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 247 files the same, 10 different, changes appear to be focused
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ Compared with 14.02.11, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 251 files the same, 6 different, changes appear to be focused
+    + Compared with 14.02.11, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 251 files the same, 6 different, changes appear to be focused
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ Compared with 14.02.14, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 229 files the same, 28 different, changes appear to be focused
+    + Compared with 14.02.14, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 229 files the same, 28 different, changes appear to be focused
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ Compared with 14.02.22, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 250 files the same, 8 different, changes appear to be focused
+    + Compared with 14.02.22, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 250 files the same, 8 different, changes appear to be focused
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ Compared with 14.02.23, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 247 files the same, 8 different, changes appear to be focused
+    + Compared with 14.02.23, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 247 files the same, 8 different, changes appear to be focused
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ Compared with 14.02.24, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 234 files the same, 23 different, changes appear to be focused
+    + Compared with 14.02.24, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 234 files the same, 23 different, changes appear to be focused
 * 15.00.01 (`Statem/Forwell` folder)
-	+ Compared with 15.00.00, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
-	+ 252 files the same, 5 different, changes appear to be focused
+    + Compared with 15.00.00, converted all to Linux `LF` line endings with `dos2unix` to simplify comparison
+    + 252 files the same, 5 different, changes appear to be focused
 
 ## Copy Files to Git Working Files ##
 
@@ -431,33 +431,33 @@ $ git checkout 14.02.04-gfortran
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ Ray Bennett indicated that dayrate.for and daily.inc are not used but include in the repository initial snapshot
+    + Ray Bennett indicated that dayrate.for and daily.inc are not used but include in the repository initial snapshot
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ No issues copying
+    + No issues copying
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ No issues copying
+    + No issues copying
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ No issues copying
+    + No issues copying
 * 15.00.01 (`Statem/Forwell` folder)
-	+ No issues copying
+    + No issues copying
 
 ## Confirm Compile using Makefile ##
 
@@ -467,51 +467,51 @@ and result in working compilation process.
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ code did not compile due to syntax issues - need to jump to next version to incorporate `gfortran` changes
+    + code did not compile due to syntax issues - need to jump to next version to incorporate `gfortran` changes
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ Add new files directwr.for and divimpr2.for to makefile
-	+ Code initially compiles but there are undefined references that were resolved:
-		- `getcl_1 in `parse` - resolve by using `parse_gfortran.for` from Jim Brannon work and
-		update the general `makefile` to handle
-		- `date_` and `time_` in `dattim` - resolve by using `dattim_gfortran.for` from Jim Brannon work and
-		update the general `makefile` to handle
-	+ Since the above is implemented, also enabled 
-	+ Also confirm makefile dependency list on `common.inc`
+    + Add new files directwr.for and divimpr2.for to makefile
+    + Code initially compiles but there are undefined references that were resolved:
+        - `getcl_1 in `parse` - resolve by using `parse_gfortran.for` from Jim Brannon work and
+          update the general `makefile` to handle
+        - `date_` and `time_` in `dattim` - resolve by using `dattim_gfortran.for` from Jim Brannon work and
+          update the general `makefile` to handle
+    + Since the above is implemented, also enabled 
+    + Also confirm makefile dependency list on `common.inc`
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 * 15.00.01 (`Statem/Forwell` folder)
-	+ No new files
-	+ Compiled successfully with previous makefile
+    + No new files
+    + Compiled successfully with previous makefile
 
 ## Run Automated Tests ##
 
@@ -529,33 +529,33 @@ Additional Fortran unit tests may be added to test specific subroutines.
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 * 15.00.01 (`Statem/Forwell` folder)
-	+ automated tests are not yet in place
+    + automated tests are not yet in place
 
 ## Commit Reviewed Code to Repository ##
 
@@ -573,42 +573,42 @@ This generally followed the steps, assuming branch is `14.02.04-gfortran`:
 The following is noted:
 
 * 13.00.03 (`Statem/Forwell/for13_0003` folder)
-	+ committed and tagged as `StateMod-13.00.01-initial`
+    + committed and tagged as `StateMod-13.00.01-initial`
 * 14.00.01 (`Statem/Forwell/for14_0001` folder)
-	+ skipped because this is Jim Brannon's version, which needs to be compared and merged at end
+    + skipped because this is Jim Brannon's version, which needs to be compared and merged at end
 * 14.02.04 (`Statem/Forwell/for14_0204` folder)
-	+ committed and tagged as `StateMod-14.02.04-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.04-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.06 (`Statem/Forwell/for14_0206` folder)
-	+ committed and tagged as `StateMod-14.02.06-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.06-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.07 (`Statem/Forwell/for14_0207` folder)
-	+ committed and tagged as `StateMod-14.02.07-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.07-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.08 (`Statem/Forwell/for14_0208` folder)
-	+ committed and tagged as `StateMod-14.02.08-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.08-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.09 (`Statem/Forwell/for14_0209` folder)
-	+ committed and tagged as `StateMod-14.02.09-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.09-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.11 (`Statem/Forwell/for14_0211` folder)
-	+ committed and tagged as `StateMod-14.02.11-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.11-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.14 (`Statem/Forwell/for14_0214` folder)
-	+ committed and tagged as `StateMod-14.02.14-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.14-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.22 (`Statem/Forwell/For14_0222` folder)
-	+ committed and tagged as `StateMod-14.02.22-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.22-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.23 (`Statem/Forwell/for14_0223` folder)
-	+ committed and tagged as `StateMod-14.02.23-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.23-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 14.02.24 (`Statem/Forwell/for14_0224` folder)
-	+ committed and tagged as `StateMod-14.02.24-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-14.02.24-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 15.00.00 (`Statem/Forwell/for15_0000` folder)
-	+ committed and tagged as `StateMod-15.00.00-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-15.00.00-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable
 * 15.00.01 (`Statem/Forwell` folder)
-	+ committed and tagged as `StateMod-15.00.01-untested`
-	+ spot check GitHub statem.for file history and looks reasonable
+    + committed and tagged as `StateMod-15.00.01-untested`
+    + spot check GitHub `statem.for` file history and looks reasonable

@@ -139,7 +139,7 @@ in a later step, which allows the files to be managed in Git but also be accesse
 If prompted, specify the GitHub account credentials.
 The repository will include the Fortran StateMod project.
 
-The files resulting from the following steps should match the [Development Files Structure](../project-init/overview.md#development-folder-structure).
+The files resulting from the following steps should match the [Development Folder Structure](../project-init/overview.md#development-folder-structure).
 
 
 ### ![Linux](../images/linux-32.png) Clone the repository files (Linux) ###
