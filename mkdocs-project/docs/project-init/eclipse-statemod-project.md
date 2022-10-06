@@ -1,5 +1,8 @@
 # Initial Project Setup / Eclipse StateMod Project #
 
+**Eclipse is currently not used for development.
+This decumentation was created while investigating using Eclipse.**
+
 The Eclipse workspace is a container for one or more Eclipse projects.
 Each project in a workspace can have multiple characteristics, for example the programming language, whether managed in a repository, etc.
 Eclipse responds to the characteristics of each project (when a project is selected in Eclipse) by displaying appropriate software features.
@@ -13,8 +16,8 @@ so that a single Eclipse package is used (for StateMod, the Eclipse package that
 For StateMod the name of the Eclipse project and the Git repository will be the same.
 The following resources are useful:
 
-* [Eclipse Mars Fortran Development User Guide](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.photran.doc.user%2Fhtml%2Fbasic%2FStartingNewProject.html) -
-these instructions provide background but are not followed in detail here
+*   [Eclipse Mars Fortran Development User Guide](https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.photran.doc.user%2Fhtml%2Fbasic%2FStartingNewProject.html) -
+    these instructions provide background but are not followed in detail here
 
 This documentation contains the following sections:
 
@@ -30,7 +33,7 @@ The important prerequisites for this step are:
 
 * [GitHub Git Repository](github.md) should have been set up because it will be imported as a project
 * ![Windows](../images/windows-32.ico) Windows:
-	+ [MinGW](../dev-env/machine.md) should have been set up to provide compilers and `make` program
+    + [MinGW](../dev-env/machine.md) should have been set up to provide compilers and `make` program
 
 ## Import Git Repository as Project ##
 

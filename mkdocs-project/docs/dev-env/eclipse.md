@@ -10,14 +10,14 @@ Eclipse may not be needed if a suitably full-featured text editor is used.
 The following Eclipse/Photran download page indicates that Eclipse Mars is required.
 
 * [Downloading Photran](https://eclipse.org/photran/download.php) - indicates Eclipse version and provides other information links
-* [PTP/photran/documentation/photran8installation](http://wiki.eclipse.org/PTP/photran/documentation/photran8installation) - recommends installation approach
+* [PTP/photran/documentation/photran8installation](https://wiki.eclipse.org/PTP/photran/documentation/photran8installation) - recommends installation approach
 
 This documentation includes the following sections:
 
 * [Prerequisites](#prerequisites)
 * [Install Eclipse and Photran](#install-eclipse-and-photran)
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Windows](../images/windows-32.ico) [Windows](#windows)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Windows](../images/windows-32.ico) [Windows](#windows)
 * [Next Steps](#next-steps)
 
 -------------
@@ -37,16 +37,16 @@ this may be a need for StateMod in the future so this environment may have benef
 It is also typically easier to pick a standard Eclipse installer rather than having to piecemeal plug-in installation.
 Use the following link:
 
-* [Eclipse Downloads](http://www.eclipse.org/downloads/eclipse-packages/)
+* [Eclipse Downloads](https://www.eclipse.org/downloads/eclipse-packages/)
 
 This will default to the newest environment, which is Neon.  Based on the Photran documentation, use the older Mars version.
 Therefore, use the links on the right side of the download page to access Eclipse Mars downloads:
 
-* [Eclipse Mars](http://www.eclipse.org/mars/)
+* [Eclipse Mars](https://www.eclipse.org/mars/)
 
 Then click on the ***Download*** link to see:
 
-* [Eclipse Mars 2 Packages](http://www.eclipse.org/downloads/packages/release/Mars/2)
+* [Eclipse Mars 2 Packages](https://www.eclipse.org/downloads/packages/release/Mars/2)
 
 Select the ***Eclipse for Parallel Application Developers*** link for the appropriate operating system.
 
@@ -58,7 +58,7 @@ This section will be completed when resources are available for Linux developmen
 
 The Windows installer will have a filename similar to `eclipse-parallel-mars-2-win32-x86_64.zip` and will save to the `Downloads` folder.
 
-Eclipse is distributed as a zip file.  Therefore, a program like [7zip](http://www.7-zip.org/download.html) is needed to install.
+Eclipse is distributed as a zip file.  Therefore, a program like [7zip](https://www.7-zip.org/download.html) is needed to install.
 
 The top-level folder in the zip file will be `eclipse`.
 Because it is possible to install multiple versions of Eclipse (for example the Java package will be used to develop Java software),
@@ -94,9 +94,9 @@ Press ***Yes***.  A shortcut labeled ***eclipse.exe Shortcut*** will be shown on
 Right-click on the icon and select ***Properties***.  Then change the properties as follows,
 **consistent with the Eclipse run script**:
 
-* Change the name to something like ***Eclipse Parallel Mars 64***.
-* Change the ***Shortcut*** tab ***Target*** to be similar to the batch file above:
-`"C:\Program Files\Eclipse\eclipse-parallel-mars-64\eclipse" -vm "C:\Program Files\Java\jre8\bin\java" -vmargs -Xmx700M`
+*   Change the name to something like ***Eclipse Parallel Mars 64***.
+*   Change the ***Shortcut*** tab ***Target*** to be similar to the batch file above:
+    `"C:\Program Files\Eclipse\eclipse-parallel-mars-64\eclipse" -vm "C:\Program Files\Java\jre8\bin\java" -vmargs -Xmx700M`
 
 Double-clicking on the shortcut desktop icon should then run the desired Eclipse.
 

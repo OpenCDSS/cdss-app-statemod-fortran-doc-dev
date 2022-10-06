@@ -22,9 +22,9 @@ If using the standard development files structure,
 the developer documentation is located in `~/cdss-dev/StateMod/git-repos/cdss-app-statemod-fortran-doc-dev/`.
 See the following resources for information on MkDocs and Markdown:
 
-* [MkDocs - Writing your docs](http://www.mkdocs.org/user-guide/writing-your-docs/)
+* [MkDocs - Writing your docs](https://www.mkdocs.org/user-guide/writing-your-docs/)
 * [Markdown on Wikipedia](https://en.wikipedia.org/wiki/Markdown)
-* [commonmark.org Markdown reference](http://commonmark.org/help/)
+* [commonmark.org Markdown reference](https://commonmark.org/help/)
 
 ### Run MkDocs Server to View Documentation ###
 
@@ -71,8 +71,7 @@ A MkDocs wrapper document has been created to add navigation and provide access 
 The StateMod subroutines, functions, and modules should be documented using Doxygen-style comments.
 See the following resources:
 
-* [Doxygen - Comment blocks in Fortran](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#fortranblocks)
-* [NASA Modeling Guru:  Using Doxygen with Fortran soruce code](https://modelingguru.nasa.gov/docs/DOC-1811)
+* [Doxygen - Comment blocks in Fortran](https://doxygen.nl/manual/docblocks.html#fortranblocks)
 
 Refer to the [Initial Project Setup / Documentation, API (Doxygen)](../project-init/doc-doxygen.md) documentation for how to run Doxygen.
 

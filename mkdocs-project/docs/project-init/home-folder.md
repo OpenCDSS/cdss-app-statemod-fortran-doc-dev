@@ -6,8 +6,8 @@ The following sections are included in this documentation:
 
 * [Prerequisites](#prerequisites)
 * [Create Home Folder for Development Files](#create-home-folder-for-development-files)
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Windows](../images/windows-32.ico) [Windows](#windows)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Windows](../images/windows-32.ico) [Windows](#windows)
 
 ----------
 

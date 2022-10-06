@@ -48,7 +48,7 @@ Save the settings using ***File / Save*** menu and save to the `doc-dev-doxygen-
 
 The `Doxyfile` is a long file with many settings.  See the following information that explains important settings for Fortran:
 
-* [Callgraph for Fortran with Doxygen](http://www.softeng-support.ac.uk/documents/2013/06/05/fortran-callgraph-doxygen.html)
+* [Configuration file](https://www.doxygen.nl/manual/config.html) documentation
 
 The following settings are important:
 
@@ -82,7 +82,6 @@ deleting the `output` folder and rerunning.  An example of output is shown below
 ## Create .gitignore File ##
 
 A `.gitignore` file is created in the `doc-dev-doxygen-project` folder to ignore the `output` folder.
-
 
 ## Automate Doxygen
 

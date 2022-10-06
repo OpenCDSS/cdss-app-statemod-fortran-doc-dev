@@ -1,7 +1,7 @@
 # StateMod Documentation (for Software Developers) #
 
 This documentation is the developer manual for Colorado's Decision Support Systems (CDSS) StateMod water allocation model software.
-**This documentation has been updated for StateMod 17.0.3.**
+**This documentation has been updated for the next release after StateMod 17.0.3 (version number and release are pending).**
 
 If you are reading this documentation, you have an interest in learning how StateMod is designed,
 are a member of the software development team,
@@ -26,7 +26,8 @@ This documentation is a companion to the StateMod source code and provides guida
 software developers that modify and support StateMod.
 
 It is the intended to create StateMod executable programs for Windows 10+ and Linux, with Windows being the primary version.
-64-bit software is the target environment, although 32-bit software was previously the focus.
+64-bit software is the target environment.
+Review the developer documentation for StateMod version 17.0.3 and earlier for 32-bit software information.
 This documentation includes information for multiple computer environments and will be filled out as resources can be applied to each configuration.
 Icons for Linux ![Linux](images/linux-32.png) and Windows ![Windows](images/windows-32.ico) are included to help indicate documentation
 specific to an operating system.

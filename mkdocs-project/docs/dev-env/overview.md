@@ -29,16 +29,16 @@ although this documentation is intended to help facilitate development by provid
 
 The following software are required for StateMod development:
 
-1. [Machine](machine.md) - minimal GNU for Windows (MinGW), Cygwin, or Linux virtual machine (VM), to support `gfortran` compiler
-(**MinGW is the initial focus because it is the standard environment for gfortran on Windows**)
-2. [Git](git.md) - needed to perform command line version control operations
-3. [Python and pip](python.md) - needed by MkDocs and pytest, and useful general tool (**skip if not editing MkDocs documentation and not creating automated tests with Python**)
-4. [pytest](pytest.md) - an option being evaluated for automated testing (**skip if not creating automated tests with Python**)
-5. [MkDocs](mkdocs.md) - MkDocs is used for developer and user documentation static websites, including this documentation (**skip if not editing MkDocs documentation**)
-6. [Java 8](java8.md) - used to run Eclipse, and can be used to write utility programs (**skip if using a text editor rather than Eclipse/Photran**)
-7. [gfortran](gfortran.md) - compiler for the StateMod Fortran software
-8. [Eclipse/Photran](eclipse.md) - IDE used for interactive Fortran software development (**skip if using a text editor rather than Eclipse/Photran**)
-9. [Text Editor](text-editor.md) - editor used to edit code and other files, useful in any case
+1.  [Machine](machine.md) - minimal GNU for Windows (MinGW), Cygwin, or Linux virtual machine (VM), to support `gfortran` compiler
+    (**MinGW is the initial focus because it is the standard environment for gfortran on Windows**)
+2.  [Git](git.md) - needed to perform command line version control operations
+3.  [Python and pip](python.md) - needed by MkDocs and pytest, and useful general tool (**skip if not editing MkDocs documentation and not creating automated tests with Python**)
+4.  [pytest](pytest.md) - an option being evaluated for automated testing (**skip if not creating automated tests with Python**)
+5.  [MkDocs](mkdocs.md) - MkDocs is used for developer and user documentation static websites, including this documentation (**skip if not editing MkDocs documentation**)
+6.  [Java 8](java8.md) - used to run Eclipse, and can be used to write utility programs (**skip if using a text editor rather than Eclipse/Photran**)
+7.  [gfortran](gfortran.md) - compiler for the StateMod Fortran software
+8.  [Eclipse/Photran](eclipse.md) - IDE used for interactive Fortran software development (**skip if using a text editor rather than Eclipse/Photran**)
+9.  [Text Editor](text-editor.md) - editor used to edit code and other files, useful in any case
 10. [Doxygen](doxygen.md) - documentation tool (**skip if not creating graphs of code calls**)
 11. [KDiff3](kdiff3.md) - tool for comparing files (**skip if not comparing files or have equivalent tool**)
 

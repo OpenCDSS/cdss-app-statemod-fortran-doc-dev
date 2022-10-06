@@ -9,14 +9,14 @@ Text editors that are known to be used with StateMod are discussed below.
 * [Prerequisites](#prerequisites)
 * [General Considerations](#general-considerations)
 * [Known Text Editors and Issues](#known-text-editors-and-issues)
-	+ [Atom](#atom)
-	+ [Notepad](#notepad)
-	+ [Notepad++ ("notepad plus-plus")](#notepad-notepad-plus-plus)
-	+ [Sublime](#sublime)
-	+ [UltraEdit](#ultraedit)
-	+ [vim](#vim)
-	+ [Visual Studio Code](#visual-studio-code)
-	+ [Other Editors](#other-editors)
+    + [Atom](#atom)
+    + [Notepad](#notepad)
+    + [Notepad++ ("notepad plus-plus")](#notepad-notepad-plus-plus)
+    + [Sublime](#sublime)
+    + [UltraEdit](#ultraedit)
+    + [vim](#vim)
+    + [Visual Studio Code](#visual-studio-code)
+    + [Other Editors](#other-editors)
 
 -------------
 
@@ -29,19 +29,19 @@ Text editors don't typically have prerequisites although some may have a cost.
 Text editors are generally comparable for basic features.
 The following are important considerations:
 
-1. Does the editor automatically detect line ending character (Windows or Linux) and use that
-convention when adding new lines.
-Most editors handle this and may show an indicator for the line ending type.
-It is important that a file, when saved, has consistent line endings
-so as to not confuse editors, compilers, Git, and other tools.
-2. Does the editor use tabs or spaces for indentation.
-Ideally it can be configured to display tabs.
-Spaces should be used in code if possible because tab spacing may vary between developers and tools.
-Otherwise, formatting issues may arise.
-3. Some editors create temporary and backup files.
-These files need to be ignored using Git `.gitignore` file so as to not commit to the repository.
-4. Many editors include spell checkers.
-Avoiding typos and misspelled words in code is desirable.
+1.  Does the editor automatically detect line ending character (Windows or Linux) and use that
+    convention when adding new lines.
+    Most editors handle this and may show an indicator for the line ending type.
+    It is important that a file, when saved, has consistent line endings
+    so as to not confuse editors, compilers, Git, and other tools.
+2.  Does the editor use tabs or spaces for indentation.
+    Ideally it can be configured to display tabs.
+    Spaces should be used in code if possible because tab spacing may vary between developers and tools.
+    Otherwise, formatting issues may arise.
+3.  Some editors create temporary and backup files.
+    These files need to be ignored using Git `.gitignore` file so as to not commit to the repository.
+4.  Many editors include spell checkers.
+    Avoiding typos and misspelled words in code is desirable.
 
 ## Known Text Editors and Issues ##
 
@@ -63,8 +63,8 @@ The Windows notepad editor has limitations and should not typically be used as t
 The [Notepad++](https://notepad-plus-plus.org/) editor is a good general purpose text editor.
 The following are useful Notepad++ features:
 
-* use the ***View / Show Symbol / Show End of Line*** menu to toggle the display
-of end of line character, useful to determine whether Windows or Linux end of line is being used
+*   use the ***View / Show Symbol / Show End of Line*** menu to toggle the display
+    of end of line character, useful to determine whether Windows or Linux end of line is being used
 
 ### Sublime ###
 

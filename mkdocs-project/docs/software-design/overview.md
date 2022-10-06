@@ -16,8 +16,8 @@ Need to describe code modules at a high level:
 * Code organization:  include files, parameter data, etc.
 * Input
 * Initialization
-	+ Global data
-	+ Main program data
+    + Global data
+    + Main program data
 * Calculations
 * Output
 * Data checks

@@ -11,11 +11,11 @@ software.
 This documentation contains the following sections:
 
 * [Install Python](#install-python)
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Windows](../images/windows-32.ico) [Windows](#windows)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Windows](../images/windows-32.ico) [Windows](#windows)
 * [Install `pip`](#install-pip)
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Windows](../images/windows-32.ico) [Windows](#windows)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Windows](../images/windows-32.ico) [Windows](#windows)
 
 -------------------------- 
 
@@ -111,15 +111,14 @@ do not support current conventions.  Therefore, in order to install third-party 
 See the following resources:
 
 * [Installing Packages](https://packaging.python.org/installing/) - should use `pip` if possible
-* [Stack Overflow article on using `pip` when multiple Python versions are installed](http://stackoverflow.com/questions/10919569/how-to-install-a-module-use-pip-for-specific-version-of) -
-it is possible
+* [Stack Overflow article on using `pip` when multiple Python versions are installed](https://stackoverflow.com/questions/10919569/how-to-install-a-module-use-pip-for-specific-version-of) - it is possible
 
 In summary:
 
-* Add-on packages should install into a location consistent with the Python software install location.
-* The `pip` utility should be used to install add-on packages.
-* It is possible to use `pip` to install modules when multiple versions of Python are installed.
-See the examples below for specific operating systems.
+*   Add-on packages should install into a location consistent with the Python software install location.
+*   The `pip` utility should be used to install add-on packages.
+*   It is possible to use `pip` to install modules when multiple versions of Python are installed.
+    See the examples below for specific operating systems.
 
 ### ![Linux](../images/linux-32.png) Linux ###
 

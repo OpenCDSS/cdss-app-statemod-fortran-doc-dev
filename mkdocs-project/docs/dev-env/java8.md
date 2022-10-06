@@ -9,14 +9,14 @@ The following Eclipse/Photran download page indicates that Eclipse Mars is requi
 
 * [Downloading Photran](https://eclipse.org/photran/download.php) - **however, don't download Photran yet - that is described in a later step**
 
-Mars requires at least Java 7 but Java 8 is being phased in with other CDSS tools.
+Mars requires at least Java 7 but Java 8 used with other CDSS tools.
 Therefore, Java 8 will be used with Eclipse/Photran.
 
 This documentation includes the following sections:
 
 * [Install Java 8](#install-java-8)
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Windows](../images/windows-32.ico) [Windows](#windows)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Windows](../images/windows-32.ico) [Windows](#windows)
 
 ---------------------
 
@@ -39,7 +39,7 @@ First, check whether Java 8 needs to be installed:
 If Java 8 is not installed (no version is output and a Java 8 version is not listed under installed programs),
 then installing Java 8 from Oracle is recommended:
 
-* [Java SE Development Kit 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Java SE Development Kit 8 Downloads](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 Select the Windows x64 download for Windows 7 and 10.
 The specific update is generally not important and the latest version should generally be used because

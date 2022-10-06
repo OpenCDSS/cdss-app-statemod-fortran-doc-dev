@@ -6,14 +6,14 @@ Doxygen also creates diagrams that illustrate how code modules call each other.
 Doxygen will be evaluated to determine whether it can help document StateMod code.
 See the following resources:
 
-* [Doxygen website](http://www.stack.nl/~dimitri/doxygen/)
-* [Doxygen download page](http://www.stack.nl/~dimitri/doxygen/download.html)
+* [Doxygen website](https://doxygen.nl/)
+* [Doxygen download page](https://doxygen.nl/download.html)
 
 This documentation includes the following sections:
 
 * [Install Doxygen](#install-doxygen)
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Windows](../images/windows-32.ico) [Windows](#windows)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Windows](../images/windows-32.ico) [Windows](#windows)
 * [Install GraphViz](#install-graphviz)
 * [Configure Doxygen Project](#configure-doxygen-project)
 
@@ -51,7 +51,7 @@ Run the installer as administrator and complete the following steps.
 The GraphViz software is needed to create the graphs showing how code modules call each other.
 Use the following to download a Windows version of GraphViz:
 
-* [Softpedia GraphViz Review](http://www.softpedia.com/get/Others/Miscellaneous/Graphviz.shtml)
+* [Softpedia GraphViz Review](https://www.softpedia.com/get/Others/Miscellaneous/Graphviz.shtml)
 
 After downloading, run the installer program as follows.
 

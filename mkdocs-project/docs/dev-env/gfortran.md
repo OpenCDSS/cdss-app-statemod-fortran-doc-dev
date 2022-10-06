@@ -9,9 +9,9 @@ This documentation contains the following sections:
 
 * [Prerequisites](#prerequisites)
 * [Install `gfortran`](#install-gfortran)
-	+ ![Linux](../images/linux-32.png) [Linux](#linux)
-	+ ![Cygwin](../images/cygwin-32.png) [Windows - Cygwin](#windows-cygwin)
-	+ ![Windows](../images/windows-32.ico) [Windows - MinGW](#windows-mingw)
+    + ![Linux](../images/linux-32.png) [Linux](#linux)
+    + ![Cygwin](../images/cygwin-32.png) [Windows - Cygwin](#windows-cygwin)
+    + ![Windows](../images/windows-32.ico) [Windows - MinGW](#windows-mingw)
 
 -----------------
 
@@ -34,4 +34,4 @@ This section will be completed when resources are available for Cygwin developme
 
 ### ![Windows](../images/windows-32.ico) Windows - MinGW ###
 
-The `gfortran` compiler is installed as part of the [MinGW installation](machine.md#install-mingw).
+The `gfortran` compiler is installed as part of the [MinGW installation](machine.md#windows).
