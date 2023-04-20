@@ -370,7 +370,7 @@ The following is noted:
 
 A simple cross-check was performed to confirm that changes from one version to another were reasonable.
 This ensured that no major global change or migration oversight occurred.
-The [Kdiff3 software](../dev-env/kdiff3) was used to compare the current version and previous version,
+The [Kdiff3 software](../dev-env/kdiff3.md) was used to compare the current version and previous version,
 using the "work" folder contents.
 
 The following is noted:

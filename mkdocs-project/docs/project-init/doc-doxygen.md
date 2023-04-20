@@ -18,7 +18,7 @@ This documentation includes the following sections:
 
 ## Prerequisites ##
 
-Configuring a Doxygen project requires that the [Doxygen software was previously installed](../dev-env/doxygen/),
+Configuring a Doxygen project requires that the [Doxygen software was previously installed](../dev-env/doxygen.md),
 including the GraphViz software.
 
 ## Create Doxygen Project ##
@@ -32,13 +32,13 @@ Run the Doxywizard interactively from the ***Start*** menu.  Fill out the projec
 * Source code directory: `src/main/fortran` in repository
 * Destination directory: `doc-dev-doxygen-project/output` - use `.gitignore` to ignore in repository
 
-![doxywizard setup](doc-doxygen-images/doxywizard-project-1.png)
+![doxywizard setup screen showing information listed above](doc-doxygen-images/doxywizard-project-1.png)
 
-![doxywizard setup](doc-doxygen-images/doxywizard-project-2.png)
+![doxywizard setup Mode Topic: Extraction Mode - All Entities, Programming Language - Optimize for Fortran Output](doc-doxygen-images/doxywizard-project-2.png)
 
-![doxywizard setup](doc-doxygen-images/doxywizard-project-3.png)
+![doxywizard setup Output Topic: Output Format - with Navigation panel](doc-doxygen-images/doxywizard-project-3.png)
 
-![doxywizard setup](doc-doxygen-images/doxywizard-project-4.png)
+![doxywizard setup Diagrams Topic: Use dot tool from teh GraphViz package](doc-doxygen-images/doxywizard-project-4.png)
 
 The ***Expert*** tab appears to be a direct way to set various properties.  Ignore for now.
 
@@ -70,7 +70,7 @@ If the file is edited and saved, reselect in the Doxywizard software using ***Fi
 
 Try running by using the ***Run doxygen*** button under the ***Run*** tab.
 
-![doxywizard setup](doc-doxygen-images/doxywizard-run-1.png)
+![doxywizard setup screen reflecting instructions above](doc-doxygen-images/doxywizard-run-1.png)
 
 The HTML output can be viewed as `doc-dev-doxygen-project/output/index.html`.
 If the output is complete (for example no graphs shown) and/or errors are shown in the wizard, check the configuration file

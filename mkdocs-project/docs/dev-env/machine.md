@@ -31,23 +31,23 @@ The following sections are included in this documentation for various operating 
 **The choice of development environment by the software developer will drive many other configuration steps.
 Windows MinGW is the initial focus.**
 
-* ![Linux](../images/linux-32.png) [Linux](#linux)
-* ![Windows](../images/windows-32.ico) [Windows](#windows)
+* ![Linux Penguin logo](../images/linux-32.png) [Linux](#linux)
+* ![Windows logo](../images/windows-32.ico) [Windows](#windows)
     +  [Install MSYS2 64-bit Software](#install-msys2-64-bit-software) - development environment that is the focus of this documentation
     +  [Install 64-bit MinGW Software](#install-64-bit-mingw-software) - needed to compile 64-bit executables
     +  [Install Useful MinGW Software](#install-useful-mingw-software) - useful software development tools
-* ![Cygwin](../images/cygwin-32.png) [Install Cygwin](#install-cygwin) - alternative to MinGW environment (not tested)
+* ![Cygwin logo](../images/cygwin-32.png) [Install Cygwin](#install-cygwin) - alternative to MinGW environment (not tested)
 
 -------------------
 
-## ![Linux](../images/linux-32.png) Linux ##
+## ![Linux Logo](../images/linux-32.png) Linux ##
 
 This section will be completed when resources are available for Linux development and testing.
 
 A Linux environment is known to have been successfully used with StateMod using the standard `gfortran` compiler
 and makefile provided with the StateMod source code.
 
-## ![Windows](../images/windows-32.ico) Windows ##
+## ![Windows logo](../images/windows-32.ico) Windows ##
 
 The use of `gfortran` constrains the development environment, especially on Windows,
 requiring that either MinGW or Cygwin are used for development,
@@ -73,9 +73,9 @@ It is important to use the correct menu when following the instructions below.
 
 | **MSYS2 Start Menu** | **Comments** |
 | -- | -- |
-| ![12.2](machine-images/msys2-start-menu-12.2.png) | Used with installer containing `gcc` and `gfortran` 12.2. |
-| ![10.3](machine-images/msys2-start-menu-10.3.png) | Used with installer containing `gcc` and `gfortran` 10.3. |
-| ![10.2](machine-images/msys2-start-menu-10.2.png) | Used with installer containing `gcc` and `gfortran` 10.2. |
+| ![12.2 MSYS2 Start menu options](machine-images/msys2-start-menu-12.2.png) | Used with installer containing `gcc` and `gfortran` 12.2. |
+| ![10.3 MSYS2 64bit menu options](machine-images/msys2-start-menu-10.3.png) | Used with installer containing `gcc` and `gfortran` 10.3. |
+| ![10.2 MSYS2 64bit Menu options](machine-images/msys2-start-menu-10.2.png) | Used with installer containing `gcc` and `gfortran` 10.2. |
 
 The Minimalist GNU for Windows (MinGW) environment provides a minimal Linux implementation on Windows.
 MinGW provides an environment in which the `gcc` and `gfortran` compilers will run.
@@ -92,8 +92,8 @@ Title Bar for MinGW Shells
 
 | **Window Title Bar Image**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
 | -- | -- |
-| ![git-bash-title](machine-images/git-bash-title.png) | Git Bash window title (after installing Git for Windows), does not typically include `gfortran`. |
-| ![mingw-title](machine-images/mingw-title.png)<br>![mingw-title-64](machine-images/mingw-title-64.png) | MinGW window title (see installation instructions below), does include `gfortran` if the following instructions are completed.  The title may vary depending on terminal window and MinGW version.  The first example shown displays the current folder in the title and `~` indicates the user's home folder. |
+| ![git bash window title](machine-images/git-bash-title.png) | Git Bash window title (after installing Git for Windows), does not typically include `gfortran`. |
+| ![mingw windoe title](machine-images/mingw-title.png)<br>![mingw window title 64bit](machine-images/mingw-title-64.png) | MinGW window title (see installation instructions below), does include `gfortran` if the following instructions are completed.  The title may vary depending on terminal window and MinGW version.  The first example shown displays the current folder in the title and `~` indicates the user's home folder. |
 
 See the following for MinGW installation instructions:
 
@@ -113,7 +113,7 @@ which changes over time.
 **However, see the instructions below for the download link - do not use links in the table.**
 
 **<p style="text-align: center;">
-![install-msys2-1.png](machine-images/install-msys2-1.png)
+![Table of pre-built toolchains and packages](machine-images/install-msys2-1.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -126,7 +126,7 @@ Do not use links in the above table.
 Instead, retrieve the installation program from the [msys2.org](https://www.msys2.org/) download page shown below.
 
 **<p style="text-align: center;">
-![install-msys2-2.png](machine-images/install-msys2-2.png)
+![Installation Instructions for MSYS2](machine-images/install-msys2-2.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -153,7 +153,7 @@ and follow the instructions on the above web page.
 **This does not require running as administrator.**
 
 **<p style="text-align: center;">
-![install msys2-3.png](machine-images/install-msys2-3.png)
+![iInitial Setup Step for MSys2](machine-images/install-msys2-3.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -163,7 +163,7 @@ Initial Setup Step for MSys2 (<a href="../machine-images/install-msys2-3.png">se
 Press ***Next*** to start the installation process.
 
 **<p style="text-align: center;">
-![install msys2-4.png](machine-images/install-msys2-4.png)
+![Select Installation Folder for MSys2](machine-images/install-msys2-4.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -173,7 +173,7 @@ Select Installation Folder for MSys2 (<a href="../machine-images/install-msys2-4
 Press ***Next*** to accept the default installation folder.
 
 **<p style="text-align: center;">
-![install msys2-5.png](machine-images/install-msys2-5.png)
+![Select Start Menu Folder for MSys2](machine-images/install-msys2-5.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -184,7 +184,7 @@ Press ***Next*** to accept the default ***Start Menu*** shortcuts and start the 
 which will show a progress indicator as shown below.
 
 **<p style="text-align: center;">
-![install msys2-6.png](machine-images/install-msys2-6.png)
+![MSys2 Installation Progress](machine-images/install-msys2-6.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -194,7 +194,7 @@ MSys2 Installation Progress (<a href="../machine-images/install-msys2-6.png">see
 The following will be shown when the installation is complete.
 
 **<p style="text-align: center;">
-![install msys2-7.png](machine-images/install-msys2-7.png)
+![MSys2 Installation Complete](machine-images/install-msys2-7.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -207,7 +207,7 @@ Press ***Finish*** to open an MSSYS terminal window, as shown below,
 which will be used to install the MinGW 64-bit (and if necessary, 32-bit environments).
 
 **<p style="text-align: center;">
-![install msys2-8.png](machine-images/install-msys2-8.png)
+![MSYS2 Terminal Window](machine-images/install-msys2-8.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -575,7 +575,7 @@ This may be necessary because there may have been changes to the environment nec
 The default prompt indicates that the environment is for MINGW64, as shown in the following figure.
 
 **<p style="text-align: center;">
-![install msys2-9.png](machine-images/install-msys2-9.png)
+![MinGW 64-bit Terminal Window](machine-images/install-msys2-9.png)
 </p>**
 
 **<p style="text-align: center;">
@@ -636,7 +636,7 @@ Optional Software Packages to Install
 | [`git`](https://packages.msys2.org/package/git) | Git version control. If Git is installed, it should be configured consistent with Git for Windows (Git Bash), and other Git utilities that may be used with CDSS development. Because the `/home/user` folder for MSys2 MinGW is different from other similar installations, it is necessary to set the Git configuration for the user. It will also be necessary to configure other user environment settings that a developer may be accustomed to. |
 | [`vim`](https://packages.msys2.org/package/vim) | Vim editor - optionally configure with `.vimrc`. |
 
-## ![Cygwin](../images/cygwin-32.png) Install Cygwin ##
+## ![Cygwin logo](../images/cygwin-32.png) Install Cygwin ##
 
 This section can be completed if necessary.
 

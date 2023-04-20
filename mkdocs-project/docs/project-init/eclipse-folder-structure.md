@@ -27,11 +27,11 @@ This documentation includes the following sections:
 The initial repository folder structure in Eclipse is as shown below.
 Eclipse displays files that are relevant to the Eclipse view and therefore does not show all files.
 
-![New project 6](eclipse-statemod-project-images/eclipse-new-fortran-project-6.png)
+![New project folder structure](eclipse-statemod-project-images/eclipse-new-fortran-project-6.png)
 
 The corresponding files on the file system are as shown below:
 
-![New project 6](eclipse-folder-structure-images/initial-folder-structure.png)
+![Files within the file system](eclipse-folder-structure-images/initial-folder-structure.png)
 
 The flat structure of the legacy files are reorganized into the new [development folder structure](overview.md#development-folder-structure)
 as follows.
@@ -39,7 +39,7 @@ as follows.
 First, right click on the project in ***Project Explorer*** and then use ***New / Folder*** to create a `src` folder
 for the source code.  The `src` folder will be present in the repository folder (but note that `git status` does not list empty folders).
 
-![New folder](eclipse-folder-structure-images/eclipse-new-src-folder.png)
+![Create New Folder Resource window](eclipse-folder-structure-images/eclipse-new-src-folder.png)
 
 Create additional folders under `src` to match the development files structure.
 Eclipse can be used to create folders as illustrated above, or use the command-line or suitable File Explorer.
@@ -48,7 +48,7 @@ Files will be added to this structure in a later step.
 The final result is as follows.  Note that the `Includes` folder is a virtual folder added by Eclipse that points
 to the MinGW include files in the MinGW installation location, but does not exist in the Git repository files.
 
-![New folder 2](eclipse-folder-structure-images/eclipse-new-folder-structure.png)
+![Populated Fortran project folder](eclipse-folder-structure-images/eclipse-new-folder-structure.png)
 
 ## Makefile ##
 

@@ -41,7 +41,7 @@ The empty StateMod Git repository can be used to initialize the Eclipse project,
 
 First use ***File / New / Other...*** and select ***Fortran / Fortran Project*** as shown below.
 
-![New project 1](eclipse-statemod-project-images/eclipse-new-fortran-project-1.png)
+![New project creation window](eclipse-statemod-project-images/eclipse-new-fortran-project-1.png)
 
 Press ***Next >***.  The following dialog will be shown to configure the dialog.
 Because a custom makefile will be used to compile the software, select ***Makefile Project / Empty Project*** as shown below
@@ -50,28 +50,28 @@ same toolchains being shown on the right.
 Make sure to uncheck the ***Use default location*** because if checked the project files will be located
 in the Eclipse workspace folder - instead the Eclipse project files are co-located with the Git repository files.
 
-![New project 2](eclipse-statemod-project-images/eclipse-new-fortran-project-2.png)
+![New project Location Window](eclipse-statemod-project-images/eclipse-new-fortran-project-2.png)
 
 Note the warning at the top of the dialog:  ***Directory with specified name already exists***.
 This is OK because Eclipse will not overwrite the files in the directory.
 Press ***Next >***
 
-![New project 3](eclipse-statemod-project-images/eclipse-new-fortran-project-3.png)
+![New project Select Configurations window](eclipse-statemod-project-images/eclipse-new-fortran-project-3.png)
 
 It does not appear that any additional settings are required.  Press ***Finish***.
 
-![New project 4](eclipse-statemod-project-images/eclipse-new-fortran-project-4.png)
+![New project settings override warning](eclipse-statemod-project-images/eclipse-new-fortran-project-4.png)
 
 The above warning may (or may not) be shown (may be due to recreating the project several times during initialization).
 If shown, press ***OK*** since this is a new project and Eclipse project files have not previously been created within the repository files.
 
-![New project 5](eclipse-statemod-project-images/eclipse-new-fortran-project-5.png)
+![New project perspective warning](eclipse-statemod-project-images/eclipse-new-fortran-project-5.png)
 
 The above warning is asking what Eclipse should display next and the suggested Fortran perspective is appropriate.
 Press ***Yes***.  The following ***Project Explorer*** view will be shown.
 For the image below the project files have been expanded.
 
-![New project 6](eclipse-statemod-project-images/eclipse-new-fortran-project-6.png)
+![New project Explorer view](eclipse-statemod-project-images/eclipse-new-fortran-project-6.png)
 
 Note that Eclipse automatically detects that the files are a Git repository
 (yellow barrel decorators on files and repository name with branch indicated with ***[cdss-app-statemod-fortran master]***
@@ -125,7 +125,7 @@ and selecting ***Properties*** shows the following:
 Change the selections to the following.
 It may be necessary to uncheck the ***Display compatible toolchains only*** to see a list of choices.
 
-![Project properties - Fortran Build](eclipse-statemod-project-images/eclipse-project-properties-fortran-build-tool-chain.png)
+![Project properties - Additional options](eclipse-statemod-project-images/eclipse-project-properties-fortran-build-tool-chain.png)
 
 From experience, it is desirable to enable the ***Analysis/Refactoring*** features as shown below.
 

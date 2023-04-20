@@ -266,7 +266,7 @@ Example Test Suite Results Text File
 The following illustrates the Excel file report:
 
 **<p style="text-align: center;">
-![excel-test-results.png](testing-images/excel-test-results.png)
+![Example Test Suite Results Excel File](testing-images/excel-test-results.png)
 </p>**
 
 **<p style="text-align: center;">

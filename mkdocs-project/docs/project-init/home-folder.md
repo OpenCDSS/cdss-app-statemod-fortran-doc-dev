@@ -1,6 +1,6 @@
 # Initial Project Setup / Create Development Home Folder #
 
-See the [discussion of development project folder structure](overview#development-folder-structure).
+See the [discussion of development project folder structure](../project-init/overview.md#development-folder-structure).
 
 The following sections are included in this documentation:
 

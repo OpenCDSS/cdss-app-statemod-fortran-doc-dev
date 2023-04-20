@@ -4,7 +4,7 @@
 This decumentation was created while investigating using Eclipse.**
 
 The Eclipse workspace folder should be created as per
-the [development folder structure](overview#development-folder-structure):
+the [development folder structure](../project-init/overview.md#development-folder-structure):
 
 * ![Linux](../images/linux-32.png) Linux: `~/cdss-dev/StateMod/eclipse-workspace`
 * ![Windows](../images/windows-32.ico) Windows: `C:\Users\user\cdss-dev\StateMod\eclipse-workspace`
