@@ -16,6 +16,7 @@ Text editors that are known to be used with StateMod are discussed below.
     + [UltraEdit](#ultraedit)
     + [vim](#vim)
     + [Visual Studio Code](#visual-studio-code)
+    + [CodeLobster](#CodeLobster)
     + [Other Editors](#other-editors)
 
 -------------
@@ -96,6 +97,11 @@ set listchars=tab:>-
 
 The [Visual Studio Code](https://code.visualstudio.com/)
 editor is useful for editing Markdown files because it provides a documentation preview.
+
+### CodeLobster ###
+
+The [CodeLobster](https://codelobster.com/)
+editor is a full-featured editor with special support for many popular frameworks.
 
 ### Other Editors ###
 
